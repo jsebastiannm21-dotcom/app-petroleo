@@ -26,6 +26,46 @@ def tasa_usd(moneda):
     return activos.tasa_usd(moneda)
 
 
+@st.cache_resource
+def salud():
+    """Tiempos de carga y errores recientes de la app (memoria del servidor; se ven en el Panel admin)."""
+    from collections import deque
+    return {"tiempos": deque(maxlen=500), "errores": deque(maxlen=50), "avisados": {}}
+
+
+def contar_uso(que):
+    """Cuenta (una vez por sesión y día) que alguien usó una función, para las cifras del Panel admin."""
+    import nube
+    clave = f"uso_{que}_{date.today()}"
+    if nube.conectado() and not st.session_state.get(clave):
+        st.session_state[clave] = True
+        __import__("gestion").uso(que)
+
+
+@st.cache_data(ttl=1800, show_spinner=False)
+def comunidad():
+    """(porcentajes por mercado, compras, ¿se usa como señal?, texto del backtest). Anónimo y agregado."""
+    import gestion
+    pct, n = gestion.comunidad()
+    usar, texto = gestion.comunidad_validada()
+    return pct, n, usar, texto
+
+
+def tarjeta_comunidad():
+    import nube
+    if not nube.conectado():
+        return
+    pct, n, usar, texto = comunidad()
+    with st.container(border=True):
+        st.markdown("#### :material/groups: Sentimiento de la comunidad (anónimo)")
+        if not n:
+            st.caption("Esta semana todavía no hay compras en la comunidad.")
+            return
+        top = ", ".join(f"**{v:.0f}%** {activos.NOMBRE_MERCADO.get(m, m)}" for m, v in pct.head(3).items())
+        st.markdown(f"De las {n} compras de esta semana: {top}.")
+        st.caption(texto)
+
+
 def yo():
     import nube
     return st.session_state.get("yo") or {"email": nube.superadmin(), "nombre": "Superadmin", "rol": "superadmin"}
@@ -392,6 +432,17 @@ def pasos_decision(r):
                                  "balance negativo es motivo para ir con más cuidado.")
             except Exception:
                 pass
+            try:
+                import nube
+                if nube.conectado():
+                    pct, n, usar, _ = comunidad()
+                    mercado = (activos.mercados(r["simbolo"]) or [None])[0]
+                    if usar and mercado in pct.index:
+                        pasos.append(f"Señal extra de la comunidad (anónima, validada con backtest): el "
+                                     f"{pct[mercado]:.0f}% de las compras de esta semana fueron de "
+                                     f"{activos.NOMBRE_MERCADO.get(mercado, mercado)}.")
+            except Exception:
+                pass
             if r.get("proteccion"):
                 pasos.append(f"Se activó la {termino('protección')}: el precio está bajo su media de 200 días y sigue cayendo.")
             if r.get("cerrado"):
@@ -496,6 +547,7 @@ QUE_TENDRIA_QUE_PASAR = {
 
 @st.dialog("Escenarios de la predicción", width="large")
 def dialogo_escenarios(r):
+    contar_uso("escenarios")
     tm = r["tm"]
     grupo = (activos.noticias(r["simbolo"]) or ["nasdaq"])[0]
     textos = QUE_TENDRIA_QUE_PASAR.get(grupo, QUE_TENDRIA_QUE_PASAR["nasdaq"])
@@ -522,6 +574,7 @@ def dialogo_escenarios(r):
 def abanico(simbolo, dias_opciones=(5, 10, 20)):
     """Abanico de 100 caminos posibles (Monte Carlo) con mediana y bandas del 10% y 90%."""
     import montecarlo
+    contar_uso("abanico")
     cab = st.container(horizontal=True, vertical_alignment="center")
     cab.markdown("#### Abanico de predicciones (Monte Carlo)")
     boton_que_es(cab, "montecarlo", f"mc_{simbolo}")
@@ -1304,6 +1357,7 @@ def predicciones_cartera(cartera, clave, etiqueta=""):
     pos = cartera.posiciones()
     if pos.empty:
         return
+    contar_uso("predicciones_cartera")
     st.markdown(f"#### :material/insights: Predicciones {etiqueta}")
     vista = st.segmented_control("Ver", ["Todos mis activos juntos", "Un activo"], default="Todos mis activos juntos",
                                  required=True, key=f"pred_vista_{clave}")

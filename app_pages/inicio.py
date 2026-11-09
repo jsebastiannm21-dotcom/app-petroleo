@@ -98,6 +98,8 @@ if st.button(f"Ver todo {nombre_panel} en Seguimiento", icon=":material/list:"):
     st.session_state["pestana_mercado"] = PESTANA_DE_PANEL.get(nombre_panel, nombre_panel)
     st.switch_page(ui.PAGINA_SEGUIMIENTO)
 
+ui.tarjeta_comunidad()
+
 # ---------- Ranking, Mis activos y alertas ----------
 izq, centro, der = st.columns([1.3, 1, 1])
 with izq.container(border=True, height="stretch"):

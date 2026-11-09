@@ -9,7 +9,7 @@ REPO = "jsebastiannm21-dotcom/app-petroleo"
 GH = os.path.join(os.environ.get("ProgramFiles", r"C:\Program Files"), "GitHub CLI", "gh.exe")
 e = dotenv_values(os.path.join(os.path.dirname(os.path.abspath(__file__)), ".env"))
 valores = {k: (e.get(k) or "").strip() for k in ["SUPABASE_URL", "SUPABASE_KEY", "SUPERADMIN_EMAIL", "TELEGRAM_TOKEN",
-                                                   "TELEGRAM_CHAT_ID"]}
+                                                   "TELEGRAM_CHAT_ID", "ADMIN_TELEGRAM_TOKEN", "ADMIN_TELEGRAM_CHAT_ID"]}
 valores["APP_URL"] = "https://app-petroleo-2jsrncgu76vcg3kdfxjqyc.streamlit.app/"
 for clave, valor in valores.items():
     if not valor:

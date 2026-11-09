@@ -521,6 +521,46 @@ inversión.
 **Para probar en tu PC como otro usuario:** antes de abrir la app, `set APP_COMO=correo@...`. Solo funciona en tu
 PC, con `APP_LOCAL=1`.
 
+## Panel admin (Fase 4, solo tú)
+Está en la barra izquierda → **Panel admin**. Para los demás esta página no existe.
+- **Gestión:**
+  - modo mantenimiento (aviso general y, si quieres, bloqueo mientras actualizas);
+  - interruptor del **modo automático para todos**;
+  - aprobar profesores, roles y pedidos de «conservar mi cuenta», con su rendimiento, aciertos, bitácora y si
+    acepta contacto;
+  - bloquear cuentas;
+  - lista de universidades;
+  - bot de admin.
+- **Usuarios:** el perfil de todos, con compras, rendimiento y ganancias.
+- **Cifras:**
+  - activos por tipo;
+  - usuarios activos hoy y en la semana, y cuántos vuelven;
+  - compras y ventas del día, ganancia y pérdida promedio;
+  - uso de las predicciones;
+  - registrados que nunca operaron.
+- **Salud:**
+  - velocidad de cada página y errores recientes;
+  - fuentes (Yahoo, noticias, Binance, Supabase);
+  - lo que llevas de los límites gratis.
+- **Actividad:** quién cambió qué y cuándo.
+- **Mensajes:** los «Reportar problema» y «Contacto». Esos botones están en la barra izquierda para todos, y en
+  la entrada para quien no tiene cuenta.
+- **Comunidad:** qué compró la comunidad esta semana, anónimo y agregado. Solo entra como señal extra en la
+  explicación de las decisiones si el backtest demuestra que mejora los aciertos (hacen falta al menos 30 compras
+  revisadas).
+- **Modo presentación** (barra izquierda): las cifras en grande, con gráficas animadas. Pantalla completa con F11.
+
+**Telegram de admin (segundo bot, solo para ti).** Te avisa si:
+- la app no carga o tarda más de 90 segundos (se revisa cada 4 horas);
+- una página tarda más de 20 segundos o tiene un error;
+- una fuente se cae (se revisa cada 30 minutos);
+- llega un mensaje de contacto.
+
+Se configura con `ADMIN_TELEGRAM_TOKEN` y `ADMIN_TELEGRAM_CHAT_ID`.
+
+**Microsoft Clarity (gratis):** mapas de calor, grabaciones de sesión, clics de frustración, tiempo por pantalla,
+horas pico y celular vs. computador. Se activa con `CLARITY_ID` en los secrets y está avisado en los términos.
+
 ## Cómo abrir la app
 
 **Doble clic en el ícono «App Petróleo» del escritorio.** Se abre en **http://localhost:8501**. Aparece también

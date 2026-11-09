@@ -324,6 +324,11 @@ def _simulador_automatico():
     """Corre el simulador de cada usuario en modo automático (el tuyo y el de los inversionistas que lo activaron).
     Telegram solo te avisa de TU simulador."""
     import nube
+    if nube.conectado():
+        import gestion
+        if not gestion.automatico_global():          # El superadmin apagó el modo automático para todos
+            print("Modo automático apagado para todos por el superadmin.")
+            return
     correos = [nube.superadmin()]
     if nube.conectado():
         filas = nube.cliente().table("ajustes").select("email,valor").eq("clave", "simulador_config").execute().data
@@ -572,6 +577,10 @@ def main():
                     "domingo a las 4:00 p.m. y el backtest los domingos a las 6:00 p.m.")
         return print("Mensaje enviado. Revisa Telegram." if ok else "No se pudo enviar.")
     if args.momento == "vigilar":
+        import nube
+        if nube.conectado():                         # Salud: si una fuente se cae, avisa al Telegram de admin
+            import gestion
+            print("Fuentes caídas:", gestion.avisar_fuentes_caidas() or "ninguna")
         return print(f"Toques de stop/objetivo: {len(vigilar())}")
     if args.momento == "finde":
         return print("\n".join(reporte_finde()))

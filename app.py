@@ -3,6 +3,9 @@
 # y la página de cada activo. Barra izquierda: selector de activo + casilla "Sugerencia".
 # AVISO: herramienta de análisis. No es una recomendación de inversión.
 
+import time
+from datetime import datetime
+
 import pandas as pd
 import streamlit as st
 
@@ -58,7 +61,11 @@ paginas = {
     "activo": st.Page("app_pages/activo.py", title="Activo", icon=":material/insights:", visibility="hidden",
                       help="Página de un activo: decisión, pronóstico, simulador, calendario y ranking."),
 }
+if usuarios.rol(yo) == "superadmin":                       # Páginas que solo existen para el superadmin
+    paginas["admin"] = st.Page("app_pages/panel_admin.py", title="Panel admin", icon=":material/admin_panel_settings:")
+    paginas["presentacion"] = st.Page("app_pages/presentacion.py", title="Presentación", icon=":material/slideshow:")
 pagina = st.navigation(list(paginas.values()), position="hidden")
+st.session_state["pagina_actual"] = pagina.title
 
 # ---------- Barra izquierda: selector de activo y sugerencia ----------
 st.session_state.setdefault("activo", activos.PRINCIPAL)
@@ -98,6 +105,10 @@ with st.sidebar:
         st.markdown("Para cambiarlo: toca el menú **⋮** (arriba a la derecha) → **Settings** → **Choose app theme** "
                     "→ **Light** (claro) o **Dark** (oscuro). Streamlit no deja que un botón de la app cambie el tema; "
                     "la app recuerda tu elección.")
+    if "admin" in paginas:
+        st.page_link(paginas["admin"], label="Panel admin", icon=":material/admin_panel_settings:")
+        st.page_link(paginas["presentacion"], label="Modo presentación", icon=":material/slideshow:")
+    usuarios.botones_ayuda(yo)
     st.caption("Dinero virtual y análisis del pasado. No es una recomendación de inversión.")
 
 # ---------- Barra inferior fija ----------
@@ -142,4 +153,32 @@ p, li { line-height: 1.55; }
 usuarios.menu_perfil(yo)
 st.caption(":material/gavel: **Herramienta educativa con dinero ficticio. No es una recomendación de inversión.**",
            text_alignment="right")
-pagina.run()
+
+clarity = nube.secreto("CLARITY_ID")
+if clarity and nube.conectado():                            # Microsoft Clarity (gratis): analítica de uso anónima
+    st.html(f"""<script>(function(c,l,a,r,i,t,y){{c[a]=c[a]||function(){{(c[a].q=c[a].q||[]).push(arguments)}};
+t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;y=l.getElementsByTagName(r)[0];
+y.parentNode.insertBefore(t,y);}})(window,document,"clarity","script","{clarity}");</script>""",
+            unsafe_allow_javascript=True)
+
+
+_inicio = time.time()
+try:
+    pagina.run()
+except Exception as _error:                                 # Se anota y se avisa; Streamlit igual muestra el error
+    import traceback
+
+    import gestion
+    ui.salud()["errores"].append({"fecha": f"{datetime.now():%Y-%m-%d %H:%M:%S}", "pagina": pagina.title,
+                                "error": f"{type(_error).__name__}: {_error}"[:300],
+                                "detalle": traceback.format_exc()[-1500:]})
+    gestion.registrar(yo["email"], f"Error en {pagina.title}", f"{type(_error).__name__}: {_error}"[:300])
+    gestion.alerta_admin(f"❌ Error en la página {pagina.title}: {type(_error).__name__}: {_error}"[:600])
+    raise
+finally:
+    _seg = time.time() - _inicio
+    _s = ui.salud()
+    _s["tiempos"].append({"fecha": f"{datetime.now():%Y-%m-%d %H:%M:%S}", "pagina": pagina.title, "segundos": round(_seg, 2)})
+    if _seg > 20 and time.time() - _s["avisados"].get(pagina.title, 0) > 3600:   # Lenta: máximo un aviso por hora
+        _s["avisados"][pagina.title] = time.time()
+        __import__("gestion").alerta_admin(f"🐢 La página {pagina.title} tardó {_seg:.0f} segundos en cargar.")

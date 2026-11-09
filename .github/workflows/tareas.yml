@@ -20,6 +20,9 @@ on:
         default: vigilar
         type: choice
         options: [manana, apertura, mediodia, cierre, noche, vigilar, finde, backtest]
+permissions:
+  contents: read
+  actions: read                     # Para contar los minutos usados del mes (Salud del sistema)
 concurrency:
   group: datos                      # Una tarea a la vez: así no se pisan los archivos
   cancel-in-progress: false
@@ -34,6 +37,9 @@ jobs:
       SUPERADMIN_EMAIL: ${{ secrets.SUPERADMIN_EMAIL }}
       TELEGRAM_TOKEN: ${{ secrets.TELEGRAM_TOKEN }}
       TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
+      ADMIN_TELEGRAM_TOKEN: ${{ secrets.ADMIN_TELEGRAM_TOKEN }}
+      ADMIN_TELEGRAM_CHAT_ID: ${{ secrets.ADMIN_TELEGRAM_CHAT_ID }}
+      GITHUB_TOKEN: ${{ github.token }}
     steps:
       - uses: actions/checkout@v4
       - name: Elegir la tarea según la hora
@@ -60,3 +66,6 @@ jobs:
           cache-dependency-path: ${{ steps.elegir.outputs.requisitos }}
       - run: pip install -r ${{ steps.elegir.outputs.requisitos }}
       - run: python nube.py tarea ${{ steps.elegir.outputs.tarea }}
+      - name: Guardar los minutos usados del mes
+        if: steps.elegir.outputs.tarea == 'manana'
+        run: python gestion.py uso-actions

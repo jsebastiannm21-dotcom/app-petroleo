@@ -33,7 +33,11 @@ administrador de la app a recoger y guardar mi correo, nombre, institución y, s
 finalidades: crear y administrar mi cuenta, guardar mi simulador y hacer estadísticas educativas sin identificarme.
 Mis datos se guardan en un servidor seguro (Supabase) y no se venden ni se comparten con terceros. Como titular puedo
 **conocer, actualizar, rectificar y pedir que se borren** mis datos, y revocar esta autorización, escribiendo al
-correo del administrador. Los datos opcionales (género y edad) son voluntarios. No se recogen datos sensibles."""
+correo del administrador. Los datos opcionales (género y edad) son voluntarios. No se recogen datos sensibles.
+
+**Analítica de uso.** Para mejorar la app usamos Microsoft Clarity (gratis), que registra de forma anónima cómo se usa:
+clics, desplazamientos, tiempo en cada pantalla, mapas de calor y grabaciones de la sesión, y si entras desde celular o
+computador. Clarity oculta los textos que escribes. No se usa para publicidad."""
 
 
 def login_configurado():
@@ -60,6 +64,10 @@ def rol(u):
 def puede(u, que):
     permisos = {"mis_activos": {"superadmin"}, "admin": {"superadmin"}, "actualizar": {"superadmin"},
                 "automatico": {"superadmin", "inversionista"}}
+    if que == "automatico":
+        import gestion
+        if not gestion.automatico_global():               # Interruptor del superadmin: apagado para todos
+            return False
     return rol(u) in permisos[que]
 
 
@@ -69,7 +77,9 @@ def _registro(email):
     st.caption(f"Entraste como {email}. Completa tu registro (solo esta vez).")
     with st.form("registro"):
         nombre = st.text_input("Nombre completo *", value=getattr(st.user, "name", "") or "")
-        institucion = st.selectbox("Institución *", UNIVERSIDADES, index=None, placeholder="Elige tu universidad")
+        import gestion
+        institucion = st.selectbox("Institución *", gestion.universidades(UNIVERSIDADES), index=None,
+                                   placeholder="Elige tu universidad")
         tipo = st.segmented_control("¿Cómo vas a usar la app? *", list(ROLES), format_func=ROLES.get, default="estudiante",
                                     help="Estudiante: simulador manual. Inversionista: todo el análisis y simulador "
                                          "manual y automático. Profesor: el administrador debe aprobarte.")
@@ -101,8 +111,13 @@ def sesion():
         como = (os.getenv("APP_COMO") or "").strip().lower()       # Solo en tu PC: probar como otro usuario
         if como and nube.conectado() and obtener(como):
             nube.USUARIO.set(como)
-            return obtener(como)
-        return {"email": nube.superadmin(), "nombre": "Superadmin (este PC)", "rol": "superadmin", "aprobado": True}
+            u = obtener(como)
+            revisar_acceso(u)
+            return u
+        jefe = {"email": nube.superadmin(), "nombre": "Superadmin (este PC)", "rol": "superadmin", "aprobado": True}
+        if nube.conectado():
+            revisar_acceso(jefe)                            # En tu PC también ves el aviso de mantenimiento
+        return jefe
     if not login_configurado():                     # En la nube SIN login: nadie entra (protege tus datos)
         st.error("Falta configurar el login con Google en los secrets de la app.", title="App en mantenimiento")
         st.stop()
@@ -111,6 +126,9 @@ def sesion():
         st.markdown("Herramienta educativa: análisis de más de 1.100 activos, predicciones y un simulador con dinero "
                     "virtual. **No es una recomendación de inversión.**")
         st.button("Entrar con Google", icon=":material/login:", type="primary", on_click=st.login, args=("google",))
+        if st.button("Contacto", icon=":material/mail:", type="tertiary"):
+            dialogo_mensaje("Contacto", {})
+        st.caption(":material/gavel: Herramienta educativa con dinero ficticio. No es una recomendación de inversión.")
         st.stop()
     email = str(st.user.email).lower()
     nube.USUARIO.set(email)                                  # De aquí en adelante, todo es de este usuario
@@ -118,7 +136,64 @@ def sesion():
     if u is None:
         _registro(email)
         st.stop()
+    revisar_acceso(u)
     return u
+
+
+def revisar_acceso(u):
+    """Cuenta bloqueada, modo mantenimiento y registro de la visita del día."""
+    import datetime
+
+    import gestion
+    jefe = u["email"] == nube.superadmin()
+    if not jefe and gestion.bloqueado(u["email"]):
+        st.error("Tu cuenta está bloqueada. Si crees que es un error, escríbenos.", title="Cuenta bloqueada")
+        if st.button("Contacto", icon=":material/mail:"):
+            dialogo_mensaje("Contacto", u)
+        st.stop()
+    m = gestion.mantenimiento()
+    if m.get("activo"):
+        if jefe:
+            st.warning("El modo mantenimiento está ACTIVO: los demás ven el aviso" +
+                       (" y no pueden usar la app." if m.get("bloquear") else "."), icon=":material/construction:")
+        else:
+            st.warning(m.get("mensaje") or "Estamos actualizando la app. Vuelve en unos minutos.",
+                       title="Mantenimiento", icon=":material/construction:")
+            if m.get("bloquear"):
+                st.stop()
+    hoy = str(datetime.date.today())
+    if st.session_state.get("visita_anotada") != hoy:
+        gestion.visita(u["email"])
+        st.session_state["visita_anotada"] = hoy
+
+
+@st.dialog("Escríbenos")
+def dialogo_mensaje(tipo, u):
+    """«Reportar problema» o «Contacto»: llega al panel del superadmin y a su Telegram de admin."""
+    import gestion
+    tipo = st.segmented_control("Tipo", ["Problema", "Contacto"], default="Problema" if tipo == "Problema" else "Contacto",
+                                required=True, format_func=lambda t: "Reportar un problema" if t == "Problema" else "Contacto")
+    nombre = st.text_input("Nombre *", value=u.get("nombre", ""))
+    correo = st.text_input("Correo *", value=u.get("email", ""))
+    persona = st.selectbox("Soy *", gestion.TIPOS_PERSONA,
+                           index={"estudiante": 0, "profesor": 1, "inversionista": 2}.get(u.get("rol"), 3))
+    texto = st.text_area("Mensaje *", max_chars=2000,
+                         placeholder="Cuéntanos qué pasó y en qué pantalla" if tipo == "Problema" else "")
+    if st.button("Enviar", type="primary", icon=":material/send:"):
+        if not (nombre.strip() and "@" in correo and texto.strip()):
+            st.error("Llena tu nombre, un correo válido y el mensaje.")
+            return
+        gestion.mensaje(tipo, nombre, correo, persona, texto, st.session_state.get("pagina_actual", ""))
+        st.success("¡Gracias! Te responderemos pronto.")
+
+
+def botones_ayuda(u):
+    """Botones para todos: Reportar problema y Contacto (en la barra izquierda)."""
+    fila = st.sidebar.container(horizontal=True)
+    if fila.button("Reportar problema", icon=":material/bug_report:", key="btn_problema"):
+        dialogo_mensaje("Problema", u)
+    if fila.button("Contacto", icon=":material/mail:", key="btn_contacto"):
+        dialogo_mensaje("Contacto", u)
 
 
 def resumen_operaciones():
@@ -175,6 +250,7 @@ def panel_admin():
                       f"{'Acepta' if p['contacto'] else 'No acepta'} que lo contacten.")
         if fila.button("Aprobar", key=f"conservar_{p['email']}", type="primary"):
             cursos.aprobar_conservar(p["email"])
+            __import__("gestion").registrar(nube.usuario(), "Aprobó conservar una cuenta", p["email"])
             st.rerun()
     pendientes = t[(t["rol"] == "profesor") & (~t["aprobado"])]
     for _, p in pendientes.iterrows():
@@ -182,10 +258,12 @@ def panel_admin():
         fila.markdown(f"**{p['nombre']}** ({p['email']}, {p['institucion']}) pide ser profesor.")
         if fila.button("Aprobar", key=f"aprobar_{p['email']}", type="primary"):
             nube.cliente().table("usuarios").update({"aprobado": True}).eq("email", p["email"]).execute()
+            __import__("gestion").registrar(nube.usuario(), "Aprobó un profesor", p["email"])
             st.rerun()
     col = st.columns([2, 1, 1], vertical_alignment="bottom")
     quien = col[0].selectbox("Cambiar el rol de", t["email"], key="admin_quien")
     nuevo = col[1].selectbox("Nuevo rol", list(ROLES), format_func=ROLES.get, key="admin_rol")
     if col[2].button("Guardar rol"):
         nube.cliente().table("usuarios").update({"rol": nuevo, "aprobado": True}).eq("email", quien).execute()
+        __import__("gestion").registrar(nube.usuario(), f"Cambió el rol a {nuevo}", quien)
         st.rerun()

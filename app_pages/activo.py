@@ -110,6 +110,7 @@ def pronostico(simbolo, _version, metodo):
 
 
 if pestanas[1].open:
+    ui.contar_uso("pronostico")
     with pestanas[1]:
         fila_m = st.container(horizontal=True, vertical_alignment="bottom")
         metodo = fila_m.segmented_control("Método", ["Método sencillo", "Prophet"], default="Método sencillo",

@@ -48,6 +48,10 @@ def _todos(prefijo):
 
 def _guardar(email, clave, valor):
     nube.guardar_ajuste(clave, valor, email)
+    if clave.split(":")[0] in ("curso", "evento", "conservar"):        # Quién cambió qué y cuándo
+        import gestion
+        nombre = valor.get("nombre") or valor.get("materia") or clave if isinstance(valor, dict) else clave
+        gestion.registrar(nube.usuario(), f"Guardó {clave.split(':')[0]}", nombre)
 
 
 def _borrar(email, clave):
@@ -397,6 +401,8 @@ def borrar_usuario(email):
     c = nube.cliente()
     for tabla in ("operaciones", "ajustes", "diario_errores", "usuarios"):
         c.table(tabla).delete().eq("email", email).execute()
+    import gestion
+    gestion.registrar(nube.usuario(), "Borró una cuenta", email[:3] + "...")
 
 
 def limpieza(hoy=None):
