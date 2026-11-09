@@ -1,0 +1,11998 @@
+{
+"activos": {
+"MMM": {
+"nombre": "3M",
+"tipo": "acción",
+"mercados": [
+"eeuu"
+],
+"noticias": [
+"nasdaq"
+],
+"sector": "Industria"
+},
+"AOS": {
+"nombre": "A. O. Smith",
+"tipo": "acción",
+"mercados": [
+"eeuu",
+"dividendos"
+],
+"noticias": [
+"nasdaq"
+],
+"sector": "Industria"
+},
+"ABT": {
+"nombre": "Abbott Laboratories",
+"tipo": "acción",
+"mercados": [
+"eeuu",
+"dividendos"
+],
+"noticias": [
+"nasdaq"
+],
+"sector": "Salud"
+},
+"ABBV": {
+"nombre": "AbbVie",
+"tipo": "acción",
+"mercados": [
+"eeuu",
+"dividendos"
+],
+"noticias": [
+"nasdaq"
+],
+"sector": "Salud"
+},
+"ACN": {
+"nombre": "Accenture",
+"tipo": "acción",
+"mercados": [
+"eeuu"
+],
+"noticias": [
+"nasdaq"
+],
+"sector": "Tecnología"
+},
+"ADBE": {
+"nombre": "Adobe Inc.",
+"tipo": "acción",
+"mercados": [
+"eeuu"
+],
+"noticias": [
+"nasdaq"
+],
+"sector": "Tecnología"
+},
+"AMD": {
+"nombre": "Advanced Micro Devices",
+"tipo": "acción",
+"mercados": [
+"eeuu"
+],
+"noticias": [
+"nasdaq"
+],
+"sector": "Tecnología"
+},
+"AES": {
+"nombre": "AES Corporation",
+"tipo": "acción",
+"mercados": [
+"eeuu"
+],
+"noticias": [
+"nasdaq"
+],
+"sector": "Energía eléctrica"
+},
+"AFL": {
+"nombre": "Aflac",
+"tipo": "acción",
+"mercados": [
+"eeuu",
+"dividendos"
+],
+"noticias": [
+"nasdaq"
+],
+"sector": "Bancos y finanzas"
+},
+"A": {
+"nombre": "Agilent Technologies",
+"tipo": "acción",
+"mercados": [
+"eeuu"
+],
+"noticias": [
+"nasdaq"
+],
+"sector": "Salud"
+},
+"APD": {
+"nombre": "Air Products",
+"tipo": "acción",
+"mercados": [
+"eeuu",
+"dividendos"
+],
+"noticias": [
+"nasdaq"
+],
+"sector": "Materiales y minería"
+},
+"ABNB": {
+"nombre": "Airbnb",
+"tipo": "acción",
+"mercados": [
+"eeuu"
+],
+"noticias": [
+"nasdaq"
+],
+"sector": "Consumo"
+},
+"AKAM": {
+"nombre": "Akamai Technologies",
+"tipo": "acción",
+"mercados": [
+"eeuu"
+],
+"noticias": [
+"nasdaq"
+],
+"sector": "Tecnología"
+},
+"ALB": {
+"nombre": "Albemarle Corporation",
+"tipo": "acción",
+"mercados": [
+"eeuu",
+"dividendos"
+],
+"noticias": [
+"nasdaq"
+],
+"sector": "Materiales y minería"
+},
+"ARE": {
+"nombre": "Alexandria Real Estate Equities",
+"tipo": "acción",
+"mercados": [
+"eeuu"
+],
+"noticias": [
+"nasdaq"
+],
+"sector": "Inmobiliario"
+},
+"ALGN": {
+"nombre": "Align Technology",
+"tipo": "acción",
+"mercados": [
+"eeuu"
+],
+"noticias": [
+"nasdaq"
+],
+"sector": "Salud"
+},
+"ALLE": {
+"nombre": "Allegion",
+"tipo": "acción",
+"mercados": [
+"eeuu"
+],
+"noticias": [
+"nasdaq"
+],
+"sector": "Industria"
+},
+"LNT": {
+"nombre": "Alliant Energy",
+"tipo": "acción",
+"mercados": [
+"eeuu"
+],
+"noticias": [
+"nasdaq"
+],
+"sector": "Energía eléctrica"
+},
+"ALL": {
+"nombre": "Allstate",
+"tipo": "acción",
+"mercados": [
+"eeuu"
+],
+"noticias": [
+"nasdaq"
+],
+"sector": "Bancos y finanzas"
+},
+"GOOGL": {
+"nombre": "Alphabet Inc. (Class A)",
+"tipo": "acción",
+"mercados": [
+"eeuu"
+],
+"noticias": [
+"nasdaq"
+],
+"sector": "Comunicaciones"
+},
+"GOOG": {
+"nombre": "Alphabet Inc. (Class C)",
+"tipo": "acción",
+"mercados": [
+"eeuu"
+],
+"noticias": [
+"nasdaq"
+],
+"sector": "Comunicaciones"
+},
+"MO": {
+"nombre": "Altria",
+"tipo": "acción",
+"mercados": [
+"eeuu"
+],
+"noticias": [
+"nasdaq"
+],
+"sector": "Consumo básico"
+},
+"AMZN": {
+"nombre": "Amazon",
+"tipo": "acción",
+"mercados": [
+"eeuu"
+],
+"noticias": [
+"nasdaq"
+],
+"sector": "Consumo"
+},
+"AMCR": {
+"nombre": "Amcor",
+"tipo": "acción",
+"mercados": [
+"eeuu",
+"dividendos"
+],
+"noticias": [
+"nasdaq"
+],
+"sector": "Materiales y minería"
+},
+"AEE": {
+"nombre": "Ameren",
+"tipo": "acción",
+"mercados": [
+"eeuu"
+],
+"noticias": [
+"nasdaq"
+],
+"sector": "Energía eléctrica"
+},
+"AEP": {
+"nombre": "American Electric Power",
+"tipo": "acción",
+"mercados": [
+"eeuu"
+],
+"noticias": [
+"nasdaq"
+],
+"sector": "Energía eléctrica"
+},
+"AXP": {
+"nombre": "American Express",
+"tipo": "acción",
+"mercados": [
+"eeuu"
+],
+"noticias": [
+"nasdaq"
+],
+"sector": "Bancos y finanzas"
+},
+"AIG": {
+"nombre": "American International Group",
+"tipo": "acción",
+"mercados": [
+"eeuu"
+],
+"noticias": [
+"nasdaq"
+],
+"sector": "Bancos y finanzas"
+},
+"AMT": {
+"nombre": "American Tower",
+"tipo": "acción",
+"mercados": [
+"eeuu"
+],
+"noticias": [
+"nasdaq"
+],
+"sector": "Inmobiliario"
+},
+"AWK": {
+"nombre": "American Water Works",
+"tipo": "acción",
+"mercados": [
+"eeuu"
+],
+"noticias": [
+"nasdaq"
+],
+"sector": "Energía eléctrica"
+},
+"AMP": {
+"nombre": "Ameriprise Financial",
+"tipo": "acción",
+"mercados": [
+"eeuu"
+],
+"noticias": [
+"nasdaq"
+],
+"sector": "Bancos y finanzas"
+},
+"AME": {
+"nombre": "Ametek",
+"tipo": "acción",
+"mercados": [
+"eeuu"
+],
+"noticias": [
+"nasdaq"
+],
+"sector": "Industria"
+},
+"AMGN": {
+"nombre": "Amgen",
+"tipo": "acción",
+"mercados": [
+"eeuu"
+],
+"noticias": [
+"nasdaq"
+],
+"sector": "Salud"
+},
+"APH": {
+"nombre": "Amphenol",
+"tipo": "acción",
+"mercados": [
+"eeuu"
+],
+"noticias": [
+"nasdaq"
+],
+"sector": "Tecnología"
+},
+"ADI": {
+"nombre": "Analog Devices",
+"tipo": "acción",
+"mercados": [
+"eeuu"
+],
+"noticias": [
+"nasdaq"
+],
+"sector": "Tecnología"
+},
+"AON": {
+"nombre": "Aon plc",
+"tipo": "acción",
+"mercados": [
+"eeuu"
+],
+"noticias": [
+"nasdaq"
+],
+"sector": "Bancos y finanzas"
+},
+"APA": {
+"nombre": "APA Corporation",
+"tipo": "acción",
+"mercados": [
+"eeuu",
+"petróleo"
+],
+"noticias": [
+"nasdaq"
+],
+"sector": "Petróleo y gas"
+},
+"APO": {
+"nombre": "Apollo Global Management",
+"tipo": "acción",
+"mercados": [
+"eeuu"
+],
+"noticias": [
+"nasdaq"
+],
+"sector": "Bancos y finanzas"
+},
+"AAPL": {
+"nombre": "Apple Inc.",
+"tipo": "acción",
+"mercados": [
+"eeuu"
+],
+"noticias": [
+"nasdaq"
+],
+"sector": "Tecnología"
+},
+"AMAT": {
+"nombre": "Applied Materials",
+"tipo": "acción",
+"mercados": [
+"eeuu"
+],
+"noticias": [
+"nasdaq"
+],
+"sector": "Tecnología"
+},
+"APP": {
+"nombre": "AppLovin",
+"tipo": "acción",
+"mercados": [
+"eeuu"
+],
+"noticias": [
+"nasdaq"
+],
+"sector": "Comunicaciones"
+},
+"APTV": {
+"nombre": "Aptiv",
+"tipo": "acción",
+"mercados": [
+"eeuu"
+],
+"noticias": [
+"nasdaq"
+],
+"sector": "Consumo"
+},
+"ACGL": {
+"nombre": "Arch Capital Group",
+"tipo": "acción",
+"mercados": [
+"eeuu"
+],
+"noticias": [
+"nasdaq"
+],
+"sector": "Bancos y finanzas"
+},
+"ADM": {
+"nombre": "Archer Daniels Midland",
+"tipo": "acción",
+"mercados": [
+"eeuu",
+"dividendos"
+],
+"noticias": [
+"nasdaq"
+],
+"sector": "Consumo básico"
+},
+"ARES": {
+"nombre": "Ares Management",
+"tipo": "acción",
+"mercados": [
+"eeuu"
+],
+"noticias": [
+"nasdaq"
+],
+"sector": "Bancos y finanzas"
+},
+"ANET": {
+"nombre": "Arista Networks",
+"tipo": "acción",
+"mercados": [
+"eeuu"
+],
+"noticias": [
+"nasdaq"
+],
+"sector": "Tecnología"
+},
+"AJG": {
+"nombre": "Arthur J. Gallagher & Co.",
+"tipo": "acción",
+"mercados": [
+"eeuu"
+],
+"noticias": [
+"nasdaq"
+],
+"sector": "Bancos y finanzas"
+},
+"AIZ": {
+"nombre": "Assurant",
+"tipo": "acción",
+"mercados": [
+"eeuu"
+],
+"noticias": [
+"nasdaq"
+],
+"sector": "Bancos y finanzas"
+},
+"T": {
+"nombre": "AT&T",
+"tipo": "acción",
+"mercados": [
+"eeuu"
+],
+"noticias": [
+"nasdaq"
+],
+"sector": "Comunicaciones"
+},
+"ATO": {
+"nombre": "Atmos Energy",
+"tipo": "acción",
+"mercados": [
+"eeuu",
+"dividendos"
+],
+"noticias": [
+"nasdaq"
+],
+"sector": "Energía eléctrica"
+},
+"ADSK": {
+"nombre": "Autodesk",
+"tipo": "acción",
+"mercados": [
+"eeuu"
+],
+"noticias": [
+"nasdaq"
+],
+"sector": "Tecnología"
+},
+"ADP": {
+"nombre": "Automatic Data Processing",
+"tipo": "acción",
+"mercados": [
+"eeuu",
+"dividendos"
+],
+"noticias": [
+"nasdaq"
+],
+"sector": "Industria"
+},
+"AZO": {
+"nombre": "AutoZone",
+"tipo": "acción",
+"mercados": [
+"eeuu"
+],
+"noticias": [
+"nasdaq"
+],
+"sector": "Consumo"
+},
+"AVY": {
+"nombre": "Avery Dennison",
+"tipo": "acción",
+"mercados": [
+"eeuu"
+],
+"noticias": [
+"nasdaq"
+],
+"sector": "Materiales y minería"
+},
+"AXON": {
+"nombre": "Axon Enterprise",
+"tipo": "acción",
+"mercados": [
+"eeuu"
+],
+"noticias": [
+"nasdaq"
+],
+"sector": "Industria"
+},
+"BKR": {
+"nombre": "Baker Hughes",
+"tipo": "acción",
+"mercados": [
+"eeuu"
+],
+"noticias": [
+"nasdaq"
+],
+"sector": "Petróleo y gas"
+},
+"BALL": {
+"nombre": "Ball Corporation",
+"tipo": "acción",
+"mercados": [
+"eeuu"
+],
+"noticias": [
+"nasdaq"
+],
+"sector": "Materiales y minería"
+},
+"BAC": {
+"nombre": "Bank of America",
+"tipo": "acción",
+"mercados": [
+"eeuu"
+],
+"noticias": [
+"nasdaq"
+],
+"sector": "Bancos y finanzas"
+},
+"BAX": {
+"nombre": "Baxter International",
+"tipo": "acción",
+"mercados": [
+"eeuu"
+],
+"noticias": [
+"nasdaq"
+],
+"sector": "Salud"
+},
+"BDX": {
+"nombre": "Becton Dickinson",
+"tipo": "acción",
+"mercados": [
+"eeuu",
+"dividendos"
+],
+"noticias": [
+"nasdaq"
+],
+"sector": "Salud"
+},
+"BRK-B": {
+"nombre": "Berkshire Hathaway",
+"tipo": "acción",
+"mercados": [
+"eeuu"
+],
+"noticias": [
+"nasdaq"
+],
+"sector": "Bancos y finanzas"
+},
+"BBY": {
+"nombre": "Best Buy",
+"tipo": "acción",
+"mercados": [
+"eeuu"
+],
+"noticias": [
+"nasdaq"
+],
+"sector": "Consumo"
+},
+"TECH": {
+"nombre": "Bio-Techne",
+"tipo": "acción",
+"mercados": [
+"eeuu"
+],
+"noticias": [
+"nasdaq"
+],
+"sector": "Salud"
+},
+"BIIB": {
+"nombre": "Biogen",
+"tipo": "acción",
+"mercados": [
+"eeuu"
+],
+"noticias": [
+"nasdaq"
+],
+"sector": "Salud"
+},
+"BLK": {
+"nombre": "BlackRock",
+"tipo": "acción",
+"mercados": [
+"eeuu"
+],
+"noticias": [
+"nasdaq"
+],
+"sector": "Bancos y finanzas"
+},
+"BX": {
+"nombre": "Blackstone Inc.",
+"tipo": "acción",
+"mercados": [
+"eeuu"
+],
+"noticias": [
+"nasdaq"
+],
+"sector": "Bancos y finanzas"
+},
+"XYZ": {
+"nombre": "Block, Inc.",
+"tipo": "acción",
+"mercados": [
+"eeuu"
+],
+"noticias": [
+"nasdaq"
+],
+"sector": "Bancos y finanzas"
+},
+"BE": {
+"nombre": "Bloom Energy",
+"tipo": "acción",
+"mercados": [
+"eeuu"
+],
+"noticias": [
+"nasdaq"
+],
+"sector": "Industria"
+},
+"BNY": {
+"nombre": "BNY Mellon",
+"tipo": "acción",
+"mercados": [
+"eeuu"
+],
+"noticias": [
+"nasdaq"
+],
+"sector": "Bancos y finanzas"
+},
+"BA": {
+"nombre": "Boeing",
+"tipo": "acción",
+"mercados": [
+"eeuu"
+],
+"noticias": [
+"nasdaq"
+],
+"sector": "Industria"
+},
+"BKNG": {
+"nombre": "Booking Holdings",
+"tipo": "acción",
+"mercados": [
+"eeuu"
+],
+"noticias": [
+"nasdaq"
+],
+"sector": "Consumo"
+},
+"BSX": {
+"nombre": "Boston Scientific",
+"tipo": "acción",
+"mercados": [
+"eeuu"
+],
+"noticias": [
+"nasdaq"
+],
+"sector": "Salud"
+},
+"BMY": {
+"nombre": "Bristol Myers Squibb",
+"tipo": "acción",
+"mercados": [
+"eeuu"
+],
+"noticias": [
+"nasdaq"
+],
+"sector": "Salud"
+},
+"AVGO": {
+"nombre": "Broadcom",
+"tipo": "acción",
+"mercados": [
+"eeuu"
+],
+"noticias": [
+"nasdaq"
+],
+"sector": "Tecnología"
+},
+"BR": {
+"nombre": "Broadridge Financial Solutions",
+"tipo": "acción",
+"mercados": [
+"eeuu"
+],
+"noticias": [
+"nasdaq"
+],
+"sector": "Industria"
+},
+"BRO": {
+"nombre": "Brown & Brown",
+"tipo": "acción",
+"mercados": [
+"eeuu",
+"dividendos"
+],
+"noticias": [
+"nasdaq"
+],
+"sector": "Bancos y finanzas"
+},
+"BF-B": {
+"nombre": "Brown–Forman",
+"tipo": "acción",
+"mercados": [
+"eeuu",
+"dividendos"
+],
+"noticias": [
+"nasdaq"
+],
+"sector": "Consumo básico"
+},
+"BG": {
+"nombre": "Bunge Global",
+"tipo": "acción",
+"mercados": [
+"eeuu"
+],
+"noticias": [
+"nasdaq"
+],
+"sector": "Consumo básico"
+},
+"BXP": {
+"nombre": "BXP, Inc.",
+"tipo": "acción",
+"mercados": [
+"eeuu"
+],
+"noticias": [
+"nasdaq"
+],
+"sector": "Inmobiliario"
+},
+"CHRW": {
+"nombre": "C.H. Robinson",
+"tipo": "acción",
+"mercados": [
+"eeuu",
+"dividendos"
+],
+"noticias": [
+"nasdaq"
+],
+"sector": "Industria"
+},
+"CDNS": {
+"nombre": "Cadence Design Systems",
+"tipo": "acción",
+"mercados": [
+"eeuu"
+],
+"noticias": [
+"nasdaq"
+],
+"sector": "Tecnología"
+},
+"CPT": {
+"nombre": "Camden Property Trust",
+"tipo": "acción",
+"mercados": [
+"eeuu"
+],
+"noticias": [
+"nasdaq"
+],
+"sector": "Inmobiliario"
+},
+"COF": {
+"nombre": "Capital One",
+"tipo": "acción",
+"mercados": [
+"eeuu"
+],
+"noticias": [
+"nasdaq"
+],
+"sector": "Bancos y finanzas"
+},
+"CAH": {
+"nombre": "Cardinal Health",
+"tipo": "acción",
+"mercados": [
+"eeuu",
+"dividendos"
+],
+"noticias": [
+"nasdaq"
+],
+"sector": "Salud"
+},
+"CCL": {
+"nombre": "Carnival Corporation",
+"tipo": "acción",
+"mercados": [
+"eeuu"
+],
+"noticias": [
+"nasdaq"
+],
+"sector": "Consumo"
+},
+"CARR": {
+"nombre": "Carrier Global",
+"tipo": "acción",
+"mercados": [
+"eeuu"
+],
+"noticias": [
+"nasdaq"
+],
+"sector": "Industria"
+},
+"CVNA": {
+"nombre": "Carvana",
+"tipo": "acción",
+"mercados": [
+"eeuu"
+],
+"noticias": [
+"nasdaq"
+],
+"sector": "Consumo"
+},
+"CASY": {
+"nombre": "Casey's",
+"tipo": "acción",
+"mercados": [
+"eeuu"
+],
+"noticias": [
+"nasdaq"
+],
+"sector": "Consumo básico"
+},
+"CAT": {
+"nombre": "Caterpillar Inc.",
+"tipo": "acción",
+"mercados": [
+"eeuu",
+"dividendos"
+],
+"noticias": [
+"nasdaq"
+],
+"sector": "Industria"
+},
+"CBOE": {
+"nombre": "Cboe Global Markets",
+"tipo": "acción",
+"mercados": [
+"eeuu"
+],
+"noticias": [
+"nasdaq"
+],
+"sector": "Bancos y finanzas"
+},
+"CBRE": {
+"nombre": "CBRE Group",
+"tipo": "acción",
+"mercados": [
+"eeuu"
+],
+"noticias": [
+"nasdaq"
+],
+"sector": "Inmobiliario"
+},
+"CDW": {
+"nombre": "CDW Corporation",
+"tipo": "acción",
+"mercados": [
+"eeuu"
+],
+"noticias": [
+"nasdaq"
+],
+"sector": "Tecnología"
+},
+"COR": {
+"nombre": "Cencora",
+"tipo": "acción",
+"mercados": [
+"eeuu"
+],
+"noticias": [
+"nasdaq"
+],
+"sector": "Salud"
+},
+"CNC": {
+"nombre": "Centene Corporation",
+"tipo": "acción",
+"mercados": [
+"eeuu"
+],
+"noticias": [
+"nasdaq"
+],
+"sector": "Salud"
+},
+"CNP": {
+"nombre": "CenterPoint Energy",
+"tipo": "acción",
+"mercados": [
+"eeuu"
+],
+"noticias": [
+"nasdaq"
+],
+"sector": "Energía eléctrica"
+},
+"CF": {
+"nombre": "CF Industries",
+"tipo": "acción",
+"mercados": [
+"eeuu"
+],
+"noticias": [
+"nasdaq"
+],
+"sector": "Materiales y minería"
+},
+"CRL": {
+"nombre": "Charles River Laboratories",
+"tipo": "acción",
+"mercados": [
+"eeuu"
+],
+"noticias": [
+"nasdaq"
+],
+"sector": "Salud"
+},
+"SCHW": {
+"nombre": "Charles Schwab Corporation",
+"tipo": "acción",
+"mercados": [
+"eeuu"
+],
+"noticias": [
+"nasdaq"
+],
+"sector": "Bancos y finanzas"
+},
+"CHTR": {
+"nombre": "Charter Communications",
+"tipo": "acción",
+"mercados": [
+"eeuu"
+],
+"noticias": [
+"nasdaq"
+],
+"sector": "Comunicaciones"
+},
+"CVX": {
+"nombre": "Chevron Corporation",
+"tipo": "acción",
+"mercados": [
+"eeuu",
+"dividendos"
+],
+"noticias": [
+"nasdaq"
+],
+"sector": "Petróleo y gas"
+},
+"CMG": {
+"nombre": "Chipotle Mexican Grill",
+"tipo": "acción",
+"mercados": [
+"eeuu"
+],
+"noticias": [
+"nasdaq"
+],
+"sector": "Consumo"
+},
+"CB": {
+"nombre": "Chubb Limited",
+"tipo": "acción",
+"mercados": [
+"eeuu",
+"dividendos"
+],
+"noticias": [
+"nasdaq"
+],
+"sector": "Bancos y finanzas"
+},
+"CHD": {
+"nombre": "Church & Dwight",
+"tipo": "acción",
+"mercados": [
+"eeuu",
+"dividendos"
+],
+"noticias": [
+"nasdaq"
+],
+"sector": "Consumo básico"
+},
+"CIEN": {
+"nombre": "Ciena",
+"tipo": "acción",
+"mercados": [
+"eeuu"
+],
+"noticias": [
+"nasdaq"
+],
+"sector": "Tecnología"
+},
+"CI": {
+"nombre": "Cigna",
+"tipo": "acción",
+"mercados": [
+"eeuu"
+],
+"noticias": [
+"nasdaq"
+],
+"sector": "Salud"
+},
+"CINF": {
+"nombre": "Cincinnati Financial",
+"tipo": "acción",
+"mercados": [
+"eeuu",
+"dividendos"
+],
+"noticias": [
+"nasdaq"
+],
+"sector": "Bancos y finanzas"
+},
+"CTAS": {
+"nombre": "Cintas",
+"tipo": "acción",
+"mercados": [
+"eeuu",
+"dividendos"
+],
+"noticias": [
+"nasdaq"
+],
+"sector": "Industria"
+},
+"CSCO": {
+"nombre": "Cisco",
+"tipo": "acción",
+"mercados": [
+"eeuu"
+],
+"noticias": [
+"nasdaq"
+],
+"sector": "Tecnología"
+},
+"C": {
+"nombre": "Citigroup",
+"tipo": "acción",
+"mercados": [
+"eeuu"
+],
+"noticias": [
+"nasdaq"
+],
+"sector": "Bancos y finanzas"
+},
+"CFG": {
+"nombre": "Citizens Financial Group",
+"tipo": "acción",
+"mercados": [
+"eeuu"
+],
+"noticias": [
+"nasdaq"
+],
+"sector": "Bancos y finanzas"
+},
+"CLX": {
+"nombre": "Clorox",
+"tipo": "acción",
+"mercados": [
+"eeuu",
+"dividendos"
+],
+"noticias": [
+"nasdaq"
+],
+"sector": "Consumo básico"
+},
+"CME": {
+"nombre": "CME Group",
+"tipo": "acción",
+"mercados": [
+"eeuu"
+],
+"noticias": [
+"nasdaq"
+],
+"sector": "Bancos y finanzas"
+},
+"CMS": {
+"nombre": "CMS Energy",
+"tipo": "acción",
+"mercados": [
+"eeuu"
+],
+"noticias": [
+"nasdaq"
+],
+"sector": "Energía eléctrica"
+},
+"KO": {
+"nombre": "Coca-Cola Company (The)",
+"tipo": "acción",
+"mercados": [
+"eeuu",
+"dividendos"
+],
+"noticias": [
+"nasdaq"
+],
+"sector": "Consumo básico"
+},
+"CTSH": {
+"nombre": "Cognizant",
+"tipo": "acción",
+"mercados": [
+"eeuu"
+],
+"noticias": [
+"nasdaq"
+],
+"sector": "Tecnología"
+},
+"COHR": {
+"nombre": "Coherent Corp.",
+"tipo": "acción",
+"mercados": [
+"eeuu"
+],
+"noticias": [
+"nasdaq"
+],
+"sector": "Tecnología"
+},
+"COIN": {
+"nombre": "Coinbase",
+"tipo": "acción",
+"mercados": [
+"eeuu"
+],
+"noticias": [
+"nasdaq"
+],
+"sector": "Bancos y finanzas"
+},
+"CL": {
+"nombre": "Colgate-Palmolive",
+"tipo": "acción",
+"mercados": [
+"eeuu",
+"dividendos"
+],
+"noticias": [
+"nasdaq"
+],
+"sector": "Consumo básico"
+},
+"CMCSA": {
+"nombre": "Comcast",
+"tipo": "acción",
+"mercados": [
+"eeuu"
+],
+"noticias": [
+"nasdaq"
+],
+"sector": "Comunicaciones"
+},
+"FIX": {
+"nombre": "Comfort Systems USA",
+"tipo": "acción",
+"mercados": [
+"eeuu"
+],
+"noticias": [
+"nasdaq"
+],
+"sector": "Industria"
+},
+"COP": {
+"nombre": "ConocoPhillips",
+"tipo": "acción",
+"mercados": [
+"eeuu"
+],
+"noticias": [
+"nasdaq"
+],
+"sector": "Petróleo y gas"
+},
+"ED": {
+"nombre": "Consolidated Edison",
+"tipo": "acción",
+"mercados": [
+"eeuu",
+"dividendos"
+],
+"noticias": [
+"nasdaq"
+],
+"sector": "Energía eléctrica"
+},
+"STZ": {
+"nombre": "Constellation Brands",
+"tipo": "acción",
+"mercados": [
+"eeuu"
+],
+"noticias": [
+"nasdaq"
+],
+"sector": "Consumo básico"
+},
+"CEG": {
+"nombre": "Constellation Energy",
+"tipo": "acción",
+"mercados": [
+"eeuu"
+],
+"noticias": [
+"nasdaq"
+],
+"sector": "Energía eléctrica"
+},
+"COO": {
+"nombre": "Cooper Companies (The)",
+"tipo": "acción",
+"mercados": [
+"eeuu"
+],
+"noticias": [
+"nasdaq"
+],
+"sector": "Salud"
+},
+"CPRT": {
+"nombre": "Copart",
+"tipo": "acción",
+"mercados": [
+"eeuu"
+],
+"noticias": [
+"nasdaq"
+],
+"sector": "Industria"
+},
+"GLW": {
+"nombre": "Corning Inc.",
+"tipo": "acción",
+"mercados": [
+"eeuu"
+],
+"noticias": [
+"nasdaq"
+],
+"sector": "Tecnología"
+},
+"CPAY": {
+"nombre": "Corpay",
+"tipo": "acción",
+"mercados": [
+"eeuu"
+],
+"noticias": [
+"nasdaq"
+],
+"sector": "Bancos y finanzas"
+},
+"CSGP": {
+"nombre": "CoStar Group",
+"tipo": "acción",
+"mercados": [
+"eeuu"
+],
+"noticias": [
+"nasdaq"
+],
+"sector": "Inmobiliario"
+},
+"COST": {
+"nombre": "Costco",
+"tipo": "acción",
+"mercados": [
+"eeuu"
+],
+"noticias": [
+"nasdaq"
+],
+"sector": "Consumo básico"
+},
+"CRH": {
+"nombre": "CRH plc",
+"tipo": "acción",
+"mercados": [
+"eeuu"
+],
+"noticias": [
+"nasdaq"
+],
+"sector": "Materiales y minería"
+},
+"CRWD": {
+"nombre": "CrowdStrike",
+"tipo": "acción",
+"mercados": [
+"eeuu"
+],
+"noticias": [
+"nasdaq"
+],
+"sector": "Tecnología"
+},
+"CCI": {
+"nombre": "Crown Castle",
+"tipo": "acción",
+"mercados": [
+"eeuu"
+],
+"noticias": [
+"nasdaq"
+],
+"sector": "Inmobiliario"
+},
+"CSX": {
+"nombre": "CSX Corporation",
+"tipo": "acción",
+"mercados": [
+"eeuu"
+],
+"noticias": [
+"nasdaq"
+],
+"sector": "Industria"
+},
+"CMI": {
+"nombre": "Cummins",
+"tipo": "acción",
+"mercados": [
+"eeuu"
+],
+"noticias": [
+"nasdaq"
+],
+"sector": "Industria"
+},
+"CVS": {
+"nombre": "CVS Health",
+"tipo": "acción",
+"mercados": [
+"eeuu"
+],
+"noticias": [
+"nasdaq"
+],
+"sector": "Salud"
+},
+"DHR": {
+"nombre": "Danaher Corporation",
+"tipo": "acción",
+"mercados": [
+"eeuu"
+],
+"noticias": [
+"nasdaq"
+],
+"sector": "Salud"
+},
+"DRI": {
+"nombre": "Darden Restaurants",
+"tipo": "acción",
+"mercados": [
+"eeuu"
+],
+"noticias": [
+"nasdaq"
+],
+"sector": "Consumo"
+},
+"DDOG": {
+"nombre": "Datadog",
+"tipo": "acción",
+"mercados": [
+"eeuu"
+],
+"noticias": [
+"nasdaq"
+],
+"sector": "Tecnología"
+},
+"DVA": {
+"nombre": "DaVita",
+"tipo": "acción",
+"mercados": [
+"eeuu"
+],
+"noticias": [
+"nasdaq"
+],
+"sector": "Salud"
+},
+"DECK": {
+"nombre": "Deckers Brands",
+"tipo": "acción",
+"mercados": [
+"eeuu"
+],
+"noticias": [
+"nasdaq"
+],
+"sector": "Consumo"
+},
+"DE": {
+"nombre": "Deere & Company",
+"tipo": "acción",
+"mercados": [
+"eeuu"
+],
+"noticias": [
+"nasdaq"
+],
+"sector": "Industria"
+},
+"DELL": {
+"nombre": "Dell Technologies",
+"tipo": "acción",
+"mercados": [
+"eeuu"
+],
+"noticias": [
+"nasdaq"
+],
+"sector": "Tecnología"
+},
+"DAL": {
+"nombre": "Delta Air Lines",
+"tipo": "acción",
+"mercados": [
+"eeuu"
+],
+"noticias": [
+"nasdaq"
+],
+"sector": "Industria"
+},
+"DVN": {
+"nombre": "Devon Energy",
+"tipo": "acción",
+"mercados": [
+"eeuu"
+],
+"noticias": [
+"nasdaq"
+],
+"sector": "Petróleo y gas"
+},
+"DXCM": {
+"nombre": "Dexcom",
+"tipo": "acción",
+"mercados": [
+"eeuu"
+],
+"noticias": [
+"nasdaq"
+],
+"sector": "Salud"
+},
+"FANG": {
+"nombre": "Diamondback Energy",
+"tipo": "acción",
+"mercados": [
+"eeuu"
+],
+"noticias": [
+"nasdaq"
+],
+"sector": "Petróleo y gas"
+},
+"DLR": {
+"nombre": "Digital Realty",
+"tipo": "acción",
+"mercados": [
+"eeuu"
+],
+"noticias": [
+"nasdaq"
+],
+"sector": "Inmobiliario"
+},
+"DG": {
+"nombre": "Dollar General",
+"tipo": "acción",
+"mercados": [
+"eeuu"
+],
+"noticias": [
+"nasdaq"
+],
+"sector": "Consumo básico"
+},
+"DLTR": {
+"nombre": "Dollar Tree",
+"tipo": "acción",
+"mercados": [
+"eeuu"
+],
+"noticias": [
+"nasdaq"
+],
+"sector": "Consumo básico"
+},
+"D": {
+"nombre": "Dominion Energy",
+"tipo": "acción",
+"mercados": [
+"eeuu"
+],
+"noticias": [
+"nasdaq"
+],
+"sector": "Energía eléctrica"
+},
+"DPZ": {
+"nombre": "Domino's",
+"tipo": "acción",
+"mercados": [
+"eeuu"
+],
+"noticias": [
+"nasdaq"
+],
+"sector": "Consumo"
+},
+"DASH": {
+"nombre": "DoorDash",
+"tipo": "acción",
+"mercados": [
+"eeuu"
+],
+"noticias": [
+"nasdaq"
+],
+"sector": "Consumo"
+},
+"DOV": {
+"nombre": "Dover Corporation",
+"tipo": "acción",
+"mercados": [
+"eeuu",
+"dividendos"
+],
+"noticias": [
+"nasdaq"
+],
+"sector": "Industria"
+},
+"DOW": {
+"nombre": "Dow Inc.",
+"tipo": "acción",
+"mercados": [
+"eeuu"
+],
+"noticias": [
+"nasdaq"
+],
+"sector": "Materiales y minería"
+},
+"DHI": {
+"nombre": "D. R. Horton",
+"tipo": "acción",
+"mercados": [
+"eeuu"
+],
+"noticias": [
+"nasdaq"
+],
+"sector": "Consumo"
+},
+"DTE": {
+"nombre": "DTE Energy",
+"tipo": "acción",
+"mercados": [
+"eeuu"
+],
+"noticias": [
+"nasdaq"
+],
+"sector": "Energía eléctrica"
+},
+"DUK": {
+"nombre": "Duke Energy",
+"tipo": "acción",
+"mercados": [
+"eeuu"
+],
+"noticias": [
+"nasdaq"
+],
+"sector": "Energía eléctrica"
+},
+"DD": {
+"nombre": "DuPont",
+"tipo": "acción",
+"mercados": [
+"eeuu"
+],
+"noticias": [
+"nasdaq"
+],
+"sector": "Industria"
+},
+"ETN": {
+"nombre": "Eaton Corporation",
+"tipo": "acción",
+"mercados": [
+"eeuu"
+],
+"noticias": [
+"nasdaq"
+],
+"sector": "Industria"
+},
+"EBAY": {
+"nombre": "eBay Inc.",
+"tipo": "acción",
+"mercados": [
+"eeuu"
+],
+"noticias": [
+"nasdaq"
+],
+"sector": "Consumo"
+},
+"ECHO": {
+"nombre": "EchoStar",
+"tipo": "acción",
+"mercados": [
+"eeuu"
+],
+"noticias": [
+"nasdaq"
+],
+"sector": "Comunicaciones"
+},
+"ECL": {
+"nombre": "Ecolab",
+"tipo": "acción",
+"mercados": [
+"eeuu",
+"dividendos"
+],
+"noticias": [
+"nasdaq"
+],
+"sector": "Materiales y minería"
+},
+"EIX": {
+"nombre": "Edison International",
+"tipo": "acción",
+"mercados": [
+"eeuu"
+],
+"noticias": [
+"nasdaq"
+],
+"sector": "Energía eléctrica"
+},
+"EW": {
+"nombre": "Edwards Lifesciences",
+"tipo": "acción",
+"mercados": [
+"eeuu"
+],
+"noticias": [
+"nasdaq"
+],
+"sector": "Salud"
+},
+"ELV": {
+"nombre": "Elevance Health",
+"tipo": "acción",
+"mercados": [
+"eeuu"
+],
+"noticias": [
+"nasdaq"
+],
+"sector": "Salud"
+},
+"EME": {
+"nombre": "Emcor",
+"tipo": "acción",
+"mercados": [
+"eeuu"
+],
+"noticias": [
+"nasdaq"
+],
+"sector": "Industria"
+},
+"EMR": {
+"nombre": "Emerson Electric",
+"tipo": "acción",
+"mercados": [
+"eeuu",
+"dividendos"
+],
+"noticias": [
+"nasdaq"
+],
+"sector": "Industria"
+},
+"ETR": {
+"nombre": "Entergy",
+"tipo": "acción",
+"mercados": [
+"eeuu"
+],
+"noticias": [
+"nasdaq"
+],
+"sector": "Energía eléctrica"
+},
+"EOG": {
+"nombre": "EOG Resources",
+"tipo": "acción",
+"mercados": [
+"eeuu"
+],
+"noticias": [
+"nasdaq"
+],
+"sector": "Petróleo y gas"
+},
+"EQT": {
+"nombre": "EQT Corporation",
+"tipo": "acción",
+"mercados": [
+"eeuu",
+"petróleo"
+],
+"noticias": [
+"nasdaq"
+],
+"sector": "Petróleo y gas"
+},
+"EFX": {
+"nombre": "Equifax",
+"tipo": "acción",
+"mercados": [
+"eeuu"
+],
+"noticias": [
+"nasdaq"
+],
+"sector": "Industria"
+},
+"EQIX": {
+"nombre": "Equinix",
+"tipo": "acción",
+"mercados": [
+"eeuu"
+],
+"noticias": [
+"nasdaq"
+],
+"sector": "Inmobiliario"
+},
+"ERIE": {
+"nombre": "Erie Indemnity",
+"tipo": "acción",
+"mercados": [
+"eeuu",
+"dividendos"
+],
+"noticias": [
+"nasdaq"
+],
+"sector": "Bancos y finanzas"
+},
+"ESS": {
+"nombre": "Essex Property Trust",
+"tipo": "acción",
+"mercados": [
+"eeuu",
+"dividendos"
+],
+"noticias": [
+"nasdaq"
+],
+"sector": "Inmobiliario"
+},
+"EL": {
+"nombre": "Estée Lauder Companies (The)",
+"tipo": "acción",
+"mercados": [
+"eeuu"
+],
+"noticias": [
+"nasdaq"
+],
+"sector": "Consumo básico"
+},
+"EG": {
+"nombre": "Everest Group",
+"tipo": "acción",
+"mercados": [
+"eeuu"
+],
+"noticias": [
+"nasdaq"
+],
+"sector": "Bancos y finanzas"
+},
+"EVRG": {
+"nombre": "Evergy",
+"tipo": "acción",
+"mercados": [
+"eeuu"
+],
+"noticias": [
+"nasdaq"
+],
+"sector": "Energía eléctrica"
+},
+"P": {
+"nombre": "Everpure",
+"tipo": "acción",
+"mercados": [
+"eeuu"
+],
+"noticias": [
+"nasdaq"
+],
+"sector": "Tecnología"
+},
+"ES": {
+"nombre": "Eversource Energy",
+"tipo": "acción",
+"mercados": [
+"eeuu",
+"dividendos"
+],
+"noticias": [
+"nasdaq"
+],
+"sector": "Energía eléctrica"
+},
+"EXC": {
+"nombre": "Exelon",
+"tipo": "acción",
+"mercados": [
+"eeuu"
+],
+"noticias": [
+"nasdaq"
+],
+"sector": "Energía eléctrica"
+},
+"EXE": {
+"nombre": "Expand Energy",
+"tipo": "acción",
+"mercados": [
+"eeuu",
+"petróleo"
+],
+"noticias": [
+"nasdaq"
+],
+"sector": "Petróleo y gas"
+},
+"EXPE": {
+"nombre": "Expedia Group",
+"tipo": "acción",
+"mercados": [
+"eeuu"
+],
+"noticias": [
+"nasdaq"
+],
+"sector": "Consumo"
+},
+"EXPD": {
+"nombre": "Expeditors International",
+"tipo": "acción",
+"mercados": [
+"eeuu",
+"dividendos"
+],
+"noticias": [
+"nasdaq"
+],
+"sector": "Industria"
+},
+"EXR": {
+"nombre": "Extra Space Storage",
+"tipo": "acción",
+"mercados": [
+"eeuu"
+],
+"noticias": [
+"nasdaq"
+],
+"sector": "Inmobiliario"
+},
+"XOM": {
+"nombre": "ExxonMobil",
+"tipo": "acción",
+"mercados": [
+"eeuu",
+"dividendos"
+],
+"noticias": [
+"nasdaq"
+],
+"sector": "Petróleo y gas"
+},
+"FFIV": {
+"nombre": "F5, Inc.",
+"tipo": "acción",
+"mercados": [
+"eeuu"
+],
+"noticias": [
+"nasdaq"
+],
+"sector": "Tecnología"
+},
+"FDS": {
+"nombre": "FactSet",
+"tipo": "acción",
+"mercados": [
+"eeuu",
+"dividendos"
+],
+"noticias": [
+"nasdaq"
+],
+"sector": "Bancos y finanzas"
+},
+"FICO": {
+"nombre": "Fair Isaac",
+"tipo": "acción",
+"mercados": [
+"eeuu"
+],
+"noticias": [
+"nasdaq"
+],
+"sector": "Tecnología"
+},
+"FAST": {
+"nombre": "Fastenal",
+"tipo": "acción",
+"mercados": [
+"eeuu",
+"dividendos"
+],
+"noticias": [
+"nasdaq"
+],
+"sector": "Industria"
+},
+"FRT": {
+"nombre": "Federal Realty Investment Trust",
+"tipo": "acción",
+"mercados": [
+"eeuu",
+"dividendos"
+],
+"noticias": [
+"nasdaq"
+],
+"sector": "Inmobiliario"
+},
+"FDX": {
+"nombre": "FedEx",
+"tipo": "acción",
+"mercados": [
+"eeuu"
+],
+"noticias": [
+"nasdaq"
+],
+"sector": "Industria"
+},
+"FDXF": {
+"nombre": "FedEx Freight",
+"tipo": "acción",
+"mercados": [
+"eeuu"
+],
+"noticias": [
+"nasdaq"
+],
+"sector": "Industria"
+},
+"FERG": {
+"nombre": "Ferguson Enterprises",
+"tipo": "acción",
+"mercados": [
+"eeuu"
+],
+"noticias": [
+"nasdaq"
+],
+"sector": "Industria"
+},
+"FIS": {
+"nombre": "Fidelity National Information Services",
+"tipo": "acción",
+"mercados": [
+"eeuu"
+],
+"noticias": [
+"nasdaq"
+],
+"sector": "Bancos y finanzas"
+},
+"FITB": {
+"nombre": "Fifth Third Bancorp",
+"tipo": "acción",
+"mercados": [
+"eeuu"
+],
+"noticias": [
+"nasdaq"
+],
+"sector": "Bancos y finanzas"
+},
+"FSLR": {
+"nombre": "First Solar",
+"tipo": "acción",
+"mercados": [
+"eeuu"
+],
+"noticias": [
+"nasdaq"
+],
+"sector": "Tecnología"
+},
+"FE": {
+"nombre": "FirstEnergy",
+"tipo": "acción",
+"mercados": [
+"eeuu"
+],
+"noticias": [
+"nasdaq"
+],
+"sector": "Energía eléctrica"
+},
+"FISV": {
+"nombre": "Fiserv",
+"tipo": "acción",
+"mercados": [
+"eeuu"
+],
+"noticias": [
+"nasdaq"
+],
+"sector": "Bancos y finanzas"
+},
+"FLEX": {
+"nombre": "Flex Ltd.",
+"tipo": "acción",
+"mercados": [
+"eeuu"
+],
+"noticias": [
+"nasdaq"
+],
+"sector": "Tecnología"
+},
+"F": {
+"nombre": "Ford Motor Company",
+"tipo": "acción",
+"mercados": [
+"eeuu"
+],
+"noticias": [
+"nasdaq"
+],
+"sector": "Consumo"
+},
+"FTNT": {
+"nombre": "Fortinet",
+"tipo": "acción",
+"mercados": [
+"eeuu"
+],
+"noticias": [
+"nasdaq"
+],
+"sector": "Tecnología"
+},
+"FTV": {
+"nombre": "Fortive",
+"tipo": "acción",
+"mercados": [
+"eeuu"
+],
+"noticias": [
+"nasdaq"
+],
+"sector": "Industria"
+},
+"FOXA": {
+"nombre": "Fox Corporation (Class A)",
+"tipo": "acción",
+"mercados": [
+"eeuu"
+],
+"noticias": [
+"nasdaq"
+],
+"sector": "Comunicaciones"
+},
+"FOX": {
+"nombre": "Fox Corporation (Class B)",
+"tipo": "acción",
+"mercados": [
+"eeuu"
+],
+"noticias": [
+"nasdaq"
+],
+"sector": "Comunicaciones"
+},
+"BEN": {
+"nombre": "Franklin Resources",
+"tipo": "acción",
+"mercados": [
+"eeuu",
+"dividendos"
+],
+"noticias": [
+"nasdaq"
+],
+"sector": "Bancos y finanzas"
+},
+"FCX": {
+"nombre": "Freeport-McMoRan",
+"tipo": "acción",
+"mercados": [
+"eeuu",
+"oro"
+],
+"noticias": [
+"nasdaq"
+],
+"sector": "Materiales y minería"
+},
+"GRMN": {
+"nombre": "Garmin",
+"tipo": "acción",
+"mercados": [
+"eeuu"
+],
+"noticias": [
+"nasdaq"
+],
+"sector": "Consumo"
+},
+"IT": {
+"nombre": "Gartner",
+"tipo": "acción",
+"mercados": [
+"eeuu"
+],
+"noticias": [
+"nasdaq"
+],
+"sector": "Tecnología"
+},
+"GE": {
+"nombre": "GE Aerospace",
+"tipo": "acción",
+"mercados": [
+"eeuu"
+],
+"noticias": [
+"nasdaq"
+],
+"sector": "Industria"
+},
+"GEHC": {
+"nombre": "GE HealthCare",
+"tipo": "acción",
+"mercados": [
+"eeuu"
+],
+"noticias": [
+"nasdaq"
+],
+"sector": "Salud"
+},
+"GEV": {
+"nombre": "GE Vernova",
+"tipo": "acción",
+"mercados": [
+"eeuu"
+],
+"noticias": [
+"nasdaq"
+],
+"sector": "Industria"
+},
+"GEN": {
+"nombre": "Gen Digital",
+"tipo": "acción",
+"mercados": [
+"eeuu"
+],
+"noticias": [
+"nasdaq"
+],
+"sector": "Tecnología"
+},
+"GNRC": {
+"nombre": "Generac",
+"tipo": "acción",
+"mercados": [
+"eeuu"
+],
+"noticias": [
+"nasdaq"
+],
+"sector": "Industria"
+},
+"GD": {
+"nombre": "General Dynamics",
+"tipo": "acción",
+"mercados": [
+"eeuu",
+"dividendos"
+],
+"noticias": [
+"nasdaq"
+],
+"sector": "Industria"
+},
+"GIS": {
+"nombre": "General Mills",
+"tipo": "acción",
+"mercados": [
+"eeuu"
+],
+"noticias": [
+"nasdaq"
+],
+"sector": "Consumo básico"
+},
+"GM": {
+"nombre": "General Motors",
+"tipo": "acción",
+"mercados": [
+"eeuu"
+],
+"noticias": [
+"nasdaq"
+],
+"sector": "Consumo"
+},
+"GPC": {
+"nombre": "Genuine Parts Company",
+"tipo": "acción",
+"mercados": [
+"eeuu",
+"dividendos"
+],
+"noticias": [
+"nasdaq"
+],
+"sector": "Consumo"
+},
+"GILD": {
+"nombre": "Gilead Sciences",
+"tipo": "acción",
+"mercados": [
+"eeuu"
+],
+"noticias": [
+"nasdaq"
+],
+"sector": "Salud"
+},
+"GPN": {
+"nombre": "Global Payments",
+"tipo": "acción",
+"mercados": [
+"eeuu"
+],
+"noticias": [
+"nasdaq"
+],
+"sector": "Bancos y finanzas"
+},
+"GL": {
+"nombre": "Globe Life",
+"tipo": "acción",
+"mercados": [
+"eeuu"
+],
+"noticias": [
+"nasdaq"
+],
+"sector": "Bancos y finanzas"
+},
+"GDDY": {
+"nombre": "GoDaddy",
+"tipo": "acción",
+"mercados": [
+"eeuu"
+],
+"noticias": [
+"nasdaq"
+],
+"sector": "Tecnología"
+},
+"GS": {
+"nombre": "Goldman Sachs",
+"tipo": "acción",
+"mercados": [
+"eeuu"
+],
+"noticias": [
+"nasdaq"
+],
+"sector": "Bancos y finanzas"
+},
+"HAL": {
+"nombre": "Halliburton",
+"tipo": "acción",
+"mercados": [
+"eeuu",
+"petróleo"
+],
+"noticias": [
+"nasdaq"
+],
+"sector": "Petróleo y gas"
+},
+"HIG": {
+"nombre": "Hartford (The)",
+"tipo": "acción",
+"mercados": [
+"eeuu"
+],
+"noticias": [
+"nasdaq"
+],
+"sector": "Bancos y finanzas"
+},
+"HAS": {
+"nombre": "Hasbro",
+"tipo": "acción",
+"mercados": [
+"eeuu"
+],
+"noticias": [
+"nasdaq"
+],
+"sector": "Consumo"
+},
+"HCA": {
+"nombre": "HCA Healthcare",
+"tipo": "acción",
+"mercados": [
+"eeuu"
+],
+"noticias": [
+"nasdaq"
+],
+"sector": "Salud"
+},
+"DOC": {
+"nombre": "Healthpeak Properties",
+"tipo": "acción",
+"mercados": [
+"eeuu"
+],
+"noticias": [
+"nasdaq"
+],
+"sector": "Inmobiliario"
+},
+"HSIC": {
+"nombre": "Henry Schein",
+"tipo": "acción",
+"mercados": [
+"eeuu"
+],
+"noticias": [
+"nasdaq"
+],
+"sector": "Salud"
+},
+"HSY": {
+"nombre": "Hershey Company (The)",
+"tipo": "acción",
+"mercados": [
+"eeuu"
+],
+"noticias": [
+"nasdaq"
+],
+"sector": "Consumo básico"
+},
+"HPE": {
+"nombre": "Hewlett Packard Enterprise",
+"tipo": "acción",
+"mercados": [
+"eeuu"
+],
+"noticias": [
+"nasdaq"
+],
+"sector": "Tecnología"
+},
+"HLT": {
+"nombre": "Hilton Worldwide",
+"tipo": "acción",
+"mercados": [
+"eeuu"
+],
+"noticias": [
+"nasdaq"
+],
+"sector": "Consumo"
+},
+"HD": {
+"nombre": "Home Depot (The)",
+"tipo": "acción",
+"mercados": [
+"eeuu"
+],
+"noticias": [
+"nasdaq"
+],
+"sector": "Consumo"
+},
+"HONA": {
+"nombre": "Honeywell Aerospace",
+"tipo": "acción",
+"mercados": [
+"eeuu"
+],
+"noticias": [
+"nasdaq"
+],
+"sector": "Industria"
+},
+"HON": {
+"nombre": "Honeywell Technologies",
+"tipo": "acción",
+"mercados": [
+"eeuu"
+],
+"noticias": [
+"nasdaq"
+],
+"sector": "Industria"
+},
+"HRL": {
+"nombre": "Hormel Foods",
+"tipo": "acción",
+"mercados": [
+"eeuu",
+"dividendos"
+],
+"noticias": [
+"nasdaq"
+],
+"sector": "Consumo básico"
+},
+"HST": {
+"nombre": "Host Hotels & Resorts",
+"tipo": "acción",
+"mercados": [
+"eeuu"
+],
+"noticias": [
+"nasdaq"
+],
+"sector": "Inmobiliario"
+},
+"HWM": {
+"nombre": "Howmet Aerospace",
+"tipo": "acción",
+"mercados": [
+"eeuu"
+],
+"noticias": [
+"nasdaq"
+],
+"sector": "Industria"
+},
+"HPQ": {
+"nombre": "HP Inc.",
+"tipo": "acción",
+"mercados": [
+"eeuu"
+],
+"noticias": [
+"nasdaq"
+],
+"sector": "Tecnología"
+},
+"HUBB": {
+"nombre": "Hubbell Incorporated",
+"tipo": "acción",
+"mercados": [
+"eeuu"
+],
+"noticias": [
+"nasdaq"
+],
+"sector": "Industria"
+},
+"HUM": {
+"nombre": "Humana",
+"tipo": "acción",
+"mercados": [
+"eeuu"
+],
+"noticias": [
+"nasdaq"
+],
+"sector": "Salud"
+},
+"HBAN": {
+"nombre": "Huntington Bancshares",
+"tipo": "acción",
+"mercados": [
+"eeuu"
+],
+"noticias": [
+"nasdaq"
+],
+"sector": "Bancos y finanzas"
+},
+"HII": {
+"nombre": "Huntington Ingalls Industries",
+"tipo": "acción",
+"mercados": [
+"eeuu"
+],
+"noticias": [
+"nasdaq"
+],
+"sector": "Industria"
+},
+"IBM": {
+"nombre": "IBM",
+"tipo": "acción",
+"mercados": [
+"eeuu",
+"dividendos"
+],
+"noticias": [
+"nasdaq"
+],
+"sector": "Tecnología"
+},
+"IEX": {
+"nombre": "IDEX Corporation",
+"tipo": "acción",
+"mercados": [
+"eeuu"
+],
+"noticias": [
+"nasdaq"
+],
+"sector": "Industria"
+},
+"IDXX": {
+"nombre": "Idexx Laboratories",
+"tipo": "acción",
+"mercados": [
+"eeuu"
+],
+"noticias": [
+"nasdaq"
+],
+"sector": "Salud"
+},
+"ITW": {
+"nombre": "Illinois Tool Works",
+"tipo": "acción",
+"mercados": [
+"eeuu",
+"dividendos"
+],
+"noticias": [
+"nasdaq"
+],
+"sector": "Industria"
+},
+"ILMN": {
+"nombre": "Illumina, Inc.",
+"tipo": "acción",
+"mercados": [
+"eeuu"
+],
+"noticias": [
+"nasdaq"
+],
+"sector": "Salud"
+},
+"INCY": {
+"nombre": "Incyte",
+"tipo": "acción",
+"mercados": [
+"eeuu"
+],
+"noticias": [
+"nasdaq"
+],
+"sector": "Salud"
+},
+"IR": {
+"nombre": "Ingersoll Rand",
+"tipo": "acción",
+"mercados": [
+"eeuu"
+],
+"noticias": [
+"nasdaq"
+],
+"sector": "Industria"
+},
+"PODD": {
+"nombre": "Insulet Corporation",
+"tipo": "acción",
+"mercados": [
+"eeuu"
+],
+"noticias": [
+"nasdaq"
+],
+"sector": "Salud"
+},
+"INTC": {
+"nombre": "Intel",
+"tipo": "acción",
+"mercados": [
+"eeuu"
+],
+"noticias": [
+"nasdaq"
+],
+"sector": "Tecnología"
+},
+"IBKR": {
+"nombre": "Interactive Brokers",
+"tipo": "acción",
+"mercados": [
+"eeuu"
+],
+"noticias": [
+"nasdaq"
+],
+"sector": "Bancos y finanzas"
+},
+"ICE": {
+"nombre": "Intercontinental Exchange",
+"tipo": "acción",
+"mercados": [
+"eeuu"
+],
+"noticias": [
+"nasdaq"
+],
+"sector": "Bancos y finanzas"
+},
+"IFF": {
+"nombre": "International Flavors & Fragrances",
+"tipo": "acción",
+"mercados": [
+"eeuu"
+],
+"noticias": [
+"nasdaq"
+],
+"sector": "Materiales y minería"
+},
+"IP": {
+"nombre": "International Paper",
+"tipo": "acción",
+"mercados": [
+"eeuu"
+],
+"noticias": [
+"nasdaq"
+],
+"sector": "Materiales y minería"
+},
+"INTU": {
+"nombre": "Intuit",
+"tipo": "acción",
+"mercados": [
+"eeuu"
+],
+"noticias": [
+"nasdaq"
+],
+"sector": "Tecnología"
+},
+"ISRG": {
+"nombre": "Intuitive Surgical",
+"tipo": "acción",
+"mercados": [
+"eeuu"
+],
+"noticias": [
+"nasdaq"
+],
+"sector": "Salud"
+},
+"IVZ": {
+"nombre": "Invesco",
+"tipo": "acción",
+"mercados": [
+"eeuu"
+],
+"noticias": [
+"nasdaq"
+],
+"sector": "Bancos y finanzas"
+},
+"INVH": {
+"nombre": "Invitation Homes",
+"tipo": "acción",
+"mercados": [
+"eeuu"
+],
+"noticias": [
+"nasdaq"
+],
+"sector": "Inmobiliario"
+},
+"IQV": {
+"nombre": "IQVIA",
+"tipo": "acción",
+"mercados": [
+"eeuu"
+],
+"noticias": [
+"nasdaq"
+],
+"sector": "Salud"
+},
+"IRM": {
+"nombre": "Iron Mountain",
+"tipo": "acción",
+"mercados": [
+"eeuu"
+],
+"noticias": [
+"nasdaq"
+],
+"sector": "Inmobiliario"
+},
+"JBHT": {
+"nombre": "J.B. Hunt",
+"tipo": "acción",
+"mercados": [
+"eeuu"
+],
+"noticias": [
+"nasdaq"
+],
+"sector": "Industria"
+},
+"JBL": {
+"nombre": "Jabil",
+"tipo": "acción",
+"mercados": [
+"eeuu"
+],
+"noticias": [
+"nasdaq"
+],
+"sector": "Tecnología"
+},
+"JKHY": {
+"nombre": "Jack Henry & Associates",
+"tipo": "acción",
+"mercados": [
+"eeuu"
+],
+"noticias": [
+"nasdaq"
+],
+"sector": "Bancos y finanzas"
+},
+"J": {
+"nombre": "Jacobs Solutions",
+"tipo": "acción",
+"mercados": [
+"eeuu"
+],
+"noticias": [
+"nasdaq"
+],
+"sector": "Industria"
+},
+"JNJ": {
+"nombre": "Johnson & Johnson",
+"tipo": "acción",
+"mercados": [
+"eeuu",
+"dividendos"
+],
+"noticias": [
+"nasdaq"
+],
+"sector": "Salud"
+},
+"JCI": {
+"nombre": "Johnson Controls",
+"tipo": "acción",
+"mercados": [
+"eeuu"
+],
+"noticias": [
+"nasdaq"
+],
+"sector": "Industria"
+},
+"JPM": {
+"nombre": "JPMorgan Chase",
+"tipo": "acción",
+"mercados": [
+"eeuu"
+],
+"noticias": [
+"nasdaq"
+],
+"sector": "Bancos y finanzas"
+},
+"KDP": {
+"nombre": "Keurig Dr Pepper",
+"tipo": "acción",
+"mercados": [
+"eeuu"
+],
+"noticias": [
+"nasdaq"
+],
+"sector": "Consumo básico"
+},
+"KEY": {
+"nombre": "KeyCorp",
+"tipo": "acción",
+"mercados": [
+"eeuu"
+],
+"noticias": [
+"nasdaq"
+],
+"sector": "Bancos y finanzas"
+},
+"KEYS": {
+"nombre": "Keysight Technologies",
+"tipo": "acción",
+"mercados": [
+"eeuu"
+],
+"noticias": [
+"nasdaq"
+],
+"sector": "Tecnología"
+},
+"KMB": {
+"nombre": "Kimberly-Clark",
+"tipo": "acción",
+"mercados": [
+"eeuu",
+"dividendos"
+],
+"noticias": [
+"nasdaq"
+],
+"sector": "Consumo básico"
+},
+"KIM": {
+"nombre": "Kimco Realty",
+"tipo": "acción",
+"mercados": [
+"eeuu"
+],
+"noticias": [
+"nasdaq"
+],
+"sector": "Inmobiliario"
+},
+"KMI": {
+"nombre": "Kinder Morgan",
+"tipo": "acción",
+"mercados": [
+"eeuu",
+"petróleo"
+],
+"noticias": [
+"nasdaq"
+],
+"sector": "Petróleo y gas"
+},
+"KKR": {
+"nombre": "KKR & Co.",
+"tipo": "acción",
+"mercados": [
+"eeuu"
+],
+"noticias": [
+"nasdaq"
+],
+"sector": "Bancos y finanzas"
+},
+"KLAC": {
+"nombre": "KLA Corporation",
+"tipo": "acción",
+"mercados": [
+"eeuu"
+],
+"noticias": [
+"nasdaq"
+],
+"sector": "Tecnología"
+},
+"KHC": {
+"nombre": "Kraft Heinz",
+"tipo": "acción",
+"mercados": [
+"eeuu"
+],
+"noticias": [
+"nasdaq"
+],
+"sector": "Consumo básico"
+},
+"KR": {
+"nombre": "Kroger",
+"tipo": "acción",
+"mercados": [
+"eeuu"
+],
+"noticias": [
+"nasdaq"
+],
+"sector": "Consumo básico"
+},
+"LHX": {
+"nombre": "L3Harris",
+"tipo": "acción",
+"mercados": [
+"eeuu"
+],
+"noticias": [
+"nasdaq"
+],
+"sector": "Industria"
+},
+"LH": {
+"nombre": "Labcorp",
+"tipo": "acción",
+"mercados": [
+"eeuu"
+],
+"noticias": [
+"nasdaq"
+],
+"sector": "Salud"
+},
+"LRCX": {
+"nombre": "Lam Research",
+"tipo": "acción",
+"mercados": [
+"eeuu"
+],
+"noticias": [
+"nasdaq"
+],
+"sector": "Tecnología"
+},
+"LVS": {
+"nombre": "Las Vegas Sands",
+"tipo": "acción",
+"mercados": [
+"eeuu"
+],
+"noticias": [
+"nasdaq"
+],
+"sector": "Consumo"
+},
+"LDOS": {
+"nombre": "Leidos",
+"tipo": "acción",
+"mercados": [
+"eeuu"
+],
+"noticias": [
+"nasdaq"
+],
+"sector": "Industria"
+},
+"LEN": {
+"nombre": "Lennar",
+"tipo": "acción",
+"mercados": [
+"eeuu"
+],
+"noticias": [
+"nasdaq"
+],
+"sector": "Consumo"
+},
+"LII": {
+"nombre": "Lennox International",
+"tipo": "acción",
+"mercados": [
+"eeuu"
+],
+"noticias": [
+"nasdaq"
+],
+"sector": "Industria"
+},
+"LLY": {
+"nombre": "Lilly (Eli)",
+"tipo": "acción",
+"mercados": [
+"eeuu"
+],
+"noticias": [
+"nasdaq"
+],
+"sector": "Salud"
+},
+"LIN": {
+"nombre": "Linde plc",
+"tipo": "acción",
+"mercados": [
+"eeuu",
+"dividendos"
+],
+"noticias": [
+"nasdaq"
+],
+"sector": "Materiales y minería"
+},
+"LYV": {
+"nombre": "Live Nation Entertainment",
+"tipo": "acción",
+"mercados": [
+"eeuu"
+],
+"noticias": [
+"nasdaq"
+],
+"sector": "Comunicaciones"
+},
+"LMT": {
+"nombre": "Lockheed Martin",
+"tipo": "acción",
+"mercados": [
+"eeuu"
+],
+"noticias": [
+"nasdaq"
+],
+"sector": "Industria"
+},
+"L": {
+"nombre": "Loews Corporation",
+"tipo": "acción",
+"mercados": [
+"eeuu"
+],
+"noticias": [
+"nasdaq"
+],
+"sector": "Bancos y finanzas"
+},
+"LOW": {
+"nombre": "Lowe's",
+"tipo": "acción",
+"mercados": [
+"eeuu",
+"dividendos"
+],
+"noticias": [
+"nasdaq"
+],
+"sector": "Consumo"
+},
+"LULU": {
+"nombre": "Lululemon Athletica",
+"tipo": "acción",
+"mercados": [
+"eeuu"
+],
+"noticias": [
+"nasdaq"
+],
+"sector": "Consumo"
+},
+"LITE": {
+"nombre": "Lumentum",
+"tipo": "acción",
+"mercados": [
+"eeuu"
+],
+"noticias": [
+"nasdaq"
+],
+"sector": "Tecnología"
+},
+"LYB": {
+"nombre": "LyondellBasell",
+"tipo": "acción",
+"mercados": [
+"eeuu"
+],
+"noticias": [
+"nasdaq"
+],
+"sector": "Materiales y minería"
+},
+"MTB": {
+"nombre": "M&T Bank",
+"tipo": "acción",
+"mercados": [
+"eeuu"
+],
+"noticias": [
+"nasdaq"
+],
+"sector": "Bancos y finanzas"
+},
+"MPC": {
+"nombre": "Marathon Petroleum",
+"tipo": "acción",
+"mercados": [
+"eeuu",
+"petróleo"
+],
+"noticias": [
+"nasdaq"
+],
+"sector": "Petróleo y gas"
+},
+"MAR": {
+"nombre": "Marriott International",
+"tipo": "acción",
+"mercados": [
+"eeuu"
+],
+"noticias": [
+"nasdaq"
+],
+"sector": "Consumo"
+},
+"MRSH": {
+"nombre": "Marsh McLennan",
+"tipo": "acción",
+"mercados": [
+"eeuu"
+],
+"noticias": [
+"nasdaq"
+],
+"sector": "Bancos y finanzas"
+},
+"MLM": {
+"nombre": "Martin Marietta Materials",
+"tipo": "acción",
+"mercados": [
+"eeuu"
+],
+"noticias": [
+"nasdaq"
+],
+"sector": "Materiales y minería"
+},
+"MRVL": {
+"nombre": "Marvell Technology",
+"tipo": "acción",
+"mercados": [
+"eeuu"
+],
+"noticias": [
+"nasdaq"
+],
+"sector": "Tecnología"
+},
+"MAS": {
+"nombre": "Masco",
+"tipo": "acción",
+"mercados": [
+"eeuu"
+],
+"noticias": [
+"nasdaq"
+],
+"sector": "Industria"
+},
+"MA": {
+"nombre": "Mastercard",
+"tipo": "acción",
+"mercados": [
+"eeuu"
+],
+"noticias": [
+"nasdaq"
+],
+"sector": "Bancos y finanzas"
+},
+"MKC": {
+"nombre": "McCormick & Company",
+"tipo": "acción",
+"mercados": [
+"eeuu",
+"dividendos"
+],
+"noticias": [
+"nasdaq"
+],
+"sector": "Consumo básico"
+},
+"MCD": {
+"nombre": "McDonald's",
+"tipo": "acción",
+"mercados": [
+"eeuu",
+"dividendos"
+],
+"noticias": [
+"nasdaq"
+],
+"sector": "Consumo"
+},
+"MCK": {
+"nombre": "McKesson",
+"tipo": "acción",
+"mercados": [
+"eeuu"
+],
+"noticias": [
+"nasdaq"
+],
+"sector": "Salud"
+},
+"MDT": {
+"nombre": "Medtronic",
+"tipo": "acción",
+"mercados": [
+"eeuu",
+"dividendos"
+],
+"noticias": [
+"nasdaq"
+],
+"sector": "Salud"
+},
+"MRK": {
+"nombre": "Merck & Co.",
+"tipo": "acción",
+"mercados": [
+"eeuu"
+],
+"noticias": [
+"nasdaq"
+],
+"sector": "Salud"
+},
+"META": {
+"nombre": "Meta Platforms",
+"tipo": "acción",
+"mercados": [
+"eeuu"
+],
+"noticias": [
+"nasdaq"
+],
+"sector": "Comunicaciones"
+},
+"MET": {
+"nombre": "MetLife",
+"tipo": "acción",
+"mercados": [
+"eeuu"
+],
+"noticias": [
+"nasdaq"
+],
+"sector": "Bancos y finanzas"
+},
+"MTD": {
+"nombre": "Mettler Toledo",
+"tipo": "acción",
+"mercados": [
+"eeuu"
+],
+"noticias": [
+"nasdaq"
+],
+"sector": "Salud"
+},
+"MGM": {
+"nombre": "MGM Resorts",
+"tipo": "acción",
+"mercados": [
+"eeuu"
+],
+"noticias": [
+"nasdaq"
+],
+"sector": "Consumo"
+},
+"MCHP": {
+"nombre": "Microchip Technology",
+"tipo": "acción",
+"mercados": [
+"eeuu"
+],
+"noticias": [
+"nasdaq"
+],
+"sector": "Tecnología"
+},
+"MU": {
+"nombre": "Micron Technology",
+"tipo": "acción",
+"mercados": [
+"eeuu"
+],
+"noticias": [
+"nasdaq"
+],
+"sector": "Tecnología"
+},
+"MSFT": {
+"nombre": "Microsoft",
+"tipo": "acción",
+"mercados": [
+"eeuu"
+],
+"noticias": [
+"nasdaq"
+],
+"sector": "Tecnología"
+},
+"MAA": {
+"nombre": "Mid-America Apartment Communities",
+"tipo": "acción",
+"mercados": [
+"eeuu"
+],
+"noticias": [
+"nasdaq"
+],
+"sector": "Inmobiliario"
+},
+"MRNA": {
+"nombre": "Moderna",
+"tipo": "acción",
+"mercados": [
+"eeuu"
+],
+"noticias": [
+"nasdaq"
+],
+"sector": "Salud"
+},
+"MDLZ": {
+"nombre": "Mondelez International",
+"tipo": "acción",
+"mercados": [
+"eeuu"
+],
+"noticias": [
+"nasdaq"
+],
+"sector": "Consumo básico"
+},
+"MPWR": {
+"nombre": "Monolithic Power Systems",
+"tipo": "acción",
+"mercados": [
+"eeuu"
+],
+"noticias": [
+"nasdaq"
+],
+"sector": "Tecnología"
+},
+"MNST": {
+"nombre": "Monster Beverage",
+"tipo": "acción",
+"mercados": [
+"eeuu"
+],
+"noticias": [
+"nasdaq"
+],
+"sector": "Consumo básico"
+},
+"MCO": {
+"nombre": "Moody's Corporation",
+"tipo": "acción",
+"mercados": [
+"eeuu"
+],
+"noticias": [
+"nasdaq"
+],
+"sector": "Bancos y finanzas"
+},
+"MS": {
+"nombre": "Morgan Stanley",
+"tipo": "acción",
+"mercados": [
+"eeuu"
+],
+"noticias": [
+"nasdaq"
+],
+"sector": "Bancos y finanzas"
+},
+"MOS": {
+"nombre": "Mosaic Company (The)",
+"tipo": "acción",
+"mercados": [
+"eeuu"
+],
+"noticias": [
+"nasdaq"
+],
+"sector": "Materiales y minería"
+},
+"MSI": {
+"nombre": "Motorola Solutions",
+"tipo": "acción",
+"mercados": [
+"eeuu"
+],
+"noticias": [
+"nasdaq"
+],
+"sector": "Tecnología"
+},
+"MSCI": {
+"nombre": "MSCI",
+"tipo": "acción",
+"mercados": [
+"eeuu"
+],
+"noticias": [
+"nasdaq"
+],
+"sector": "Bancos y finanzas"
+},
+"NDAQ": {
+"nombre": "Nasdaq, Inc.",
+"tipo": "acción",
+"mercados": [
+"eeuu"
+],
+"noticias": [
+"nasdaq"
+],
+"sector": "Bancos y finanzas"
+},
+"NTAP": {
+"nombre": "NetApp",
+"tipo": "acción",
+"mercados": [
+"eeuu"
+],
+"noticias": [
+"nasdaq"
+],
+"sector": "Tecnología"
+},
+"NFLX": {
+"nombre": "Netflix",
+"tipo": "acción",
+"mercados": [
+"eeuu"
+],
+"noticias": [
+"nasdaq"
+],
+"sector": "Comunicaciones"
+},
+"NEM": {
+"nombre": "Newmont",
+"tipo": "acción",
+"mercados": [
+"eeuu"
+],
+"noticias": [
+"nasdaq"
+],
+"sector": "Materiales y minería"
+},
+"NWSA": {
+"nombre": "News Corp (Class A)",
+"tipo": "acción",
+"mercados": [
+"eeuu"
+],
+"noticias": [
+"nasdaq"
+],
+"sector": "Comunicaciones"
+},
+"NWS": {
+"nombre": "News Corp (Class B)",
+"tipo": "acción",
+"mercados": [
+"eeuu"
+],
+"noticias": [
+"nasdaq"
+],
+"sector": "Comunicaciones"
+},
+"NEE": {
+"nombre": "NextEra Energy",
+"tipo": "acción",
+"mercados": [
+"eeuu",
+"dividendos"
+],
+"noticias": [
+"nasdaq"
+],
+"sector": "Energía eléctrica"
+},
+"NKE": {
+"nombre": "Nike, Inc.",
+"tipo": "acción",
+"mercados": [
+"eeuu"
+],
+"noticias": [
+"nasdaq"
+],
+"sector": "Consumo"
+},
+"NI": {
+"nombre": "NiSource",
+"tipo": "acción",
+"mercados": [
+"eeuu"
+],
+"noticias": [
+"nasdaq"
+],
+"sector": "Energía eléctrica"
+},
+"NDSN": {
+"nombre": "Nordson Corporation",
+"tipo": "acción",
+"mercados": [
+"eeuu",
+"dividendos"
+],
+"noticias": [
+"nasdaq"
+],
+"sector": "Industria"
+},
+"NSC": {
+"nombre": "Norfolk Southern",
+"tipo": "acción",
+"mercados": [
+"eeuu"
+],
+"noticias": [
+"nasdaq"
+],
+"sector": "Industria"
+},
+"NTRS": {
+"nombre": "Northern Trust",
+"tipo": "acción",
+"mercados": [
+"eeuu"
+],
+"noticias": [
+"nasdaq"
+],
+"sector": "Bancos y finanzas"
+},
+"NOC": {
+"nombre": "Northrop Grumman",
+"tipo": "acción",
+"mercados": [
+"eeuu"
+],
+"noticias": [
+"nasdaq"
+],
+"sector": "Industria"
+},
+"NCLH": {
+"nombre": "Norwegian Cruise Line Holdings",
+"tipo": "acción",
+"mercados": [
+"eeuu"
+],
+"noticias": [
+"nasdaq"
+],
+"sector": "Consumo"
+},
+"NRG": {
+"nombre": "NRG Energy",
+"tipo": "acción",
+"mercados": [
+"eeuu"
+],
+"noticias": [
+"nasdaq"
+],
+"sector": "Energía eléctrica"
+},
+"NUE": {
+"nombre": "Nucor",
+"tipo": "acción",
+"mercados": [
+"eeuu",
+"dividendos"
+],
+"noticias": [
+"nasdaq"
+],
+"sector": "Materiales y minería"
+},
+"NVDA": {
+"nombre": "Nvidia",
+"tipo": "acción",
+"mercados": [
+"eeuu"
+],
+"noticias": [
+"nasdaq"
+],
+"sector": "Tecnología"
+},
+"NVR": {
+"nombre": "NVR, Inc.",
+"tipo": "acción",
+"mercados": [
+"eeuu"
+],
+"noticias": [
+"nasdaq"
+],
+"sector": "Consumo"
+},
+"NXPI": {
+"nombre": "NXP Semiconductors",
+"tipo": "acción",
+"mercados": [
+"eeuu"
+],
+"noticias": [
+"nasdaq"
+],
+"sector": "Tecnología"
+},
+"ORLY": {
+"nombre": "O'Reilly Automotive",
+"tipo": "acción",
+"mercados": [
+"eeuu"
+],
+"noticias": [
+"nasdaq"
+],
+"sector": "Consumo"
+},
+"OXY": {
+"nombre": "Occidental Petroleum",
+"tipo": "acción",
+"mercados": [
+"eeuu"
+],
+"noticias": [
+"nasdaq"
+],
+"sector": "Petróleo y gas"
+},
+"OKTA": {
+"nombre": "Okta, Inc.",
+"tipo": "acción",
+"mercados": [
+"eeuu"
+],
+"noticias": [
+"nasdaq"
+],
+"sector": "Tecnología"
+},
+"ODFL": {
+"nombre": "Old Dominion",
+"tipo": "acción",
+"mercados": [
+"eeuu"
+],
+"noticias": [
+"nasdaq"
+],
+"sector": "Industria"
+},
+"OMC": {
+"nombre": "Omnicom Group",
+"tipo": "acción",
+"mercados": [
+"eeuu"
+],
+"noticias": [
+"nasdaq"
+],
+"sector": "Comunicaciones"
+},
+"ON": {
+"nombre": "ON Semiconductor",
+"tipo": "acción",
+"mercados": [
+"eeuu"
+],
+"noticias": [
+"nasdaq"
+],
+"sector": "Tecnología"
+},
+"OKE": {
+"nombre": "Oneok",
+"tipo": "acción",
+"mercados": [
+"eeuu",
+"petróleo"
+],
+"noticias": [
+"nasdaq"
+],
+"sector": "Petróleo y gas"
+},
+"ORCL": {
+"nombre": "Oracle Corporation",
+"tipo": "acción",
+"mercados": [
+"eeuu"
+],
+"noticias": [
+"nasdaq"
+],
+"sector": "Tecnología"
+},
+"OTIS": {
+"nombre": "Otis Worldwide",
+"tipo": "acción",
+"mercados": [
+"eeuu"
+],
+"noticias": [
+"nasdaq"
+],
+"sector": "Industria"
+},
+"PCAR": {
+"nombre": "Paccar",
+"tipo": "acción",
+"mercados": [
+"eeuu"
+],
+"noticias": [
+"nasdaq"
+],
+"sector": "Industria"
+},
+"PKG": {
+"nombre": "Packaging Corporation of America",
+"tipo": "acción",
+"mercados": [
+"eeuu"
+],
+"noticias": [
+"nasdaq"
+],
+"sector": "Materiales y minería"
+},
+"PLTR": {
+"nombre": "Palantir Technologies",
+"tipo": "acción",
+"mercados": [
+"eeuu"
+],
+"noticias": [
+"nasdaq"
+],
+"sector": "Tecnología"
+},
+"PANW": {
+"nombre": "Palo Alto Networks",
+"tipo": "acción",
+"mercados": [
+"eeuu"
+],
+"noticias": [
+"nasdaq"
+],
+"sector": "Tecnología"
+},
+"PH": {
+"nombre": "Parker Hannifin",
+"tipo": "acción",
+"mercados": [
+"eeuu"
+],
+"noticias": [
+"nasdaq"
+],
+"sector": "Industria"
+},
+"PAYX": {
+"nombre": "Paychex",
+"tipo": "acción",
+"mercados": [
+"eeuu"
+],
+"noticias": [
+"nasdaq"
+],
+"sector": "Industria"
+},
+"PYPL": {
+"nombre": "PayPal",
+"tipo": "acción",
+"mercados": [
+"eeuu"
+],
+"noticias": [
+"nasdaq"
+],
+"sector": "Bancos y finanzas"
+},
+"PNR": {
+"nombre": "Pentair",
+"tipo": "acción",
+"mercados": [
+"eeuu",
+"dividendos"
+],
+"noticias": [
+"nasdaq"
+],
+"sector": "Industria"
+},
+"PEP": {
+"nombre": "PepsiCo",
+"tipo": "acción",
+"mercados": [
+"eeuu",
+"dividendos"
+],
+"noticias": [
+"nasdaq"
+],
+"sector": "Consumo básico"
+},
+"PFE": {
+"nombre": "Pfizer",
+"tipo": "acción",
+"mercados": [
+"eeuu"
+],
+"noticias": [
+"nasdaq"
+],
+"sector": "Salud"
+},
+"PCG": {
+"nombre": "PG&E Corporation",
+"tipo": "acción",
+"mercados": [
+"eeuu"
+],
+"noticias": [
+"nasdaq"
+],
+"sector": "Energía eléctrica"
+},
+"PM": {
+"nombre": "Philip Morris International",
+"tipo": "acción",
+"mercados": [
+"eeuu"
+],
+"noticias": [
+"nasdaq"
+],
+"sector": "Consumo básico"
+},
+"PSX": {
+"nombre": "Phillips 66",
+"tipo": "acción",
+"mercados": [
+"eeuu",
+"petróleo"
+],
+"noticias": [
+"nasdaq"
+],
+"sector": "Petróleo y gas"
+},
+"PNW": {
+"nombre": "Pinnacle West Capital",
+"tipo": "acción",
+"mercados": [
+"eeuu"
+],
+"noticias": [
+"nasdaq"
+],
+"sector": "Energía eléctrica"
+},
+"PNC": {
+"nombre": "PNC Financial Services",
+"tipo": "acción",
+"mercados": [
+"eeuu"
+],
+"noticias": [
+"nasdaq"
+],
+"sector": "Bancos y finanzas"
+},
+"PPG": {
+"nombre": "PPG Industries",
+"tipo": "acción",
+"mercados": [
+"eeuu",
+"dividendos"
+],
+"noticias": [
+"nasdaq"
+],
+"sector": "Materiales y minería"
+},
+"PPL": {
+"nombre": "PPL Corporation",
+"tipo": "acción",
+"mercados": [
+"eeuu"
+],
+"noticias": [
+"nasdaq"
+],
+"sector": "Energía eléctrica"
+},
+"PFG": {
+"nombre": "Principal Financial Group",
+"tipo": "acción",
+"mercados": [
+"eeuu"
+],
+"noticias": [
+"nasdaq"
+],
+"sector": "Bancos y finanzas"
+},
+"PG": {
+"nombre": "Procter & Gamble",
+"tipo": "acción",
+"mercados": [
+"eeuu",
+"dividendos"
+],
+"noticias": [
+"nasdaq"
+],
+"sector": "Consumo básico"
+},
+"PGR": {
+"nombre": "Progressive Corporation",
+"tipo": "acción",
+"mercados": [
+"eeuu"
+],
+"noticias": [
+"nasdaq"
+],
+"sector": "Bancos y finanzas"
+},
+"PLD": {
+"nombre": "Prologis",
+"tipo": "acción",
+"mercados": [
+"eeuu"
+],
+"noticias": [
+"nasdaq"
+],
+"sector": "Inmobiliario"
+},
+"PRU": {
+"nombre": "Prudential Financial",
+"tipo": "acción",
+"mercados": [
+"eeuu"
+],
+"noticias": [
+"nasdaq"
+],
+"sector": "Bancos y finanzas"
+},
+"PTC": {
+"nombre": "PTC Inc.",
+"tipo": "acción",
+"mercados": [
+"eeuu"
+],
+"noticias": [
+"nasdaq"
+],
+"sector": "Tecnología"
+},
+"PEG": {
+"nombre": "Public Service Enterprise Group",
+"tipo": "acción",
+"mercados": [
+"eeuu"
+],
+"noticias": [
+"nasdaq"
+],
+"sector": "Energía eléctrica"
+},
+"PSA": {
+"nombre": "Public Storage",
+"tipo": "acción",
+"mercados": [
+"eeuu"
+],
+"noticias": [
+"nasdaq"
+],
+"sector": "Inmobiliario"
+},
+"PHM": {
+"nombre": "PulteGroup",
+"tipo": "acción",
+"mercados": [
+"eeuu"
+],
+"noticias": [
+"nasdaq"
+],
+"sector": "Consumo"
+},
+"Q": {
+"nombre": "Qnity Electronics",
+"tipo": "acción",
+"mercados": [
+"eeuu"
+],
+"noticias": [
+"nasdaq"
+],
+"sector": "Tecnología"
+},
+"QCOM": {
+"nombre": "Qualcomm",
+"tipo": "acción",
+"mercados": [
+"eeuu"
+],
+"noticias": [
+"nasdaq"
+],
+"sector": "Tecnología"
+},
+"PWR": {
+"nombre": "Quanta Services",
+"tipo": "acción",
+"mercados": [
+"eeuu"
+],
+"noticias": [
+"nasdaq"
+],
+"sector": "Industria"
+},
+"DGX": {
+"nombre": "Quest Diagnostics",
+"tipo": "acción",
+"mercados": [
+"eeuu"
+],
+"noticias": [
+"nasdaq"
+],
+"sector": "Salud"
+},
+"RL": {
+"nombre": "Ralph Lauren Corporation",
+"tipo": "acción",
+"mercados": [
+"eeuu"
+],
+"noticias": [
+"nasdaq"
+],
+"sector": "Consumo"
+},
+"RJF": {
+"nombre": "Raymond James Financial",
+"tipo": "acción",
+"mercados": [
+"eeuu"
+],
+"noticias": [
+"nasdaq"
+],
+"sector": "Bancos y finanzas"
+},
+"RDDT": {
+"nombre": "Reddit",
+"tipo": "acción",
+"mercados": [
+"eeuu"
+],
+"noticias": [
+"nasdaq"
+],
+"sector": "Comunicaciones"
+},
+"O": {
+"nombre": "Realty Income",
+"tipo": "acción",
+"mercados": [
+"eeuu",
+"dividendos"
+],
+"noticias": [
+"nasdaq"
+],
+"sector": "Inmobiliario"
+},
+"REG": {
+"nombre": "Regency Centers",
+"tipo": "acción",
+"mercados": [
+"eeuu"
+],
+"noticias": [
+"nasdaq"
+],
+"sector": "Inmobiliario"
+},
+"REGN": {
+"nombre": "Regeneron Pharmaceuticals",
+"tipo": "acción",
+"mercados": [
+"eeuu"
+],
+"noticias": [
+"nasdaq"
+],
+"sector": "Salud"
+},
+"RF": {
+"nombre": "Regions Financial Corporation",
+"tipo": "acción",
+"mercados": [
+"eeuu"
+],
+"noticias": [
+"nasdaq"
+],
+"sector": "Bancos y finanzas"
+},
+"RSG": {
+"nombre": "Republic Services",
+"tipo": "acción",
+"mercados": [
+"eeuu"
+],
+"noticias": [
+"nasdaq"
+],
+"sector": "Industria"
+},
+"RMD": {
+"nombre": "ResMed",
+"tipo": "acción",
+"mercados": [
+"eeuu"
+],
+"noticias": [
+"nasdaq"
+],
+"sector": "Salud"
+},
+"RVTY": {
+"nombre": "Revvity",
+"tipo": "acción",
+"mercados": [
+"eeuu"
+],
+"noticias": [
+"nasdaq"
+],
+"sector": "Salud"
+},
+"HOOD": {
+"nombre": "Robinhood Markets",
+"tipo": "acción",
+"mercados": [
+"eeuu"
+],
+"noticias": [
+"nasdaq"
+],
+"sector": "Bancos y finanzas"
+},
+"ROK": {
+"nombre": "Rockwell Automation",
+"tipo": "acción",
+"mercados": [
+"eeuu"
+],
+"noticias": [
+"nasdaq"
+],
+"sector": "Industria"
+},
+"ROL": {
+"nombre": "Rollins, Inc.",
+"tipo": "acción",
+"mercados": [
+"eeuu"
+],
+"noticias": [
+"nasdaq"
+],
+"sector": "Industria"
+},
+"ROP": {
+"nombre": "Roper Technologies",
+"tipo": "acción",
+"mercados": [
+"eeuu",
+"dividendos"
+],
+"noticias": [
+"nasdaq"
+],
+"sector": "Tecnología"
+},
+"ROST": {
+"nombre": "Ross Stores",
+"tipo": "acción",
+"mercados": [
+"eeuu"
+],
+"noticias": [
+"nasdaq"
+],
+"sector": "Consumo"
+},
+"RCL": {
+"nombre": "Royal Caribbean Group",
+"tipo": "acción",
+"mercados": [
+"eeuu"
+],
+"noticias": [
+"nasdaq"
+],
+"sector": "Consumo"
+},
+"RTX": {
+"nombre": "RTX Corporation",
+"tipo": "acción",
+"mercados": [
+"eeuu"
+],
+"noticias": [
+"nasdaq"
+],
+"sector": "Industria"
+},
+"SPGI": {
+"nombre": "S&P Global",
+"tipo": "acción",
+"mercados": [
+"eeuu",
+"dividendos"
+],
+"noticias": [
+"nasdaq"
+],
+"sector": "Bancos y finanzas"
+},
+"CRM": {
+"nombre": "Salesforce",
+"tipo": "acción",
+"mercados": [
+"eeuu"
+],
+"noticias": [
+"nasdaq"
+],
+"sector": "Tecnología"
+},
+"SNDK": {
+"nombre": "Sandisk",
+"tipo": "acción",
+"mercados": [
+"eeuu"
+],
+"noticias": [
+"nasdaq"
+],
+"sector": "Tecnología"
+},
+"SBAC": {
+"nombre": "SBA Communications",
+"tipo": "acción",
+"mercados": [
+"eeuu"
+],
+"noticias": [
+"nasdaq"
+],
+"sector": "Inmobiliario"
+},
+"SLB": {
+"nombre": "Schlumberger",
+"tipo": "acción",
+"mercados": [
+"eeuu",
+"petróleo"
+],
+"noticias": [
+"nasdaq"
+],
+"sector": "Petróleo y gas"
+},
+"STX": {
+"nombre": "Seagate Technology",
+"tipo": "acción",
+"mercados": [
+"eeuu"
+],
+"noticias": [
+"nasdaq"
+],
+"sector": "Tecnología"
+},
+"SRE": {
+"nombre": "Sempra",
+"tipo": "acción",
+"mercados": [
+"eeuu"
+],
+"noticias": [
+"nasdaq"
+],
+"sector": "Energía eléctrica"
+},
+"NOW": {
+"nombre": "ServiceNow",
+"tipo": "acción",
+"mercados": [
+"eeuu"
+],
+"noticias": [
+"nasdaq"
+],
+"sector": "Tecnología"
+},
+"SHW": {
+"nombre": "Sherwin-Williams",
+"tipo": "acción",
+"mercados": [
+"eeuu",
+"dividendos"
+],
+"noticias": [
+"nasdaq"
+],
+"sector": "Materiales y minería"
+},
+"SPG": {
+"nombre": "Simon Property Group",
+"tipo": "acción",
+"mercados": [
+"eeuu"
+],
+"noticias": [
+"nasdaq"
+],
+"sector": "Inmobiliario"
+},
+"SKYD": {
+"nombre": "Skydance",
+"tipo": "acción",
+"mercados": [
+"eeuu"
+],
+"noticias": [
+"nasdaq"
+],
+"sector": "Comunicaciones"
+},
+"SWKS": {
+"nombre": "Skyworks Solutions",
+"tipo": "acción",
+"mercados": [
+"eeuu"
+],
+"noticias": [
+"nasdaq"
+],
+"sector": "Tecnología"
+},
+"SJM": {
+"nombre": "J.M. Smucker Company (The)",
+"tipo": "acción",
+"mercados": [
+"eeuu",
+"dividendos"
+],
+"noticias": [
+"nasdaq"
+],
+"sector": "Consumo básico"
+},
+"SW": {
+"nombre": "Smurfit Westrock",
+"tipo": "acción",
+"mercados": [
+"eeuu"
+],
+"noticias": [
+"nasdaq"
+],
+"sector": "Materiales y minería"
+},
+"SNA": {
+"nombre": "Snap-on",
+"tipo": "acción",
+"mercados": [
+"eeuu"
+],
+"noticias": [
+"nasdaq"
+],
+"sector": "Industria"
+},
+"SOLV": {
+"nombre": "Solventum",
+"tipo": "acción",
+"mercados": [
+"eeuu"
+],
+"noticias": [
+"nasdaq"
+],
+"sector": "Salud"
+},
+"SO": {
+"nombre": "Southern Company",
+"tipo": "acción",
+"mercados": [
+"eeuu"
+],
+"noticias": [
+"nasdaq"
+],
+"sector": "Energía eléctrica"
+},
+"LUV": {
+"nombre": "Southwest Airlines",
+"tipo": "acción",
+"mercados": [
+"eeuu"
+],
+"noticias": [
+"nasdaq"
+],
+"sector": "Industria"
+},
+"SWK": {
+"nombre": "Stanley Black & Decker",
+"tipo": "acción",
+"mercados": [
+"eeuu",
+"dividendos"
+],
+"noticias": [
+"nasdaq"
+],
+"sector": "Industria"
+},
+"SBUX": {
+"nombre": "Starbucks",
+"tipo": "acción",
+"mercados": [
+"eeuu"
+],
+"noticias": [
+"nasdaq"
+],
+"sector": "Consumo"
+},
+"STT": {
+"nombre": "State Street Corporation",
+"tipo": "acción",
+"mercados": [
+"eeuu"
+],
+"noticias": [
+"nasdaq"
+],
+"sector": "Bancos y finanzas"
+},
+"STLD": {
+"nombre": "Steel Dynamics",
+"tipo": "acción",
+"mercados": [
+"eeuu"
+],
+"noticias": [
+"nasdaq"
+],
+"sector": "Materiales y minería"
+},
+"STE": {
+"nombre": "Steris",
+"tipo": "acción",
+"mercados": [
+"eeuu"
+],
+"noticias": [
+"nasdaq"
+],
+"sector": "Salud"
+},
+"SYK": {
+"nombre": "Stryker Corporation",
+"tipo": "acción",
+"mercados": [
+"eeuu"
+],
+"noticias": [
+"nasdaq"
+],
+"sector": "Salud"
+},
+"SMCI": {
+"nombre": "Supermicro",
+"tipo": "acción",
+"mercados": [
+"eeuu"
+],
+"noticias": [
+"nasdaq"
+],
+"sector": "Tecnología"
+},
+"SYF": {
+"nombre": "Synchrony Financial",
+"tipo": "acción",
+"mercados": [
+"eeuu"
+],
+"noticias": [
+"nasdaq"
+],
+"sector": "Bancos y finanzas"
+},
+"SNPS": {
+"nombre": "Synopsys",
+"tipo": "acción",
+"mercados": [
+"eeuu"
+],
+"noticias": [
+"nasdaq"
+],
+"sector": "Tecnología"
+},
+"SYY": {
+"nombre": "Sysco",
+"tipo": "acción",
+"mercados": [
+"eeuu",
+"dividendos"
+],
+"noticias": [
+"nasdaq"
+],
+"sector": "Consumo básico"
+},
+"TMUS": {
+"nombre": "T-Mobile US",
+"tipo": "acción",
+"mercados": [
+"eeuu"
+],
+"noticias": [
+"nasdaq"
+],
+"sector": "Comunicaciones"
+},
+"TROW": {
+"nombre": "T. Rowe Price",
+"tipo": "acción",
+"mercados": [
+"eeuu",
+"dividendos"
+],
+"noticias": [
+"nasdaq"
+],
+"sector": "Bancos y finanzas"
+},
+"TTWO": {
+"nombre": "Take-Two Interactive",
+"tipo": "acción",
+"mercados": [
+"eeuu"
+],
+"noticias": [
+"nasdaq"
+],
+"sector": "Comunicaciones"
+},
+"TPR": {
+"nombre": "Tapestry, Inc.",
+"tipo": "acción",
+"mercados": [
+"eeuu"
+],
+"noticias": [
+"nasdaq"
+],
+"sector": "Consumo"
+},
+"TRGP": {
+"nombre": "Targa Resources",
+"tipo": "acción",
+"mercados": [
+"eeuu",
+"petróleo"
+],
+"noticias": [
+"nasdaq"
+],
+"sector": "Petróleo y gas"
+},
+"TGT": {
+"nombre": "Target Corporation",
+"tipo": "acción",
+"mercados": [
+"eeuu",
+"dividendos"
+],
+"noticias": [
+"nasdaq"
+],
+"sector": "Consumo básico"
+},
+"TEL": {
+"nombre": "TE Connectivity",
+"tipo": "acción",
+"mercados": [
+"eeuu"
+],
+"noticias": [
+"nasdaq"
+],
+"sector": "Tecnología"
+},
+"TDY": {
+"nombre": "Teledyne Technologies",
+"tipo": "acción",
+"mercados": [
+"eeuu"
+],
+"noticias": [
+"nasdaq"
+],
+"sector": "Tecnología"
+},
+"TER": {
+"nombre": "Teradyne",
+"tipo": "acción",
+"mercados": [
+"eeuu"
+],
+"noticias": [
+"nasdaq"
+],
+"sector": "Tecnología"
+},
+"TSLA": {
+"nombre": "Tesla, Inc.",
+"tipo": "acción",
+"mercados": [
+"eeuu"
+],
+"noticias": [
+"nasdaq"
+],
+"sector": "Consumo"
+},
+"TXN": {
+"nombre": "Texas Instruments",
+"tipo": "acción",
+"mercados": [
+"eeuu"
+],
+"noticias": [
+"nasdaq"
+],
+"sector": "Tecnología"
+},
+"TPL": {
+"nombre": "Texas Pacific Land Corporation",
+"tipo": "acción",
+"mercados": [
+"eeuu",
+"petróleo"
+],
+"noticias": [
+"nasdaq"
+],
+"sector": "Petróleo y gas"
+},
+"TXT": {
+"nombre": "Textron",
+"tipo": "acción",
+"mercados": [
+"eeuu"
+],
+"noticias": [
+"nasdaq"
+],
+"sector": "Industria"
+},
+"TMO": {
+"nombre": "Thermo Fisher Scientific",
+"tipo": "acción",
+"mercados": [
+"eeuu"
+],
+"noticias": [
+"nasdaq"
+],
+"sector": "Salud"
+},
+"TJX": {
+"nombre": "TJX Companies",
+"tipo": "acción",
+"mercados": [
+"eeuu"
+],
+"noticias": [
+"nasdaq"
+],
+"sector": "Consumo"
+},
+"TKO": {
+"nombre": "TKO Group Holdings",
+"tipo": "acción",
+"mercados": [
+"eeuu"
+],
+"noticias": [
+"nasdaq"
+],
+"sector": "Comunicaciones"
+},
+"TSCO": {
+"nombre": "Tractor Supply",
+"tipo": "acción",
+"mercados": [
+"eeuu"
+],
+"noticias": [
+"nasdaq"
+],
+"sector": "Consumo"
+},
+"TT": {
+"nombre": "Trane Technologies",
+"tipo": "acción",
+"mercados": [
+"eeuu"
+],
+"noticias": [
+"nasdaq"
+],
+"sector": "Industria"
+},
+"TDG": {
+"nombre": "TransDigm Group",
+"tipo": "acción",
+"mercados": [
+"eeuu"
+],
+"noticias": [
+"nasdaq"
+],
+"sector": "Industria"
+},
+"TRV": {
+"nombre": "Travelers Companies (The)",
+"tipo": "acción",
+"mercados": [
+"eeuu"
+],
+"noticias": [
+"nasdaq"
+],
+"sector": "Bancos y finanzas"
+},
+"TRMB": {
+"nombre": "Trimble Inc.",
+"tipo": "acción",
+"mercados": [
+"eeuu"
+],
+"noticias": [
+"nasdaq"
+],
+"sector": "Tecnología"
+},
+"TFC": {
+"nombre": "Truist Financial",
+"tipo": "acción",
+"mercados": [
+"eeuu"
+],
+"noticias": [
+"nasdaq"
+],
+"sector": "Bancos y finanzas"
+},
+"TWLO": {
+"nombre": "Twilio",
+"tipo": "acción",
+"mercados": [
+"eeuu"
+],
+"noticias": [
+"nasdaq"
+],
+"sector": "Tecnología"
+},
+"TYL": {
+"nombre": "Tyler Technologies",
+"tipo": "acción",
+"mercados": [
+"eeuu"
+],
+"noticias": [
+"nasdaq"
+],
+"sector": "Tecnología"
+},
+"TSN": {
+"nombre": "Tyson Foods",
+"tipo": "acción",
+"mercados": [
+"eeuu"
+],
+"noticias": [
+"nasdaq"
+],
+"sector": "Consumo básico"
+},
+"USB": {
+"nombre": "U.S. Bancorp",
+"tipo": "acción",
+"mercados": [
+"eeuu"
+],
+"noticias": [
+"nasdaq"
+],
+"sector": "Bancos y finanzas"
+},
+"UBER": {
+"nombre": "Uber",
+"tipo": "acción",
+"mercados": [
+"eeuu"
+],
+"noticias": [
+"nasdaq"
+],
+"sector": "Industria"
+},
+"UDR": {
+"nombre": "UDR, Inc.",
+"tipo": "acción",
+"mercados": [
+"eeuu"
+],
+"noticias": [
+"nasdaq"
+],
+"sector": "Inmobiliario"
+},
+"ULTA": {
+"nombre": "Ulta Beauty",
+"tipo": "acción",
+"mercados": [
+"eeuu"
+],
+"noticias": [
+"nasdaq"
+],
+"sector": "Consumo"
+},
+"UNP": {
+"nombre": "Union Pacific Corporation",
+"tipo": "acción",
+"mercados": [
+"eeuu"
+],
+"noticias": [
+"nasdaq"
+],
+"sector": "Industria"
+},
+"UAL": {
+"nombre": "United Airlines Holdings",
+"tipo": "acción",
+"mercados": [
+"eeuu"
+],
+"noticias": [
+"nasdaq"
+],
+"sector": "Industria"
+},
+"UPS": {
+"nombre": "United Parcel Service",
+"tipo": "acción",
+"mercados": [
+"eeuu"
+],
+"noticias": [
+"nasdaq"
+],
+"sector": "Industria"
+},
+"URI": {
+"nombre": "United Rentals",
+"tipo": "acción",
+"mercados": [
+"eeuu"
+],
+"noticias": [
+"nasdaq"
+],
+"sector": "Industria"
+},
+"UNH": {
+"nombre": "UnitedHealth Group",
+"tipo": "acción",
+"mercados": [
+"eeuu"
+],
+"noticias": [
+"nasdaq"
+],
+"sector": "Salud"
+},
+"UHS": {
+"nombre": "Universal Health Services",
+"tipo": "acción",
+"mercados": [
+"eeuu"
+],
+"noticias": [
+"nasdaq"
+],
+"sector": "Salud"
+},
+"VLO": {
+"nombre": "Valero Energy",
+"tipo": "acción",
+"mercados": [
+"eeuu",
+"petróleo"
+],
+"noticias": [
+"nasdaq"
+],
+"sector": "Petróleo y gas"
+},
+"VEEV": {
+"nombre": "Veeva Systems",
+"tipo": "acción",
+"mercados": [
+"eeuu"
+],
+"noticias": [
+"nasdaq"
+],
+"sector": "Salud"
+},
+"VTR": {
+"nombre": "Ventas",
+"tipo": "acción",
+"mercados": [
+"eeuu"
+],
+"noticias": [
+"nasdaq"
+],
+"sector": "Inmobiliario"
+},
+"VLTO": {
+"nombre": "Veralto",
+"tipo": "acción",
+"mercados": [
+"eeuu"
+],
+"noticias": [
+"nasdaq"
+],
+"sector": "Industria"
+},
+"VRSN": {
+"nombre": "Verisign",
+"tipo": "acción",
+"mercados": [
+"eeuu"
+],
+"noticias": [
+"nasdaq"
+],
+"sector": "Tecnología"
+},
+"VRSK": {
+"nombre": "Verisk Analytics",
+"tipo": "acción",
+"mercados": [
+"eeuu"
+],
+"noticias": [
+"nasdaq"
+],
+"sector": "Industria"
+},
+"VZ": {
+"nombre": "Verizon",
+"tipo": "acción",
+"mercados": [
+"eeuu"
+],
+"noticias": [
+"nasdaq"
+],
+"sector": "Comunicaciones"
+},
+"VRTX": {
+"nombre": "Vertex Pharmaceuticals",
+"tipo": "acción",
+"mercados": [
+"eeuu"
+],
+"noticias": [
+"nasdaq"
+],
+"sector": "Salud"
+},
+"VRT": {
+"nombre": "Vertiv",
+"tipo": "acción",
+"mercados": [
+"eeuu"
+],
+"noticias": [
+"nasdaq"
+],
+"sector": "Industria"
+},
+"VTRS": {
+"nombre": "Viatris",
+"tipo": "acción",
+"mercados": [
+"eeuu"
+],
+"noticias": [
+"nasdaq"
+],
+"sector": "Salud"
+},
+"VICI": {
+"nombre": "Vici Properties",
+"tipo": "acción",
+"mercados": [
+"eeuu"
+],
+"noticias": [
+"nasdaq"
+],
+"sector": "Inmobiliario"
+},
+"V": {
+"nombre": "Visa Inc.",
+"tipo": "acción",
+"mercados": [
+"eeuu"
+],
+"noticias": [
+"nasdaq"
+],
+"sector": "Bancos y finanzas"
+},
+"VST": {
+"nombre": "Vistra Corp.",
+"tipo": "acción",
+"mercados": [
+"eeuu"
+],
+"noticias": [
+"nasdaq"
+],
+"sector": "Energía eléctrica"
+},
+"VMRK": {
+"nombre": "Vivmark Residential",
+"tipo": "acción",
+"mercados": [
+"eeuu"
+],
+"noticias": [
+"nasdaq"
+],
+"sector": "Inmobiliario"
+},
+"VMC": {
+"nombre": "Vulcan Materials Company",
+"tipo": "acción",
+"mercados": [
+"eeuu"
+],
+"noticias": [
+"nasdaq"
+],
+"sector": "Materiales y minería"
+},
+"WRB": {
+"nombre": "W. R. Berkley Corporation",
+"tipo": "acción",
+"mercados": [
+"eeuu"
+],
+"noticias": [
+"nasdaq"
+],
+"sector": "Bancos y finanzas"
+},
+"GWW": {
+"nombre": "W. W. Grainger",
+"tipo": "acción",
+"mercados": [
+"eeuu",
+"dividendos"
+],
+"noticias": [
+"nasdaq"
+],
+"sector": "Industria"
+},
+"WAB": {
+"nombre": "Wabtec",
+"tipo": "acción",
+"mercados": [
+"eeuu"
+],
+"noticias": [
+"nasdaq"
+],
+"sector": "Industria"
+},
+"WMT": {
+"nombre": "Walmart",
+"tipo": "acción",
+"mercados": [
+"eeuu",
+"dividendos"
+],
+"noticias": [
+"nasdaq"
+],
+"sector": "Consumo básico"
+},
+"DIS": {
+"nombre": "Walt Disney Company (The)",
+"tipo": "acción",
+"mercados": [
+"eeuu"
+],
+"noticias": [
+"nasdaq"
+],
+"sector": "Comunicaciones"
+},
+"WM": {
+"nombre": "Waste Management",
+"tipo": "acción",
+"mercados": [
+"eeuu"
+],
+"noticias": [
+"nasdaq"
+],
+"sector": "Industria"
+},
+"WAT": {
+"nombre": "Waters Corporation",
+"tipo": "acción",
+"mercados": [
+"eeuu"
+],
+"noticias": [
+"nasdaq"
+],
+"sector": "Salud"
+},
+"WEC": {
+"nombre": "WEC Energy Group",
+"tipo": "acción",
+"mercados": [
+"eeuu"
+],
+"noticias": [
+"nasdaq"
+],
+"sector": "Energía eléctrica"
+},
+"WFC": {
+"nombre": "Wells Fargo",
+"tipo": "acción",
+"mercados": [
+"eeuu"
+],
+"noticias": [
+"nasdaq"
+],
+"sector": "Bancos y finanzas"
+},
+"WELL": {
+"nombre": "Welltower",
+"tipo": "acción",
+"mercados": [
+"eeuu"
+],
+"noticias": [
+"nasdaq"
+],
+"sector": "Inmobiliario"
+},
+"WST": {
+"nombre": "West Pharmaceutical Services",
+"tipo": "acción",
+"mercados": [
+"eeuu",
+"dividendos"
+],
+"noticias": [
+"nasdaq"
+],
+"sector": "Salud"
+},
+"WDC": {
+"nombre": "Western Digital",
+"tipo": "acción",
+"mercados": [
+"eeuu"
+],
+"noticias": [
+"nasdaq"
+],
+"sector": "Tecnología"
+},
+"WY": {
+"nombre": "Weyerhaeuser",
+"tipo": "acción",
+"mercados": [
+"eeuu"
+],
+"noticias": [
+"nasdaq"
+],
+"sector": "Inmobiliario"
+},
+"WSM": {
+"nombre": "Williams-Sonoma, Inc.",
+"tipo": "acción",
+"mercados": [
+"eeuu"
+],
+"noticias": [
+"nasdaq"
+],
+"sector": "Consumo"
+},
+"WMB": {
+"nombre": "Williams Companies",
+"tipo": "acción",
+"mercados": [
+"eeuu",
+"petróleo"
+],
+"noticias": [
+"nasdaq"
+],
+"sector": "Petróleo y gas"
+},
+"WTW": {
+"nombre": "Willis Towers Watson",
+"tipo": "acción",
+"mercados": [
+"eeuu"
+],
+"noticias": [
+"nasdaq"
+],
+"sector": "Bancos y finanzas"
+},
+"WDAY": {
+"nombre": "Workday, Inc.",
+"tipo": "acción",
+"mercados": [
+"eeuu"
+],
+"noticias": [
+"nasdaq"
+],
+"sector": "Tecnología"
+},
+"WYNN": {
+"nombre": "Wynn Resorts",
+"tipo": "acción",
+"mercados": [
+"eeuu"
+],
+"noticias": [
+"nasdaq"
+],
+"sector": "Consumo"
+},
+"XEL": {
+"nombre": "Xcel Energy",
+"tipo": "acción",
+"mercados": [
+"eeuu"
+],
+"noticias": [
+"nasdaq"
+],
+"sector": "Energía eléctrica"
+},
+"XYL": {
+"nombre": "Xylem Inc.",
+"tipo": "acción",
+"mercados": [
+"eeuu"
+],
+"noticias": [
+"nasdaq"
+],
+"sector": "Industria"
+},
+"YUM": {
+"nombre": "Yum! Brands",
+"tipo": "acción",
+"mercados": [
+"eeuu"
+],
+"noticias": [
+"nasdaq"
+],
+"sector": "Consumo"
+},
+"ZBRA": {
+"nombre": "Zebra Technologies",
+"tipo": "acción",
+"mercados": [
+"eeuu"
+],
+"noticias": [
+"nasdaq"
+],
+"sector": "Tecnología"
+},
+"ZBH": {
+"nombre": "Zimmer Biomet",
+"tipo": "acción",
+"mercados": [
+"eeuu"
+],
+"noticias": [
+"nasdaq"
+],
+"sector": "Salud"
+},
+"ZTS": {
+"nombre": "Zoetis",
+"tipo": "acción",
+"mercados": [
+"eeuu"
+],
+"noticias": [
+"nasdaq"
+],
+"sector": "Salud"
+},
+"ADS.DE": {
+"nombre": "Adidas",
+"tipo": "acción",
+"mercados": [
+"europa",
+"europa"
+],
+"noticias": [
+"europa"
+],
+"sector": "Consumo"
+},
+"ADYEN.AS": {
+"nombre": "Adyen",
+"tipo": "acción",
+"mercados": [
+"europa"
+],
+"noticias": [
+"europa"
+],
+"sector": "Bancos y finanzas"
+},
+"AD.AS": {
+"nombre": "Ahold Delhaize",
+"tipo": "acción",
+"mercados": [
+"europa"
+],
+"noticias": [
+"europa"
+],
+"sector": "Consumo básico"
+},
+"AI.PA": {
+"nombre": "Air Liquide",
+"tipo": "acción",
+"mercados": [
+"europa"
+],
+"noticias": [
+"europa"
+],
+"sector": "Materiales y minería"
+},
+"AIR.PA": {
+"nombre": "Airbus",
+"tipo": "acción",
+"mercados": [
+"europa",
+"europa"
+],
+"noticias": [
+"europa"
+],
+"sector": "Industria"
+},
+"ALV.DE": {
+"nombre": "Allianz",
+"tipo": "acción",
+"mercados": [
+"europa",
+"europa"
+],
+"noticias": [
+"europa"
+],
+"sector": "Bancos y finanzas"
+},
+"ABI.BR": {
+"nombre": "Anheuser-Busch InBev",
+"tipo": "acción",
+"mercados": [
+"europa"
+],
+"noticias": [
+"europa"
+],
+"sector": "Consumo básico"
+},
+"ARGX.BR": {
+"nombre": "Argenx",
+"tipo": "acción",
+"mercados": [
+"europa"
+],
+"noticias": [
+"europa"
+],
+"sector": "Salud"
+},
+"ASML.AS": {
+"nombre": "ASML Holding",
+"tipo": "acción",
+"mercados": [
+"europa"
+],
+"noticias": [
+"europa"
+],
+"sector": "Tecnología"
+},
+"CS.PA": {
+"nombre": "Axa",
+"tipo": "acción",
+"mercados": [
+"europa"
+],
+"noticias": [
+"europa"
+],
+"sector": "Bancos y finanzas"
+},
+"BAS.DE": {
+"nombre": "BASF",
+"tipo": "acción",
+"mercados": [
+"europa",
+"europa"
+],
+"noticias": [
+"europa"
+],
+"sector": "Materiales y minería"
+},
+"BAYN.DE": {
+"nombre": "Bayer",
+"tipo": "acción",
+"mercados": [
+"europa",
+"europa"
+],
+"noticias": [
+"europa"
+],
+"sector": "Salud"
+},
+"BBVA.MC": {
+"nombre": "BBVA",
+"tipo": "acción",
+"mercados": [
+"europa"
+],
+"noticias": [
+"europa"
+],
+"sector": "Bancos y finanzas"
+},
+"SAN.MC": {
+"nombre": "Banco Santander",
+"tipo": "acción",
+"mercados": [
+"europa"
+],
+"noticias": [
+"europa"
+],
+"sector": "Bancos y finanzas"
+},
+"BMW.DE": {
+"nombre": "BMW",
+"tipo": "acción",
+"mercados": [
+"europa",
+"europa"
+],
+"noticias": [
+"europa"
+],
+"sector": "Consumo"
+},
+"BNP.PA": {
+"nombre": "BNP Paribas",
+"tipo": "acción",
+"mercados": [
+"europa"
+],
+"noticias": [
+"europa"
+],
+"sector": "Bancos y finanzas"
+},
+"BN.PA": {
+"nombre": "Danone",
+"tipo": "acción",
+"mercados": [
+"europa"
+],
+"noticias": [
+"europa"
+],
+"sector": "Consumo básico"
+},
+"DBK.DE": {
+"nombre": "Deutsche Bank",
+"tipo": "acción",
+"mercados": [
+"europa",
+"europa"
+],
+"noticias": [
+"europa"
+],
+"sector": "Bancos y finanzas"
+},
+"DB1.DE": {
+"nombre": "Deutsche Börse",
+"tipo": "acción",
+"mercados": [
+"europa",
+"europa"
+],
+"noticias": [
+"europa"
+],
+"sector": "Bancos y finanzas"
+},
+"DHL.DE": {
+"nombre": "Deutsche Post",
+"tipo": "acción",
+"mercados": [
+"europa",
+"europa"
+],
+"noticias": [
+"europa"
+],
+"sector": "Industria"
+},
+"DTE.DE": {
+"nombre": "Deutsche Telekom",
+"tipo": "acción",
+"mercados": [
+"europa",
+"europa"
+],
+"noticias": [
+"europa"
+],
+"sector": null
+},
+"ENEL.MI": {
+"nombre": "Enel",
+"tipo": "acción",
+"mercados": [
+"europa"
+],
+"noticias": [
+"europa"
+],
+"sector": "Energía eléctrica"
+},
+"ENGI.PA": {
+"nombre": "Engie",
+"tipo": "acción",
+"mercados": [
+"europa"
+],
+"noticias": [
+"europa"
+],
+"sector": "Energía eléctrica"
+},
+"ENI.MI": {
+"nombre": "Eni",
+"tipo": "acción",
+"mercados": [
+"europa"
+],
+"noticias": [
+"europa"
+],
+"sector": "Petróleo y gas"
+},
+"EL.PA": {
+"nombre": "EssilorLuxottica",
+"tipo": "acción",
+"mercados": [
+"europa"
+],
+"noticias": [
+"europa"
+],
+"sector": "Salud"
+},
+"RACE.MI": {
+"nombre": "Ferrari",
+"tipo": "acción",
+"mercados": [
+"europa"
+],
+"noticias": [
+"europa"
+],
+"sector": "Consumo"
+},
+"RMS.PA": {
+"nombre": "Hermès",
+"tipo": "acción",
+"mercados": [
+"europa"
+],
+"noticias": [
+"europa"
+],
+"sector": "Consumo"
+},
+"IBE.MC": {
+"nombre": "Iberdrola",
+"tipo": "acción",
+"mercados": [
+"europa"
+],
+"noticias": [
+"europa"
+],
+"sector": "Energía eléctrica"
+},
+"ITX.MC": {
+"nombre": "Inditex",
+"tipo": "acción",
+"mercados": [
+"europa"
+],
+"noticias": [
+"europa"
+],
+"sector": "Consumo"
+},
+"IFX.DE": {
+"nombre": "Infineon Technologies",
+"tipo": "acción",
+"mercados": [
+"europa",
+"europa"
+],
+"noticias": [
+"europa"
+],
+"sector": "Tecnología"
+},
+"INGA.AS": {
+"nombre": "ING Group",
+"tipo": "acción",
+"mercados": [
+"europa"
+],
+"noticias": [
+"europa"
+],
+"sector": "Bancos y finanzas"
+},
+"ISP.MI": {
+"nombre": "Intesa Sanpaolo",
+"tipo": "acción",
+"mercados": [
+"europa"
+],
+"noticias": [
+"europa"
+],
+"sector": "Bancos y finanzas"
+},
+"OR.PA": {
+"nombre": "L'Oréal",
+"tipo": "acción",
+"mercados": [
+"europa"
+],
+"noticias": [
+"europa"
+],
+"sector": "Consumo básico"
+},
+"MC.PA": {
+"nombre": "LVMH Moët Hennessy Louis Vuitton",
+"tipo": "acción",
+"mercados": [
+"europa"
+],
+"noticias": [
+"europa"
+],
+"sector": "Consumo"
+},
+"MBG.DE": {
+"nombre": "Mercedes-Benz Group",
+"tipo": "acción",
+"mercados": [
+"europa",
+"europa"
+],
+"noticias": [
+"europa"
+],
+"sector": "Consumo"
+},
+"MUV2.DE": {
+"nombre": "Munich Re",
+"tipo": "acción",
+"mercados": [
+"europa",
+"europa"
+],
+"noticias": [
+"europa"
+],
+"sector": "Bancos y finanzas"
+},
+"NOKIA.HE": {
+"nombre": "Nokia",
+"tipo": "acción",
+"mercados": [
+"europa"
+],
+"noticias": [
+"europa"
+],
+"sector": "Tecnología"
+},
+"NDA-FI.HE": {
+"nombre": "Nordea",
+"tipo": "acción",
+"mercados": [
+"europa"
+],
+"noticias": [
+"europa"
+],
+"sector": "Bancos y finanzas"
+},
+"PRX.AS": {
+"nombre": "Prosus",
+"tipo": "acción",
+"mercados": [
+"europa"
+],
+"noticias": [
+"europa"
+],
+"sector": "Consumo"
+},
+"RHM.DE": {
+"nombre": "Rheinmetall",
+"tipo": "acción",
+"mercados": [
+"europa",
+"europa"
+],
+"noticias": [
+"europa"
+],
+"sector": "Industria"
+},
+"SAF.PA": {
+"nombre": "Safran",
+"tipo": "acción",
+"mercados": [
+"europa"
+],
+"noticias": [
+"europa"
+],
+"sector": "Industria"
+},
+"SGO.PA": {
+"nombre": "Saint-Gobain",
+"tipo": "acción",
+"mercados": [
+"europa"
+],
+"noticias": [
+"europa"
+],
+"sector": "Industria"
+},
+"SAN.PA": {
+"nombre": "Sanofi",
+"tipo": "acción",
+"mercados": [
+"europa"
+],
+"noticias": [
+"europa"
+],
+"sector": "Salud"
+},
+"SAP.DE": {
+"nombre": "SAP",
+"tipo": "acción",
+"mercados": [
+"europa",
+"europa"
+],
+"noticias": [
+"europa"
+],
+"sector": "Tecnología"
+},
+"SU.PA": {
+"nombre": "Schneider Electric",
+"tipo": "acción",
+"mercados": [
+"europa"
+],
+"noticias": [
+"europa"
+],
+"sector": "Industria"
+},
+"SIE.DE": {
+"nombre": "Siemens",
+"tipo": "acción",
+"mercados": [
+"europa",
+"europa"
+],
+"noticias": [
+"europa"
+],
+"sector": "Industria"
+},
+"ENR.DE": {
+"nombre": "Siemens Energy",
+"tipo": "acción",
+"mercados": [
+"europa",
+"europa"
+],
+"noticias": [
+"europa"
+],
+"sector": "Industria"
+},
+"TTE.PA": {
+"nombre": "TotalEnergies",
+"tipo": "acción",
+"mercados": [
+"europa"
+],
+"noticias": [
+"europa"
+],
+"sector": "Petróleo y gas"
+},
+"DG.PA": {
+"nombre": "Vinci SA",
+"tipo": "acción",
+"mercados": [
+"europa"
+],
+"noticias": [
+"europa"
+],
+"sector": "Industria"
+},
+"UCG.MI": {
+"nombre": "UniCredit",
+"tipo": "acción",
+"mercados": [
+"europa"
+],
+"noticias": [
+"europa"
+],
+"sector": "Bancos y finanzas"
+},
+"III.L": {
+"nombre": "3i (Londres)",
+"tipo": "acción",
+"mercados": [
+"europa"
+],
+"noticias": [
+"europa"
+],
+"sector": null
+},
+"ABDN.L": {
+"nombre": "Aberdeen Group (Londres)",
+"tipo": "acción",
+"mercados": [
+"europa"
+],
+"noticias": [
+"europa"
+],
+"sector": null
+},
+"ADM.L": {
+"nombre": "Admiral Group (Londres)",
+"tipo": "acción",
+"mercados": [
+"europa"
+],
+"noticias": [
+"europa"
+],
+"sector": null
+},
+"AAF.L": {
+"nombre": "Airtel Africa (Londres)",
+"tipo": "acción",
+"mercados": [
+"europa"
+],
+"noticias": [
+"europa"
+],
+"sector": null
+},
+"ALW.L": {
+"nombre": "Alliance Witan (Londres)",
+"tipo": "acción",
+"mercados": [
+"europa"
+],
+"noticias": [
+"europa"
+],
+"sector": null
+},
+"AAL.L": {
+"nombre": "Anglo American plc (Londres)",
+"tipo": "acción",
+"mercados": [
+"europa"
+],
+"noticias": [
+"europa"
+],
+"sector": null
+},
+"ANTO.L": {
+"nombre": "Antofagasta plc (Londres)",
+"tipo": "acción",
+"mercados": [
+"europa"
+],
+"noticias": [
+"europa"
+],
+"sector": null
+},
+"ABF.L": {
+"nombre": "Associated British Foods (Londres)",
+"tipo": "acción",
+"mercados": [
+"europa"
+],
+"noticias": [
+"europa"
+],
+"sector": null
+},
+"AZN.L": {
+"nombre": "AstraZeneca (Londres)",
+"tipo": "acción",
+"mercados": [
+"europa"
+],
+"noticias": [
+"europa"
+],
+"sector": null
+},
+"AUTO.L": {
+"nombre": "Autotrader Group (Londres)",
+"tipo": "acción",
+"mercados": [
+"europa"
+],
+"noticias": [
+"europa"
+],
+"sector": null
+},
+"AV.L": {
+"nombre": "Aviva (Londres)",
+"tipo": "acción",
+"mercados": [
+"europa"
+],
+"noticias": [
+"europa"
+],
+"sector": null
+},
+"BAB.L": {
+"nombre": "Babcock International (Londres)",
+"tipo": "acción",
+"mercados": [
+"europa"
+],
+"noticias": [
+"europa"
+],
+"sector": null
+},
+"BA.L": {
+"nombre": "BAE Systems (Londres)",
+"tipo": "acción",
+"mercados": [
+"europa"
+],
+"noticias": [
+"europa"
+],
+"sector": null
+},
+"BBY.L": {
+"nombre": "Balfour Beatty (Londres)",
+"tipo": "acción",
+"mercados": [
+"europa"
+],
+"noticias": [
+"europa"
+],
+"sector": null
+},
+"BARC.L": {
+"nombre": "Barclays (Londres)",
+"tipo": "acción",
+"mercados": [
+"europa"
+],
+"noticias": [
+"europa"
+],
+"sector": null
+},
+"BTRW.L": {
+"nombre": "Barratt Redrow (Londres)",
+"tipo": "acción",
+"mercados": [
+"europa"
+],
+"noticias": [
+"europa"
+],
+"sector": null
+},
+"BP.L": {
+"nombre": "BP (Londres)",
+"tipo": "acción",
+"mercados": [
+"europa"
+],
+"noticias": [
+"europa"
+],
+"sector": null
+},
+"BATS.L": {
+"nombre": "British American Tobacco (Londres)",
+"tipo": "acción",
+"mercados": [
+"europa"
+],
+"noticias": [
+"europa"
+],
+"sector": null
+},
+"BLND.L": {
+"nombre": "British Land (Londres)",
+"tipo": "acción",
+"mercados": [
+"europa"
+],
+"noticias": [
+"europa"
+],
+"sector": null
+},
+"BT-A.L": {
+"nombre": "BT Group (Londres)",
+"tipo": "acción",
+"mercados": [
+"europa"
+],
+"noticias": [
+"europa"
+],
+"sector": null
+},
+"BNZL.L": {
+"nombre": "Bunzl (Londres)",
+"tipo": "acción",
+"mercados": [
+"europa"
+],
+"noticias": [
+"europa"
+],
+"sector": null
+},
+"BRBY.L": {
+"nombre": "Burberry Group (Londres)",
+"tipo": "acción",
+"mercados": [
+"europa"
+],
+"noticias": [
+"europa"
+],
+"sector": null
+},
+"CNA.L": {
+"nombre": "Centrica (Londres)",
+"tipo": "acción",
+"mercados": [
+"europa"
+],
+"noticias": [
+"europa"
+],
+"sector": null
+},
+"CCEP.L": {
+"nombre": "Coca-Cola Europacific Partners (Londres)",
+"tipo": "acción",
+"mercados": [
+"europa"
+],
+"noticias": [
+"europa"
+],
+"sector": null
+},
+"CCH.L": {
+"nombre": "Coca-Cola HBC (Londres)",
+"tipo": "acción",
+"mercados": [
+"europa"
+],
+"noticias": [
+"europa"
+],
+"sector": null
+},
+"CPG.L": {
+"nombre": "Compass Group (Londres)",
+"tipo": "acción",
+"mercados": [
+"europa"
+],
+"noticias": [
+"europa"
+],
+"sector": null
+},
+"CCC.L": {
+"nombre": "Computacenter (Londres)",
+"tipo": "acción",
+"mercados": [
+"europa"
+],
+"noticias": [
+"europa"
+],
+"sector": null
+},
+"CTEC.L": {
+"nombre": "Convatec (Londres)",
+"tipo": "acción",
+"mercados": [
+"europa"
+],
+"noticias": [
+"europa"
+],
+"sector": null
+},
+"CRDA.L": {
+"nombre": "Croda International (Londres)",
+"tipo": "acción",
+"mercados": [
+"europa"
+],
+"noticias": [
+"europa"
+],
+"sector": null
+},
+"DCC.L": {
+"nombre": "DCC Energy (Londres)",
+"tipo": "acción",
+"mercados": [
+"europa"
+],
+"noticias": [
+"europa"
+],
+"sector": null
+},
+"DGE.L": {
+"nombre": "Diageo (Londres)",
+"tipo": "acción",
+"mercados": [
+"europa"
+],
+"noticias": [
+"europa"
+],
+"sector": null
+},
+"DPLM.L": {
+"nombre": "Diploma (Londres)",
+"tipo": "acción",
+"mercados": [
+"europa"
+],
+"noticias": [
+"europa"
+],
+"sector": null
+},
+"EZJ.L": {
+"nombre": "EasyJet (Londres)",
+"tipo": "acción",
+"mercados": [
+"europa"
+],
+"noticias": [
+"europa"
+],
+"sector": null
+},
+"EDV.L": {
+"nombre": "Endeavour Mining (Londres)",
+"tipo": "acción",
+"mercados": [
+"europa"
+],
+"noticias": [
+"europa"
+],
+"sector": null
+},
+"EXPN.L": {
+"nombre": "Experian (Londres)",
+"tipo": "acción",
+"mercados": [
+"europa"
+],
+"noticias": [
+"europa"
+],
+"sector": null
+},
+"FCIT.L": {
+"nombre": "F & C Investment Trust (Londres)",
+"tipo": "acción",
+"mercados": [
+"europa"
+],
+"noticias": [
+"europa"
+],
+"sector": null
+},
+"FRES.L": {
+"nombre": "Fresnillo plc (Londres)",
+"tipo": "acción",
+"mercados": [
+"europa"
+],
+"noticias": [
+"europa"
+],
+"sector": null
+},
+"GAW.L": {
+"nombre": "Games Workshop (Londres)",
+"tipo": "acción",
+"mercados": [
+"europa"
+],
+"noticias": [
+"europa"
+],
+"sector": null
+},
+"GLEN.L": {
+"nombre": "Glencore (Londres)",
+"tipo": "acción",
+"mercados": [
+"europa"
+],
+"noticias": [
+"europa"
+],
+"sector": null
+},
+"GSK.L": {
+"nombre": "GSK plc (Londres)",
+"tipo": "acción",
+"mercados": [
+"europa"
+],
+"noticias": [
+"europa"
+],
+"sector": null
+},
+"HLN.L": {
+"nombre": "Haleon (Londres)",
+"tipo": "acción",
+"mercados": [
+"europa"
+],
+"noticias": [
+"europa"
+],
+"sector": null
+},
+"HLMA.L": {
+"nombre": "Halma plc (Londres)",
+"tipo": "acción",
+"mercados": [
+"europa"
+],
+"noticias": [
+"europa"
+],
+"sector": null
+},
+"HSX.L": {
+"nombre": "Hiscox (Londres)",
+"tipo": "acción",
+"mercados": [
+"europa"
+],
+"noticias": [
+"europa"
+],
+"sector": null
+},
+"HWDN.L": {
+"nombre": "Howdens Joinery (Londres)",
+"tipo": "acción",
+"mercados": [
+"europa"
+],
+"noticias": [
+"europa"
+],
+"sector": null
+},
+"HSBA.L": {
+"nombre": "HSBC (Londres)",
+"tipo": "acción",
+"mercados": [
+"europa"
+],
+"noticias": [
+"europa"
+],
+"sector": null
+},
+"ICG.L": {
+"nombre": "ICG (Londres)",
+"tipo": "acción",
+"mercados": [
+"europa"
+],
+"noticias": [
+"europa"
+],
+"sector": null
+},
+"IGG.L": {
+"nombre": "IG Group (Londres)",
+"tipo": "acción",
+"mercados": [
+"europa"
+],
+"noticias": [
+"europa"
+],
+"sector": null
+},
+"IHG.L": {
+"nombre": "IHG Hotels & Resorts (Londres)",
+"tipo": "acción",
+"mercados": [
+"europa"
+],
+"noticias": [
+"europa"
+],
+"sector": null
+},
+"IMI.L": {
+"nombre": "IMI (Londres)",
+"tipo": "acción",
+"mercados": [
+"europa"
+],
+"noticias": [
+"europa"
+],
+"sector": null
+},
+"IMB.L": {
+"nombre": "Imperial Brands (Londres)",
+"tipo": "acción",
+"mercados": [
+"europa"
+],
+"noticias": [
+"europa"
+],
+"sector": null
+},
+"INF.L": {
+"nombre": "Informa (Londres)",
+"tipo": "acción",
+"mercados": [
+"europa"
+],
+"noticias": [
+"europa"
+],
+"sector": null
+},
+"IAG.L": {
+"nombre": "International Airlines Group (Londres)",
+"tipo": "acción",
+"mercados": [
+"europa"
+],
+"noticias": [
+"europa"
+],
+"sector": null
+},
+"ITRK.L": {
+"nombre": "Intertek (Londres)",
+"tipo": "acción",
+"mercados": [
+"europa"
+],
+"noticias": [
+"europa"
+],
+"sector": null
+},
+"INVP.L": {
+"nombre": "Investec (Londres)",
+"tipo": "acción",
+"mercados": [
+"europa"
+],
+"noticias": [
+"europa"
+],
+"sector": null
+},
+"ITH.L": {
+"nombre": "Ithaca Energy (Londres)",
+"tipo": "acción",
+"mercados": [
+"europa"
+],
+"noticias": [
+"europa"
+],
+"sector": null
+},
+"JD.L": {
+"nombre": "JD Sports (Londres)",
+"tipo": "acción",
+"mercados": [
+"europa"
+],
+"noticias": [
+"europa"
+],
+"sector": null
+},
+"BGEO.L": {
+"nombre": "Lion Finance Group (Londres)",
+"tipo": "acción",
+"mercados": [
+"europa"
+],
+"noticias": [
+"europa"
+],
+"sector": null
+},
+"KGF.L": {
+"nombre": "Kingfisher plc (Londres)",
+"tipo": "acción",
+"mercados": [
+"europa"
+],
+"noticias": [
+"europa"
+],
+"sector": null
+},
+"LAND.L": {
+"nombre": "Land Securities (Londres)",
+"tipo": "acción",
+"mercados": [
+"europa"
+],
+"noticias": [
+"europa"
+],
+"sector": null
+},
+"LGEN.L": {
+"nombre": "Legal & General (Londres)",
+"tipo": "acción",
+"mercados": [
+"europa"
+],
+"noticias": [
+"europa"
+],
+"sector": null
+},
+"LLOY.L": {
+"nombre": "Lloyds Banking Group (Londres)",
+"tipo": "acción",
+"mercados": [
+"europa"
+],
+"noticias": [
+"europa"
+],
+"sector": null
+},
+"LMP.L": {
+"nombre": "LondonMetric Property (Londres)",
+"tipo": "acción",
+"mercados": [
+"europa"
+],
+"noticias": [
+"europa"
+],
+"sector": null
+},
+"LSEG.L": {
+"nombre": "London Stock Exchange Group (Londres)",
+"tipo": "acción",
+"mercados": [
+"europa"
+],
+"noticias": [
+"europa"
+],
+"sector": null
+},
+"MNG.L": {
+"nombre": "M&G (Londres)",
+"tipo": "acción",
+"mercados": [
+"europa"
+],
+"noticias": [
+"europa"
+],
+"sector": null
+},
+"MKS.L": {
+"nombre": "Marks & Spencer (Londres)",
+"tipo": "acción",
+"mercados": [
+"europa"
+],
+"noticias": [
+"europa"
+],
+"sector": null
+},
+"MRO.L": {
+"nombre": "Melrose Industries (Londres)",
+"tipo": "acción",
+"mercados": [
+"europa"
+],
+"noticias": [
+"europa"
+],
+"sector": null
+},
+"MTLN.L": {
+"nombre": "Metlen Energy & Metals (Londres)",
+"tipo": "acción",
+"mercados": [
+"europa"
+],
+"noticias": [
+"europa"
+],
+"sector": null
+},
+"NG.L": {
+"nombre": "National Grid plc (Londres)",
+"tipo": "acción",
+"mercados": [
+"europa"
+],
+"noticias": [
+"europa"
+],
+"sector": null
+},
+"NWG.L": {
+"nombre": "NatWest Group (Londres)",
+"tipo": "acción",
+"mercados": [
+"europa"
+],
+"noticias": [
+"europa"
+],
+"sector": null
+},
+"NXT.L": {
+"nombre": "Next plc (Londres)",
+"tipo": "acción",
+"mercados": [
+"europa"
+],
+"noticias": [
+"europa"
+],
+"sector": null
+},
+"PSON.L": {
+"nombre": "Pearson plc (Londres)",
+"tipo": "acción",
+"mercados": [
+"europa"
+],
+"noticias": [
+"europa"
+],
+"sector": null
+},
+"PSH.L": {
+"nombre": "Pershing Square Holdings (Londres)",
+"tipo": "acción",
+"mercados": [
+"europa"
+],
+"noticias": [
+"europa"
+],
+"sector": null
+},
+"PCT.L": {
+"nombre": "Polar Capital Technology Trust (Londres)",
+"tipo": "acción",
+"mercados": [
+"europa"
+],
+"noticias": [
+"europa"
+],
+"sector": null
+},
+"PRU.L": {
+"nombre": "Prudential plc (Londres)",
+"tipo": "acción",
+"mercados": [
+"europa"
+],
+"noticias": [
+"europa"
+],
+"sector": null
+},
+"RKT.L": {
+"nombre": "Reckitt (Londres)",
+"tipo": "acción",
+"mercados": [
+"europa"
+],
+"noticias": [
+"europa"
+],
+"sector": null
+},
+"REL.L": {
+"nombre": "RELX (Londres)",
+"tipo": "acción",
+"mercados": [
+"europa"
+],
+"noticias": [
+"europa"
+],
+"sector": null
+},
+"RTO.L": {
+"nombre": "Rentokil Initial (Londres)",
+"tipo": "acción",
+"mercados": [
+"europa"
+],
+"noticias": [
+"europa"
+],
+"sector": null
+},
+"RIO.L": {
+"nombre": "Rio Tinto (Londres)",
+"tipo": "acción",
+"mercados": [
+"europa"
+],
+"noticias": [
+"europa"
+],
+"sector": null
+},
+"RR.L": {
+"nombre": "Rolls-Royce Holdings (Londres)",
+"tipo": "acción",
+"mercados": [
+"europa"
+],
+"noticias": [
+"europa"
+],
+"sector": null
+},
+"SGE.L": {
+"nombre": "Sage Group (Londres)",
+"tipo": "acción",
+"mercados": [
+"europa"
+],
+"noticias": [
+"europa"
+],
+"sector": null
+},
+"SBRY.L": {
+"nombre": "Sainsbury's (Londres)",
+"tipo": "acción",
+"mercados": [
+"europa"
+],
+"noticias": [
+"europa"
+],
+"sector": null
+},
+"SMT.L": {
+"nombre": "Scottish Mortgage Investment Trust (Londres)",
+"tipo": "acción",
+"mercados": [
+"europa"
+],
+"noticias": [
+"europa"
+],
+"sector": null
+},
+"SGRO.L": {
+"nombre": "Segro (Londres)",
+"tipo": "acción",
+"mercados": [
+"europa"
+],
+"noticias": [
+"europa"
+],
+"sector": null
+},
+"SVT.L": {
+"nombre": "Severn Trent (Londres)",
+"tipo": "acción",
+"mercados": [
+"europa"
+],
+"noticias": [
+"europa"
+],
+"sector": null
+},
+"SHEL.L": {
+"nombre": "Shell plc (Londres)",
+"tipo": "acción",
+"mercados": [
+"europa"
+],
+"noticias": [
+"europa"
+],
+"sector": null
+},
+"SMIN.L": {
+"nombre": "Smiths Group (Londres)",
+"tipo": "acción",
+"mercados": [
+"europa"
+],
+"noticias": [
+"europa"
+],
+"sector": null
+},
+"SN.L": {
+"nombre": "Smith & Nephew (Londres)",
+"tipo": "acción",
+"mercados": [
+"europa"
+],
+"noticias": [
+"europa"
+],
+"sector": null
+},
+"SPX.L": {
+"nombre": "Spirax Group (Londres)",
+"tipo": "acción",
+"mercados": [
+"europa"
+],
+"noticias": [
+"europa"
+],
+"sector": null
+},
+"SSE.L": {
+"nombre": "SSE plc (Londres)",
+"tipo": "acción",
+"mercados": [
+"europa"
+],
+"noticias": [
+"europa"
+],
+"sector": null
+},
+"STAN.L": {
+"nombre": "Standard Chartered (Londres)",
+"tipo": "acción",
+"mercados": [
+"europa"
+],
+"noticias": [
+"europa"
+],
+"sector": null
+},
+"SDLF.L": {
+"nombre": "Standard Life (Londres)",
+"tipo": "acción",
+"mercados": [
+"europa"
+],
+"noticias": [
+"europa"
+],
+"sector": null
+},
+"STJ.L": {
+"nombre": "St. James's Place (Londres)",
+"tipo": "acción",
+"mercados": [
+"europa"
+],
+"noticias": [
+"europa"
+],
+"sector": null
+},
+"TSCO.L": {
+"nombre": "Tesco (Londres)",
+"tipo": "acción",
+"mercados": [
+"europa"
+],
+"noticias": [
+"europa"
+],
+"sector": null
+},
+"BBOX.L": {
+"nombre": "Tritax Big Box REIT (Londres)",
+"tipo": "acción",
+"mercados": [
+"europa"
+],
+"noticias": [
+"europa"
+],
+"sector": null
+},
+"ULVR.L": {
+"nombre": "Unilever (Londres)",
+"tipo": "acción",
+"mercados": [
+"europa"
+],
+"noticias": [
+"europa"
+],
+"sector": null
+},
+"UU.L": {
+"nombre": "United Utilities (Londres)",
+"tipo": "acción",
+"mercados": [
+"europa"
+],
+"noticias": [
+"europa"
+],
+"sector": null
+},
+"VOD.L": {
+"nombre": "Vodafone Group (Londres)",
+"tipo": "acción",
+"mercados": [
+"europa"
+],
+"noticias": [
+"europa"
+],
+"sector": null
+},
+"WEIR.L": {
+"nombre": "Weir (Londres)",
+"tipo": "acción",
+"mercados": [
+"europa"
+],
+"noticias": [
+"europa"
+],
+"sector": null
+},
+"WTB.L": {
+"nombre": "Whitbread (Londres)",
+"tipo": "acción",
+"mercados": [
+"europa"
+],
+"noticias": [
+"europa"
+],
+"sector": null
+},
+"WPP.L": {
+"nombre": "WPP (Londres)",
+"tipo": "acción",
+"mercados": [
+"europa"
+],
+"noticias": [
+"europa"
+],
+"sector": null
+},
+"BEI.DE": {
+"nombre": "Beiersdorf",
+"tipo": "acción",
+"mercados": [
+"europa"
+],
+"noticias": [
+"europa"
+],
+"sector": null
+},
+"BNR.DE": {
+"nombre": "Brenntag",
+"tipo": "acción",
+"mercados": [
+"europa"
+],
+"noticias": [
+"europa"
+],
+"sector": null
+},
+"CBK.DE": {
+"nombre": "Commerzbank",
+"tipo": "acción",
+"mercados": [
+"europa"
+],
+"noticias": [
+"europa"
+],
+"sector": null
+},
+"CON.DE": {
+"nombre": "Continental",
+"tipo": "acción",
+"mercados": [
+"europa"
+],
+"noticias": [
+"europa"
+],
+"sector": null
+},
+"DTG.DE": {
+"nombre": "Daimler Truck",
+"tipo": "acción",
+"mercados": [
+"europa"
+],
+"noticias": [
+"europa"
+],
+"sector": null
+},
+"EOAN.DE": {
+"nombre": "E.ON",
+"tipo": "acción",
+"mercados": [
+"europa"
+],
+"noticias": [
+"europa"
+],
+"sector": null
+},
+"FRE.DE": {
+"nombre": "Fresenius",
+"tipo": "acción",
+"mercados": [
+"europa"
+],
+"noticias": [
+"europa"
+],
+"sector": null
+},
+"FME.DE": {
+"nombre": "Fresenius Medical Care",
+"tipo": "acción",
+"mercados": [
+"europa"
+],
+"noticias": [
+"europa"
+],
+"sector": null
+},
+"G1A.DE": {
+"nombre": "GEA Group",
+"tipo": "acción",
+"mercados": [
+"europa"
+],
+"noticias": [
+"europa"
+],
+"sector": null
+},
+"HNR1.DE": {
+"nombre": "Hannover Re",
+"tipo": "acción",
+"mercados": [
+"europa"
+],
+"noticias": [
+"europa"
+],
+"sector": null
+},
+"HEI.DE": {
+"nombre": "Heidelberg Materials",
+"tipo": "acción",
+"mercados": [
+"europa"
+],
+"noticias": [
+"europa"
+],
+"sector": null
+},
+"HEN3.DE": {
+"nombre": "Henkel",
+"tipo": "acción",
+"mercados": [
+"europa"
+],
+"noticias": [
+"europa"
+],
+"sector": null
+},
+"MRK.DE": {
+"nombre": "Merck",
+"tipo": "acción",
+"mercados": [
+"europa"
+],
+"noticias": [
+"europa"
+],
+"sector": null
+},
+"MTX.DE": {
+"nombre": "MTU Aero Engines",
+"tipo": "acción",
+"mercados": [
+"europa"
+],
+"noticias": [
+"europa"
+],
+"sector": null
+},
+"PAH3.DE": {
+"nombre": "Porsche SE",
+"tipo": "acción",
+"mercados": [
+"europa"
+],
+"noticias": [
+"europa"
+],
+"sector": null
+},
+"QIA.DE": {
+"nombre": "Qiagen",
+"tipo": "acción",
+"mercados": [
+"europa"
+],
+"noticias": [
+"europa"
+],
+"sector": null
+},
+"RWE.DE": {
+"nombre": "RWE",
+"tipo": "acción",
+"mercados": [
+"europa"
+],
+"noticias": [
+"europa"
+],
+"sector": null
+},
+"G24.DE": {
+"nombre": "Scout24",
+"tipo": "acción",
+"mercados": [
+"europa"
+],
+"noticias": [
+"europa"
+],
+"sector": null
+},
+"SHL.DE": {
+"nombre": "Siemens Healthineers",
+"tipo": "acción",
+"mercados": [
+"europa"
+],
+"noticias": [
+"europa"
+],
+"sector": null
+},
+"SY1.DE": {
+"nombre": "Symrise",
+"tipo": "acción",
+"mercados": [
+"europa"
+],
+"noticias": [
+"europa"
+],
+"sector": null
+},
+"VOW3.DE": {
+"nombre": "Volkswagen Group",
+"tipo": "acción",
+"mercados": [
+"europa"
+],
+"noticias": [
+"europa"
+],
+"sector": null
+},
+"VNA.DE": {
+"nombre": "Vonovia",
+"tipo": "acción",
+"mercados": [
+"europa"
+],
+"noticias": [
+"europa"
+],
+"sector": null
+},
+"ZAL.DE": {
+"nombre": "Zalando",
+"tipo": "acción",
+"mercados": [
+"europa"
+],
+"noticias": [
+"europa"
+],
+"sector": null
+},
+"0005.HK": {
+"nombre": "HSBC Holdings plc (Hong Kong)",
+"tipo": "acción",
+"mercados": [
+"asia"
+],
+"noticias": [
+"asia"
+],
+"sector": null
+},
+"0388.HK": {
+"nombre": "HKEx Limited (Hong Kong)",
+"tipo": "acción",
+"mercados": [
+"asia"
+],
+"noticias": [
+"asia"
+],
+"sector": null
+},
+"0939.HK": {
+"nombre": "China Construction Bank (Hong Kong)",
+"tipo": "acción",
+"mercados": [
+"asia"
+],
+"noticias": [
+"asia"
+],
+"sector": null
+},
+"1299.HK": {
+"nombre": "AIA Group Limited (Hong Kong)",
+"tipo": "acción",
+"mercados": [
+"asia"
+],
+"noticias": [
+"asia"
+],
+"sector": null
+},
+"1398.HK": {
+"nombre": "Industrial and Commercial Bank of China (Hong Kong)",
+"tipo": "acción",
+"mercados": [
+"asia"
+],
+"noticias": [
+"asia"
+],
+"sector": null
+},
+"2318.HK": {
+"nombre": "Ping An Insurance (Hong Kong)",
+"tipo": "acción",
+"mercados": [
+"asia"
+],
+"noticias": [
+"asia"
+],
+"sector": null
+},
+"2388.HK": {
+"nombre": "BOC Hong Kong (Holdings) Ltd (Hong Kong)",
+"tipo": "acción",
+"mercados": [
+"asia"
+],
+"noticias": [
+"asia"
+],
+"sector": null
+},
+"2628.HK": {
+"nombre": "China Life (Hong Kong)",
+"tipo": "acción",
+"mercados": [
+"asia"
+],
+"noticias": [
+"asia"
+],
+"sector": null
+},
+"3968.HK": {
+"nombre": "China Merchants Bank (Hong Kong)",
+"tipo": "acción",
+"mercados": [
+"asia"
+],
+"noticias": [
+"asia"
+],
+"sector": null
+},
+"3988.HK": {
+"nombre": "Bank of China Ltd (Hong Kong)",
+"tipo": "acción",
+"mercados": [
+"asia"
+],
+"noticias": [
+"asia"
+],
+"sector": null
+},
+"0002.HK": {
+"nombre": "CLP Holdings Limited (Hong Kong)",
+"tipo": "acción",
+"mercados": [
+"asia"
+],
+"noticias": [
+"asia"
+],
+"sector": null
+},
+"0016.HK": {
+"nombre": "Sun Hung Kai Properties Limited (Hong Kong)",
+"tipo": "acción",
+"mercados": [
+"asia"
+],
+"noticias": [
+"asia"
+],
+"sector": null
+},
+"1109.HK": {
+"nombre": "China Resources Land Limited (Hong Kong)",
+"tipo": "acción",
+"mercados": [
+"asia"
+],
+"noticias": [
+"asia"
+],
+"sector": null
+},
+"0001.HK": {
+"nombre": "CK Hutchison Holdings Limited (Hong Kong)",
+"tipo": "acción",
+"mercados": [
+"asia"
+],
+"noticias": [
+"asia"
+],
+"sector": null
+},
+"0066.HK": {
+"nombre": "MTR Corporation Ltd (Hong Kong)",
+"tipo": "acción",
+"mercados": [
+"asia"
+],
+"noticias": [
+"asia"
+],
+"sector": null
+},
+"0267.HK": {
+"nombre": "CITIC Limited (Hong Kong)",
+"tipo": "acción",
+"mercados": [
+"asia"
+],
+"noticias": [
+"asia"
+],
+"sector": null
+},
+"0300.HK": {
+"nombre": "Midea Group (Hong Kong)",
+"tipo": "acción",
+"mercados": [
+"asia"
+],
+"noticias": [
+"asia"
+],
+"sector": null
+},
+"0386.HK": {
+"nombre": "Sinopec Corp (Hong Kong)",
+"tipo": "acción",
+"mercados": [
+"asia"
+],
+"noticias": [
+"asia"
+],
+"sector": null
+},
+"0669.HK": {
+"nombre": "Techtronic Industries (Hong Kong)",
+"tipo": "acción",
+"mercados": [
+"asia"
+],
+"noticias": [
+"asia"
+],
+"sector": null
+},
+"0700.HK": {
+"nombre": "Tencent Holdings Limited (Hong Kong)",
+"tipo": "acción",
+"mercados": [
+"asia"
+],
+"noticias": [
+"asia"
+],
+"sector": null
+},
+"0857.HK": {
+"nombre": "PetroChina Company Limited (Hong Kong)",
+"tipo": "acción",
+"mercados": [
+"asia"
+],
+"noticias": [
+"asia"
+],
+"sector": null
+},
+"0883.HK": {
+"nombre": "CNOOC Limited (Hong Kong)",
+"tipo": "acción",
+"mercados": [
+"asia"
+],
+"noticias": [
+"asia"
+],
+"sector": null
+},
+"0941.HK": {
+"nombre": "China Mobile Ltd (Hong Kong)",
+"tipo": "acción",
+"mercados": [
+"asia"
+],
+"noticias": [
+"asia"
+],
+"sector": null
+},
+"0981.HK": {
+"nombre": "Semiconductor Manufacturing International Corporation (Hong Kong)",
+"tipo": "acción",
+"mercados": [
+"asia"
+],
+"noticias": [
+"asia"
+],
+"sector": null
+},
+"0992.HK": {
+"nombre": "Lenovo (Hong Kong)",
+"tipo": "acción",
+"mercados": [
+"asia"
+],
+"noticias": [
+"asia"
+],
+"sector": null
+},
+"1088.HK": {
+"nombre": "China Shenhua Energy (Hong Kong)",
+"tipo": "acción",
+"mercados": [
+"asia"
+],
+"noticias": [
+"asia"
+],
+"sector": null
+},
+"1211.HK": {
+"nombre": "BYD Company (Hong Kong)",
+"tipo": "acción",
+"mercados": [
+"asia"
+],
+"noticias": [
+"asia"
+],
+"sector": null
+},
+"1378.HK": {
+"nombre": "China Hongqiao Group (Hong Kong)",
+"tipo": "acción",
+"mercados": [
+"asia"
+],
+"noticias": [
+"asia"
+],
+"sector": null
+},
+"1810.HK": {
+"nombre": "Xiaomi (Hong Kong)",
+"tipo": "acción",
+"mercados": [
+"asia"
+],
+"noticias": [
+"asia"
+],
+"sector": null
+},
+"2020.HK": {
+"nombre": "Anta Sports (Hong Kong)",
+"tipo": "acción",
+"mercados": [
+"asia"
+],
+"noticias": [
+"asia"
+],
+"sector": null
+},
+"2359.HK": {
+"nombre": "WuXi AppTec (Hong Kong)",
+"tipo": "acción",
+"mercados": [
+"asia"
+],
+"noticias": [
+"asia"
+],
+"sector": null
+},
+"2899.HK": {
+"nombre": "Zijin Mining (Hong Kong)",
+"tipo": "acción",
+"mercados": [
+"asia"
+],
+"noticias": [
+"asia"
+],
+"sector": null
+},
+"3690.HK": {
+"nombre": "Meituan (Hong Kong)",
+"tipo": "acción",
+"mercados": [
+"asia"
+],
+"noticias": [
+"asia"
+],
+"sector": null
+},
+"3692.HK": {
+"nombre": "Hansoh Pharmaceutical Group (Hong Kong)",
+"tipo": "acción",
+"mercados": [
+"asia"
+],
+"noticias": [
+"asia"
+],
+"sector": null
+},
+"9618.HK": {
+"nombre": "JD.com (Hong Kong)",
+"tipo": "acción",
+"mercados": [
+"asia"
+],
+"noticias": [
+"asia"
+],
+"sector": null
+},
+"9633.HK": {
+"nombre": "Nongfu Spring (Hong Kong)",
+"tipo": "acción",
+"mercados": [
+"asia"
+],
+"noticias": [
+"asia"
+],
+"sector": null
+},
+"9888.HK": {
+"nombre": "Baidu (Hong Kong)",
+"tipo": "acción",
+"mercados": [
+"asia"
+],
+"noticias": [
+"asia"
+],
+"sector": null
+},
+"9961.HK": {
+"nombre": "Trip.com Group (Hong Kong)",
+"tipo": "acción",
+"mercados": [
+"asia"
+],
+"noticias": [
+"asia"
+],
+"sector": null
+},
+"9988.HK": {
+"nombre": "Alibaba Group (Hong Kong)",
+"tipo": "acción",
+"mercados": [
+"asia"
+],
+"noticias": [
+"asia"
+],
+"sector": null
+},
+"9999.HK": {
+"nombre": "NetEase (Hong Kong)",
+"tipo": "acción",
+"mercados": [
+"asia"
+],
+"noticias": [
+"asia"
+],
+"sector": null
+},
+"ADANIENT.NS": {
+"nombre": "Adani Enterprises (India)",
+"tipo": "acción",
+"mercados": [
+"asia"
+],
+"noticias": [
+"asia"
+],
+"sector": null
+},
+"ADANIPORTS.NS": {
+"nombre": "Adani Ports & SEZ (India)",
+"tipo": "acción",
+"mercados": [
+"asia"
+],
+"noticias": [
+"asia"
+],
+"sector": null
+},
+"APOLLOHOSP.NS": {
+"nombre": "Apollo Hospitals (India)",
+"tipo": "acción",
+"mercados": [
+"asia"
+],
+"noticias": [
+"asia"
+],
+"sector": null
+},
+"ASIANPAINT.NS": {
+"nombre": "Asian Paints (India)",
+"tipo": "acción",
+"mercados": [
+"asia"
+],
+"noticias": [
+"asia"
+],
+"sector": null
+},
+"AXISBANK.NS": {
+"nombre": "Axis Bank (India)",
+"tipo": "acción",
+"mercados": [
+"asia"
+],
+"noticias": [
+"asia"
+],
+"sector": null
+},
+"BAJAJ-AUTO.NS": {
+"nombre": "Bajaj Auto (India)",
+"tipo": "acción",
+"mercados": [
+"asia"
+],
+"noticias": [
+"asia"
+],
+"sector": null
+},
+"BAJFINANCE.NS": {
+"nombre": "Bajaj Finance (India)",
+"tipo": "acción",
+"mercados": [
+"asia"
+],
+"noticias": [
+"asia"
+],
+"sector": null
+},
+"BAJAJFINSV.NS": {
+"nombre": "Bajaj Finserv (India)",
+"tipo": "acción",
+"mercados": [
+"asia"
+],
+"noticias": [
+"asia"
+],
+"sector": null
+},
+"BEL.NS": {
+"nombre": "Bharat Electronics (India)",
+"tipo": "acción",
+"mercados": [
+"asia"
+],
+"noticias": [
+"asia"
+],
+"sector": null
+},
+"BHARTIARTL.NS": {
+"nombre": "Bharti Airtel (India)",
+"tipo": "acción",
+"mercados": [
+"asia"
+],
+"noticias": [
+"asia"
+],
+"sector": null
+},
+"BSE.NS": {
+"nombre": "BSE (India)",
+"tipo": "acción",
+"mercados": [
+"asia"
+],
+"noticias": [
+"asia"
+],
+"sector": null
+},
+"CIPLA.NS": {
+"nombre": "Cipla (India)",
+"tipo": "acción",
+"mercados": [
+"asia"
+],
+"noticias": [
+"asia"
+],
+"sector": null
+},
+"COALINDIA.NS": {
+"nombre": "Coal India (India)",
+"tipo": "acción",
+"mercados": [
+"asia"
+],
+"noticias": [
+"asia"
+],
+"sector": null
+},
+"DRREDDY.NS": {
+"nombre": "Dr. Reddy's Laboratories (India)",
+"tipo": "acción",
+"mercados": [
+"asia"
+],
+"noticias": [
+"asia"
+],
+"sector": null
+},
+"EICHERMOT.NS": {
+"nombre": "Eicher Motors (India)",
+"tipo": "acción",
+"mercados": [
+"asia"
+],
+"noticias": [
+"asia"
+],
+"sector": null
+},
+"ETERNAL.NS": {
+"nombre": "Eternal (India)",
+"tipo": "acción",
+"mercados": [
+"asia"
+],
+"noticias": [
+"asia"
+],
+"sector": null
+},
+"GRASIM.NS": {
+"nombre": "Grasim Industries (India)",
+"tipo": "acción",
+"mercados": [
+"asia"
+],
+"noticias": [
+"asia"
+],
+"sector": null
+},
+"HCLTECH.NS": {
+"nombre": "HCLTech (India)",
+"tipo": "acción",
+"mercados": [
+"asia"
+],
+"noticias": [
+"asia"
+],
+"sector": null
+},
+"HDFCBANK.NS": {
+"nombre": "HDFC Bank (India)",
+"tipo": "acción",
+"mercados": [
+"asia"
+],
+"noticias": [
+"asia"
+],
+"sector": null
+},
+"HDFCLIFE.NS": {
+"nombre": "HDFC Life (India)",
+"tipo": "acción",
+"mercados": [
+"asia"
+],
+"noticias": [
+"asia"
+],
+"sector": null
+},
+"HINDALCO.NS": {
+"nombre": "Hindalco Industries (India)",
+"tipo": "acción",
+"mercados": [
+"asia"
+],
+"noticias": [
+"asia"
+],
+"sector": null
+},
+"HINDUNILVR.NS": {
+"nombre": "Hindustan Unilever (India)",
+"tipo": "acción",
+"mercados": [
+"asia"
+],
+"noticias": [
+"asia"
+],
+"sector": null
+},
+"ICICIBANK.NS": {
+"nombre": "ICICI Bank (India)",
+"tipo": "acción",
+"mercados": [
+"asia"
+],
+"noticias": [
+"asia"
+],
+"sector": null
+},
+"INDIGO.NS": {
+"nombre": "IndiGo (India)",
+"tipo": "acción",
+"mercados": [
+"asia"
+],
+"noticias": [
+"asia"
+],
+"sector": null
+},
+"INFY.NS": {
+"nombre": "Infosys (India)",
+"tipo": "acción",
+"mercados": [
+"asia"
+],
+"noticias": [
+"asia"
+],
+"sector": null
+},
+"ITC.NS": {
+"nombre": "ITC (India)",
+"tipo": "acción",
+"mercados": [
+"asia"
+],
+"noticias": [
+"asia"
+],
+"sector": null
+},
+"JIOFIN.NS": {
+"nombre": "Jio Financial Services (India)",
+"tipo": "acción",
+"mercados": [
+"asia"
+],
+"noticias": [
+"asia"
+],
+"sector": null
+},
+"JSWSTEEL.NS": {
+"nombre": "JSW Steel (India)",
+"tipo": "acción",
+"mercados": [
+"asia"
+],
+"noticias": [
+"asia"
+],
+"sector": null
+},
+"KOTAKBANK.NS": {
+"nombre": "Kotak Mahindra Bank (India)",
+"tipo": "acción",
+"mercados": [
+"asia"
+],
+"noticias": [
+"asia"
+],
+"sector": null
+},
+"LT.NS": {
+"nombre": "Larsen & Toubro (India)",
+"tipo": "acción",
+"mercados": [
+"asia"
+],
+"noticias": [
+"asia"
+],
+"sector": null
+},
+"M&M.NS": {
+"nombre": "Mahindra & Mahindra (India)",
+"tipo": "acción",
+"mercados": [
+"asia"
+],
+"noticias": [
+"asia"
+],
+"sector": null
+},
+"MARUTI.NS": {
+"nombre": "Maruti Suzuki (India)",
+"tipo": "acción",
+"mercados": [
+"asia"
+],
+"noticias": [
+"asia"
+],
+"sector": null
+},
+"MAXHEALTH.NS": {
+"nombre": "Max Healthcare (India)",
+"tipo": "acción",
+"mercados": [
+"asia"
+],
+"noticias": [
+"asia"
+],
+"sector": null
+},
+"NESTLEIND.NS": {
+"nombre": "Nestlé India (India)",
+"tipo": "acción",
+"mercados": [
+"asia"
+],
+"noticias": [
+"asia"
+],
+"sector": null
+},
+"NTPC.NS": {
+"nombre": "NTPC (India)",
+"tipo": "acción",
+"mercados": [
+"asia"
+],
+"noticias": [
+"asia"
+],
+"sector": null
+},
+"ONGC.NS": {
+"nombre": "Oil and Natural Gas Corporation (India)",
+"tipo": "acción",
+"mercados": [
+"asia"
+],
+"noticias": [
+"asia"
+],
+"sector": null
+},
+"POWERGRID.NS": {
+"nombre": "Power Grid (India)",
+"tipo": "acción",
+"mercados": [
+"asia"
+],
+"noticias": [
+"asia"
+],
+"sector": null
+},
+"RELIANCE.NS": {
+"nombre": "Reliance Industries (India)",
+"tipo": "acción",
+"mercados": [
+"asia"
+],
+"noticias": [
+"asia"
+],
+"sector": null
+},
+"SBILIFE.NS": {
+"nombre": "SBI Life Insurance Company (India)",
+"tipo": "acción",
+"mercados": [
+"asia"
+],
+"noticias": [
+"asia"
+],
+"sector": null
+},
+"SHRIRAMFIN.NS": {
+"nombre": "Shriram Finance (India)",
+"tipo": "acción",
+"mercados": [
+"asia"
+],
+"noticias": [
+"asia"
+],
+"sector": null
+},
+"SBIN.NS": {
+"nombre": "State Bank of India (India)",
+"tipo": "acción",
+"mercados": [
+"asia"
+],
+"noticias": [
+"asia"
+],
+"sector": null
+},
+"SUNPHARMA.NS": {
+"nombre": "Sun Pharma (India)",
+"tipo": "acción",
+"mercados": [
+"asia"
+],
+"noticias": [
+"asia"
+],
+"sector": null
+},
+"TCS.NS": {
+"nombre": "Tata Consultancy Services (India)",
+"tipo": "acción",
+"mercados": [
+"asia"
+],
+"noticias": [
+"asia"
+],
+"sector": null
+},
+"TATACONSUM.NS": {
+"nombre": "Tata Consumer Products (India)",
+"tipo": "acción",
+"mercados": [
+"asia"
+],
+"noticias": [
+"asia"
+],
+"sector": null
+},
+"TMPV.NS": {
+"nombre": "Tata Motors Passenger Vehicles (India)",
+"tipo": "acción",
+"mercados": [
+"asia"
+],
+"noticias": [
+"asia"
+],
+"sector": null
+},
+"TATASTEEL.NS": {
+"nombre": "Tata Steel (India)",
+"tipo": "acción",
+"mercados": [
+"asia"
+],
+"noticias": [
+"asia"
+],
+"sector": null
+},
+"TECHM.NS": {
+"nombre": "Tech Mahindra (India)",
+"tipo": "acción",
+"mercados": [
+"asia"
+],
+"noticias": [
+"asia"
+],
+"sector": null
+},
+"TITAN.NS": {
+"nombre": "Titan Company (India)",
+"tipo": "acción",
+"mercados": [
+"asia"
+],
+"noticias": [
+"asia"
+],
+"sector": null
+},
+"TRENT.NS": {
+"nombre": "Trent (India)",
+"tipo": "acción",
+"mercados": [
+"asia"
+],
+"noticias": [
+"asia"
+],
+"sector": null
+},
+"ULTRACEMCO.NS": {
+"nombre": "UltraTech Cement (India)",
+"tipo": "acción",
+"mercados": [
+"asia"
+],
+"noticias": [
+"asia"
+],
+"sector": null
+},
+"7203.T": {
+"nombre": "Toyota (Tokio)",
+"tipo": "acción",
+"mercados": [
+"asia"
+],
+"noticias": [
+"asia"
+],
+"sector": null
+},
+"8306.T": {
+"nombre": "Mitsubishi UFJ (Tokio)",
+"tipo": "acción",
+"mercados": [
+"asia"
+],
+"noticias": [
+"asia"
+],
+"sector": null
+},
+"6758.T": {
+"nombre": "Sony (Tokio)",
+"tipo": "acción",
+"mercados": [
+"asia"
+],
+"noticias": [
+"asia"
+],
+"sector": null
+},
+"6501.T": {
+"nombre": "Hitachi (Tokio)",
+"tipo": "acción",
+"mercados": [
+"asia"
+],
+"noticias": [
+"asia"
+],
+"sector": null
+},
+"9984.T": {
+"nombre": "SoftBank Group (Tokio)",
+"tipo": "acción",
+"mercados": [
+"asia"
+],
+"noticias": [
+"asia"
+],
+"sector": null
+},
+"6861.T": {
+"nombre": "Keyence (Tokio)",
+"tipo": "acción",
+"mercados": [
+"asia"
+],
+"noticias": [
+"asia"
+],
+"sector": null
+},
+"8316.T": {
+"nombre": "Sumitomo Mitsui Financial (Tokio)",
+"tipo": "acción",
+"mercados": [
+"asia"
+],
+"noticias": [
+"asia"
+],
+"sector": null
+},
+"9983.T": {
+"nombre": "Fast Retailing (Uniqlo) (Tokio)",
+"tipo": "acción",
+"mercados": [
+"asia"
+],
+"noticias": [
+"asia"
+],
+"sector": null
+},
+"8035.T": {
+"nombre": "Tokyo Electron (Tokio)",
+"tipo": "acción",
+"mercados": [
+"asia"
+],
+"noticias": [
+"asia"
+],
+"sector": null
+},
+"9432.T": {
+"nombre": "NTT (Tokio)",
+"tipo": "acción",
+"mercados": [
+"asia"
+],
+"noticias": [
+"asia"
+],
+"sector": null
+},
+"4063.T": {
+"nombre": "Shin-Etsu Chemical (Tokio)",
+"tipo": "acción",
+"mercados": [
+"asia"
+],
+"noticias": [
+"asia"
+],
+"sector": null
+},
+"8058.T": {
+"nombre": "Mitsubishi Corp (Tokio)",
+"tipo": "acción",
+"mercados": [
+"asia"
+],
+"noticias": [
+"asia"
+],
+"sector": null
+},
+"8001.T": {
+"nombre": "Itochu (Tokio)",
+"tipo": "acción",
+"mercados": [
+"asia"
+],
+"noticias": [
+"asia"
+],
+"sector": null
+},
+"9433.T": {
+"nombre": "KDDI (Tokio)",
+"tipo": "acción",
+"mercados": [
+"asia"
+],
+"noticias": [
+"asia"
+],
+"sector": null
+},
+"6098.T": {
+"nombre": "Recruit (Tokio)",
+"tipo": "acción",
+"mercados": [
+"asia"
+],
+"noticias": [
+"asia"
+],
+"sector": null
+},
+"7974.T": {
+"nombre": "Nintendo (Tokio)",
+"tipo": "acción",
+"mercados": [
+"asia"
+],
+"noticias": [
+"asia"
+],
+"sector": null
+},
+"8411.T": {
+"nombre": "Mizuho (Tokio)",
+"tipo": "acción",
+"mercados": [
+"asia"
+],
+"noticias": [
+"asia"
+],
+"sector": null
+},
+"4502.T": {
+"nombre": "Takeda (Tokio)",
+"tipo": "acción",
+"mercados": [
+"asia"
+],
+"noticias": [
+"asia"
+],
+"sector": null
+},
+"6857.T": {
+"nombre": "Advantest (Tokio)",
+"tipo": "acción",
+"mercados": [
+"asia"
+],
+"noticias": [
+"asia"
+],
+"sector": null
+},
+"8766.T": {
+"nombre": "Tokio Marine (Tokio)",
+"tipo": "acción",
+"mercados": [
+"asia"
+],
+"noticias": [
+"asia"
+],
+"sector": null
+},
+"7011.T": {
+"nombre": "Mitsubishi Heavy Industries (Tokio)",
+"tipo": "acción",
+"mercados": [
+"asia"
+],
+"noticias": [
+"asia"
+],
+"sector": null
+},
+"8031.T": {
+"nombre": "Mitsui & Co (Tokio)",
+"tipo": "acción",
+"mercados": [
+"asia"
+],
+"noticias": [
+"asia"
+],
+"sector": null
+},
+"4568.T": {
+"nombre": "Daiichi Sankyo (Tokio)",
+"tipo": "acción",
+"mercados": [
+"asia"
+],
+"noticias": [
+"asia"
+],
+"sector": null
+},
+"6367.T": {
+"nombre": "Daikin (Tokio)",
+"tipo": "acción",
+"mercados": [
+"asia"
+],
+"noticias": [
+"asia"
+],
+"sector": null
+},
+"6981.T": {
+"nombre": "Murata (Tokio)",
+"tipo": "acción",
+"mercados": [
+"asia"
+],
+"noticias": [
+"asia"
+],
+"sector": null
+},
+"7267.T": {
+"nombre": "Honda (Tokio)",
+"tipo": "acción",
+"mercados": [
+"asia"
+],
+"noticias": [
+"asia"
+],
+"sector": null
+},
+"6503.T": {
+"nombre": "Mitsubishi Electric (Tokio)",
+"tipo": "acción",
+"mercados": [
+"asia"
+],
+"noticias": [
+"asia"
+],
+"sector": null
+},
+"9434.T": {
+"nombre": "SoftBank Corp (Tokio)",
+"tipo": "acción",
+"mercados": [
+"asia"
+],
+"noticias": [
+"asia"
+],
+"sector": null
+},
+"4519.T": {
+"nombre": "Chugai Pharmaceutical (Tokio)",
+"tipo": "acción",
+"mercados": [
+"asia"
+],
+"noticias": [
+"asia"
+],
+"sector": null
+},
+"6902.T": {
+"nombre": "Denso (Tokio)",
+"tipo": "acción",
+"mercados": [
+"asia"
+],
+"noticias": [
+"asia"
+],
+"sector": null
+},
+"7741.T": {
+"nombre": "HOYA (Tokio)",
+"tipo": "acción",
+"mercados": [
+"asia"
+],
+"noticias": [
+"asia"
+],
+"sector": null
+},
+"8002.T": {
+"nombre": "Marubeni (Tokio)",
+"tipo": "acción",
+"mercados": [
+"asia"
+],
+"noticias": [
+"asia"
+],
+"sector": null
+},
+"6702.T": {
+"nombre": "Fujitsu (Tokio)",
+"tipo": "acción",
+"mercados": [
+"asia"
+],
+"noticias": [
+"asia"
+],
+"sector": null
+},
+"4661.T": {
+"nombre": "Oriental Land (Tokio)",
+"tipo": "acción",
+"mercados": [
+"asia"
+],
+"noticias": [
+"asia"
+],
+"sector": null
+},
+"6273.T": {
+"nombre": "SMC (Tokio)",
+"tipo": "acción",
+"mercados": [
+"asia"
+],
+"noticias": [
+"asia"
+],
+"sector": null
+},
+"2914.T": {
+"nombre": "Japan Tobacco (Tokio)",
+"tipo": "acción",
+"mercados": [
+"asia"
+],
+"noticias": [
+"asia"
+],
+"sector": null
+},
+"8053.T": {
+"nombre": "Sumitomo Corp (Tokio)",
+"tipo": "acción",
+"mercados": [
+"asia"
+],
+"noticias": [
+"asia"
+],
+"sector": null
+},
+"6301.T": {
+"nombre": "Komatsu (Tokio)",
+"tipo": "acción",
+"mercados": [
+"asia"
+],
+"noticias": [
+"asia"
+],
+"sector": null
+},
+"7751.T": {
+"nombre": "Canon (Tokio)",
+"tipo": "acción",
+"mercados": [
+"asia"
+],
+"noticias": [
+"asia"
+],
+"sector": null
+},
+"6954.T": {
+"nombre": "Fanuc (Tokio)",
+"tipo": "acción",
+"mercados": [
+"asia"
+],
+"noticias": [
+"asia"
+],
+"sector": null
+},
+"4543.T": {
+"nombre": "Terumo (Tokio)",
+"tipo": "acción",
+"mercados": [
+"asia"
+],
+"noticias": [
+"asia"
+],
+"sector": null
+},
+"3382.T": {
+"nombre": "Seven & i (Tokio)",
+"tipo": "acción",
+"mercados": [
+"asia"
+],
+"noticias": [
+"asia"
+],
+"sector": null
+},
+"5108.T": {
+"nombre": "Bridgestone (Tokio)",
+"tipo": "acción",
+"mercados": [
+"asia"
+],
+"noticias": [
+"asia"
+],
+"sector": null
+},
+"8801.T": {
+"nombre": "Mitsui Fudosan (Tokio)",
+"tipo": "acción",
+"mercados": [
+"asia"
+],
+"noticias": [
+"asia"
+],
+"sector": null
+},
+"005930.KS": {
+"nombre": "Samsung Electronics (Corea)",
+"tipo": "acción",
+"mercados": [
+"asia"
+],
+"noticias": [
+"asia"
+],
+"sector": null
+},
+"000660.KS": {
+"nombre": "SK Hynix (Corea)",
+"tipo": "acción",
+"mercados": [
+"asia"
+],
+"noticias": [
+"asia"
+],
+"sector": null
+},
+"373220.KS": {
+"nombre": "LG Energy Solution (Corea)",
+"tipo": "acción",
+"mercados": [
+"asia"
+],
+"noticias": [
+"asia"
+],
+"sector": null
+},
+"207940.KS": {
+"nombre": "Samsung Biologics (Corea)",
+"tipo": "acción",
+"mercados": [
+"asia"
+],
+"noticias": [
+"asia"
+],
+"sector": null
+},
+"005380.KS": {
+"nombre": "Hyundai Motor (Corea)",
+"tipo": "acción",
+"mercados": [
+"asia"
+],
+"noticias": [
+"asia"
+],
+"sector": null
+},
+"000270.KS": {
+"nombre": "Kia (Corea)",
+"tipo": "acción",
+"mercados": [
+"asia"
+],
+"noticias": [
+"asia"
+],
+"sector": null
+},
+"068270.KS": {
+"nombre": "Celltrion (Corea)",
+"tipo": "acción",
+"mercados": [
+"asia"
+],
+"noticias": [
+"asia"
+],
+"sector": null
+},
+"005490.KS": {
+"nombre": "POSCO Holdings (Corea)",
+"tipo": "acción",
+"mercados": [
+"asia"
+],
+"noticias": [
+"asia"
+],
+"sector": null
+},
+"035420.KS": {
+"nombre": "NAVER (Corea)",
+"tipo": "acción",
+"mercados": [
+"asia"
+],
+"noticias": [
+"asia"
+],
+"sector": null
+},
+"105560.KS": {
+"nombre": "KB Financial (Corea)",
+"tipo": "acción",
+"mercados": [
+"asia"
+],
+"noticias": [
+"asia"
+],
+"sector": null
+},
+"055550.KS": {
+"nombre": "Shinhan Financial (Corea)",
+"tipo": "acción",
+"mercados": [
+"asia"
+],
+"noticias": [
+"asia"
+],
+"sector": null
+},
+"012330.KS": {
+"nombre": "Hyundai Mobis (Corea)",
+"tipo": "acción",
+"mercados": [
+"asia"
+],
+"noticias": [
+"asia"
+],
+"sector": null
+},
+"006400.KS": {
+"nombre": "Samsung SDI (Corea)",
+"tipo": "acción",
+"mercados": [
+"asia"
+],
+"noticias": [
+"asia"
+],
+"sector": null
+},
+"051910.KS": {
+"nombre": "LG Chem (Corea)",
+"tipo": "acción",
+"mercados": [
+"asia"
+],
+"noticias": [
+"asia"
+],
+"sector": null
+},
+"035720.KS": {
+"nombre": "Kakao (Corea)",
+"tipo": "acción",
+"mercados": [
+"asia"
+],
+"noticias": [
+"asia"
+],
+"sector": null
+},
+"028260.KS": {
+"nombre": "Samsung C&T (Corea)",
+"tipo": "acción",
+"mercados": [
+"asia"
+],
+"noticias": [
+"asia"
+],
+"sector": null
+},
+"012450.KS": {
+"nombre": "Hanwha Aerospace (Corea)",
+"tipo": "acción",
+"mercados": [
+"asia"
+],
+"noticias": [
+"asia"
+],
+"sector": null
+},
+"329180.KS": {
+"nombre": "HD Hyundai Heavy Industries (Corea)",
+"tipo": "acción",
+"mercados": [
+"asia"
+],
+"noticias": [
+"asia"
+],
+"sector": null
+},
+"086790.KS": {
+"nombre": "Hana Financial (Corea)",
+"tipo": "acción",
+"mercados": [
+"asia"
+],
+"noticias": [
+"asia"
+],
+"sector": null
+},
+"032830.KS": {
+"nombre": "Samsung Life (Corea)",
+"tipo": "acción",
+"mercados": [
+"asia"
+],
+"noticias": [
+"asia"
+],
+"sector": null
+},
+"015760.KS": {
+"nombre": "KEPCO (Korea Electric Power) (Corea)",
+"tipo": "acción",
+"mercados": [
+"asia"
+],
+"noticias": [
+"asia"
+],
+"sector": null
+},
+"066570.KS": {
+"nombre": "LG Electronics (Corea)",
+"tipo": "acción",
+"mercados": [
+"asia"
+],
+"noticias": [
+"asia"
+],
+"sector": null
+},
+"034020.KS": {
+"nombre": "Doosan Enerbility (Corea)",
+"tipo": "acción",
+"mercados": [
+"asia"
+],
+"noticias": [
+"asia"
+],
+"sector": null
+},
+"009150.KS": {
+"nombre": "Samsung Electro-Mechanics (Corea)",
+"tipo": "acción",
+"mercados": [
+"asia"
+],
+"noticias": [
+"asia"
+],
+"sector": null
+},
+"017670.KS": {
+"nombre": "SK Telecom (Corea)",
+"tipo": "acción",
+"mercados": [
+"asia"
+],
+"noticias": [
+"asia"
+],
+"sector": null
+},
+"033780.KS": {
+"nombre": "KT&G (Corea)",
+"tipo": "acción",
+"mercados": [
+"asia"
+],
+"noticias": [
+"asia"
+],
+"sector": null
+},
+"010130.KS": {
+"nombre": "Korea Zinc (Corea)",
+"tipo": "acción",
+"mercados": [
+"asia"
+],
+"noticias": [
+"asia"
+],
+"sector": null
+},
+"042660.KS": {
+"nombre": "Hanwha Ocean (Corea)",
+"tipo": "acción",
+"mercados": [
+"asia"
+],
+"noticias": [
+"asia"
+],
+"sector": null
+},
+"316140.KS": {
+"nombre": "Woori Financial (Corea)",
+"tipo": "acción",
+"mercados": [
+"asia"
+],
+"noticias": [
+"asia"
+],
+"sector": null
+},
+"018260.KS": {
+"nombre": "Samsung SDS (Corea)",
+"tipo": "acción",
+"mercados": [
+"asia"
+],
+"noticias": [
+"asia"
+],
+"sector": null
+},
+"2330.TW": {
+"nombre": "TSMC (Taiwán)",
+"tipo": "acción",
+"mercados": [
+"asia"
+],
+"noticias": [
+"asia"
+],
+"sector": null
+},
+"2317.TW": {
+"nombre": "Hon Hai (Foxconn) (Taiwán)",
+"tipo": "acción",
+"mercados": [
+"asia"
+],
+"noticias": [
+"asia"
+],
+"sector": null
+},
+"2454.TW": {
+"nombre": "MediaTek (Taiwán)",
+"tipo": "acción",
+"mercados": [
+"asia"
+],
+"noticias": [
+"asia"
+],
+"sector": null
+},
+"2308.TW": {
+"nombre": "Delta Electronics (Taiwán)",
+"tipo": "acción",
+"mercados": [
+"asia"
+],
+"noticias": [
+"asia"
+],
+"sector": null
+},
+"2382.TW": {
+"nombre": "Quanta Computer (Taiwán)",
+"tipo": "acción",
+"mercados": [
+"asia"
+],
+"noticias": [
+"asia"
+],
+"sector": null
+},
+"2881.TW": {
+"nombre": "Fubon Financial (Taiwán)",
+"tipo": "acción",
+"mercados": [
+"asia"
+],
+"noticias": [
+"asia"
+],
+"sector": null
+},
+"2882.TW": {
+"nombre": "Cathay Financial (Taiwán)",
+"tipo": "acción",
+"mercados": [
+"asia"
+],
+"noticias": [
+"asia"
+],
+"sector": null
+},
+"2412.TW": {
+"nombre": "Chunghwa Telecom (Taiwán)",
+"tipo": "acción",
+"mercados": [
+"asia"
+],
+"noticias": [
+"asia"
+],
+"sector": null
+},
+"2891.TW": {
+"nombre": "CTBC Financial (Taiwán)",
+"tipo": "acción",
+"mercados": [
+"asia"
+],
+"noticias": [
+"asia"
+],
+"sector": null
+},
+"3711.TW": {
+"nombre": "ASE Technology (Taiwán)",
+"tipo": "acción",
+"mercados": [
+"asia"
+],
+"noticias": [
+"asia"
+],
+"sector": null
+},
+"2303.TW": {
+"nombre": "UMC (Taiwán)",
+"tipo": "acción",
+"mercados": [
+"asia"
+],
+"noticias": [
+"asia"
+],
+"sector": null
+},
+"2886.TW": {
+"nombre": "Mega Financial (Taiwán)",
+"tipo": "acción",
+"mercados": [
+"asia"
+],
+"noticias": [
+"asia"
+],
+"sector": null
+},
+"1216.TW": {
+"nombre": "Uni-President (Taiwán)",
+"tipo": "acción",
+"mercados": [
+"asia"
+],
+"noticias": [
+"asia"
+],
+"sector": null
+},
+"2884.TW": {
+"nombre": "E.Sun Financial (Taiwán)",
+"tipo": "acción",
+"mercados": [
+"asia"
+],
+"noticias": [
+"asia"
+],
+"sector": null
+},
+"2357.TW": {
+"nombre": "Asustek (Taiwán)",
+"tipo": "acción",
+"mercados": [
+"asia"
+],
+"noticias": [
+"asia"
+],
+"sector": null
+},
+"3231.TW": {
+"nombre": "Wistron (Taiwán)",
+"tipo": "acción",
+"mercados": [
+"asia"
+],
+"noticias": [
+"asia"
+],
+"sector": null
+},
+"2345.TW": {
+"nombre": "Accton (Taiwán)",
+"tipo": "acción",
+"mercados": [
+"asia"
+],
+"noticias": [
+"asia"
+],
+"sector": null
+},
+"3008.TW": {
+"nombre": "Largan (Taiwán)",
+"tipo": "acción",
+"mercados": [
+"asia"
+],
+"noticias": [
+"asia"
+],
+"sector": null
+},
+"2002.TW": {
+"nombre": "China Steel (Taiwán)",
+"tipo": "acción",
+"mercados": [
+"asia"
+],
+"noticias": [
+"asia"
+],
+"sector": null
+},
+"1303.TW": {
+"nombre": "Nan Ya Plastics (Taiwán)",
+"tipo": "acción",
+"mercados": [
+"asia"
+],
+"noticias": [
+"asia"
+],
+"sector": null
+},
+"1301.TW": {
+"nombre": "Formosa Plastics (Taiwán)",
+"tipo": "acción",
+"mercados": [
+"asia"
+],
+"noticias": [
+"asia"
+],
+"sector": null
+},
+"2885.TW": {
+"nombre": "Yuanta Financial (Taiwán)",
+"tipo": "acción",
+"mercados": [
+"asia"
+],
+"noticias": [
+"asia"
+],
+"sector": null
+},
+"2892.TW": {
+"nombre": "First Financial (Taiwán)",
+"tipo": "acción",
+"mercados": [
+"asia"
+],
+"noticias": [
+"asia"
+],
+"sector": null
+},
+"6669.TW": {
+"nombre": "Wiwynn (Taiwán)",
+"tipo": "acción",
+"mercados": [
+"asia"
+],
+"noticias": [
+"asia"
+],
+"sector": null
+},
+"3034.TW": {
+"nombre": "Novatek (Taiwán)",
+"tipo": "acción",
+"mercados": [
+"asia"
+],
+"noticias": [
+"asia"
+],
+"sector": null
+},
+"2379.TW": {
+"nombre": "Realtek (Taiwán)",
+"tipo": "acción",
+"mercados": [
+"asia"
+],
+"noticias": [
+"asia"
+],
+"sector": null
+},
+"2603.TW": {
+"nombre": "Evergreen Marine (Taiwán)",
+"tipo": "acción",
+"mercados": [
+"asia"
+],
+"noticias": [
+"asia"
+],
+"sector": null
+},
+"2912.TW": {
+"nombre": "President Chain Store (Taiwán)",
+"tipo": "acción",
+"mercados": [
+"asia"
+],
+"noticias": [
+"asia"
+],
+"sector": null
+},
+"3045.TW": {
+"nombre": "Taiwan Mobile (Taiwán)",
+"tipo": "acción",
+"mercados": [
+"asia"
+],
+"noticias": [
+"asia"
+],
+"sector": null
+},
+"2395.TW": {
+"nombre": "Advantech (Taiwán)",
+"tipo": "acción",
+"mercados": [
+"asia"
+],
+"noticias": [
+"asia"
+],
+"sector": null
+},
+"ET": {
+"nombre": "Energy Transfer",
+"tipo": "acción",
+"mercados": [
+"petróleo"
+],
+"noticias": [
+"petróleo"
+],
+"sector": "Petróleo y gas"
+},
+"EPD": {
+"nombre": "Enterprise Products",
+"tipo": "acción",
+"mercados": [
+"petróleo"
+],
+"noticias": [
+"petróleo"
+],
+"sector": "Petróleo y gas"
+},
+"LNG": {
+"nombre": "Cheniere Energy (gas natural licuado)",
+"tipo": "acción",
+"mercados": [
+"petróleo"
+],
+"noticias": [
+"petróleo"
+],
+"sector": "Petróleo y gas"
+},
+"OVV": {
+"nombre": "Ovintiv",
+"tipo": "acción",
+"mercados": [
+"petróleo"
+],
+"noticias": [
+"petróleo"
+],
+"sector": "Petróleo y gas"
+},
+"AR": {
+"nombre": "Antero Resources (gas)",
+"tipo": "acción",
+"mercados": [
+"petróleo"
+],
+"noticias": [
+"petróleo"
+],
+"sector": "Petróleo y gas"
+},
+"RRC": {
+"nombre": "Range Resources (gas)",
+"tipo": "acción",
+"mercados": [
+"petróleo"
+],
+"noticias": [
+"petróleo"
+],
+"sector": "Petróleo y gas"
+},
+"MPLX": {
+"nombre": "MPLX",
+"tipo": "acción",
+"mercados": [
+"petróleo"
+],
+"noticias": [
+"petróleo"
+],
+"sector": "Petróleo y gas"
+},
+"PAA": {
+"nombre": "Plains All American",
+"tipo": "acción",
+"mercados": [
+"petróleo"
+],
+"noticias": [
+"petróleo"
+],
+"sector": "Petróleo y gas"
+},
+"ENB": {
+"nombre": "Enbridge",
+"tipo": "acción",
+"mercados": [
+"petróleo"
+],
+"noticias": [
+"petróleo"
+],
+"sector": "Petróleo y gas"
+},
+"TRP": {
+"nombre": "TC Energy (gas)",
+"tipo": "acción",
+"mercados": [
+"petróleo"
+],
+"noticias": [
+"petróleo"
+],
+"sector": "Petróleo y gas"
+},
+"CQP": {
+"nombre": "Cheniere Energy Partners",
+"tipo": "acción",
+"mercados": [
+"petróleo"
+],
+"noticias": [
+"petróleo"
+],
+"sector": "Petróleo y gas"
+},
+"WES": {
+"nombre": "Western Midstream",
+"tipo": "acción",
+"mercados": [
+"petróleo"
+],
+"noticias": [
+"petróleo"
+],
+"sector": "Petróleo y gas"
+},
+"PBA": {
+"nombre": "Pembina Pipeline",
+"tipo": "acción",
+"mercados": [
+"petróleo"
+],
+"noticias": [
+"petróleo"
+],
+"sector": "Petróleo y gas"
+},
+"PR": {
+"nombre": "Permian Resources",
+"tipo": "acción",
+"mercados": [
+"petróleo"
+],
+"noticias": [
+"petróleo"
+],
+"sector": "Petróleo y gas"
+},
+"FTI": {
+"nombre": "TechnipFMC",
+"tipo": "acción",
+"mercados": [
+"petróleo"
+],
+"noticias": [
+"petróleo"
+],
+"sector": "Petróleo y gas"
+},
+"TS": {
+"nombre": "Tenaris",
+"tipo": "acción",
+"mercados": [
+"petróleo"
+],
+"noticias": [
+"petróleo"
+],
+"sector": "Petróleo y gas"
+},
+"DTM": {
+"nombre": "DT Midstream (gas)",
+"tipo": "acción",
+"mercados": [
+"petróleo"
+],
+"noticias": [
+"petróleo"
+],
+"sector": "Petróleo y gas"
+},
+"WPM": {
+"nombre": "Wheaton Precious Metals",
+"tipo": "acción",
+"mercados": [
+"oro"
+],
+"noticias": [
+"oro"
+],
+"sector": "Materiales y minería"
+},
+"FNV": {
+"nombre": "Franco-Nevada",
+"tipo": "acción",
+"mercados": [
+"oro"
+],
+"noticias": [
+"oro"
+],
+"sector": "Materiales y minería"
+},
+"RGLD": {
+"nombre": "Royal Gold",
+"tipo": "acción",
+"mercados": [
+"oro"
+],
+"noticias": [
+"oro"
+],
+"sector": "Materiales y minería"
+},
+"PAAS": {
+"nombre": "Pan American Silver",
+"tipo": "acción",
+"mercados": [
+"oro"
+],
+"noticias": [
+"oro"
+],
+"sector": "Materiales y minería"
+},
+"AG": {
+"nombre": "First Majestic Silver",
+"tipo": "acción",
+"mercados": [
+"oro"
+],
+"noticias": [
+"oro"
+],
+"sector": "Materiales y minería"
+},
+"HL": {
+"nombre": "Hecla Mining (plata)",
+"tipo": "acción",
+"mercados": [
+"oro"
+],
+"noticias": [
+"oro"
+],
+"sector": "Materiales y minería"
+},
+"SSRM": {
+"nombre": "SSR Mining",
+"tipo": "acción",
+"mercados": [
+"oro"
+],
+"noticias": [
+"oro"
+],
+"sector": "Materiales y minería"
+},
+"SCCO": {
+"nombre": "Southern Copper",
+"tipo": "acción",
+"mercados": [
+"oro"
+],
+"noticias": [
+"oro"
+],
+"sector": "Materiales y minería"
+},
+"TECK": {
+"nombre": "Teck Resources (cobre)",
+"tipo": "acción",
+"mercados": [
+"oro"
+],
+"noticias": [
+"oro"
+],
+"sector": "Materiales y minería"
+},
+"BHP": {
+"nombre": "BHP",
+"tipo": "acción",
+"mercados": [
+"oro"
+],
+"noticias": [
+"oro"
+],
+"sector": "Materiales y minería"
+},
+"RIO": {
+"nombre": "Rio Tinto",
+"tipo": "acción",
+"mercados": [
+"oro"
+],
+"noticias": [
+"oro"
+],
+"sector": "Materiales y minería"
+},
+"VALE": {
+"nombre": "Vale",
+"tipo": "acción",
+"mercados": [
+"oro"
+],
+"noticias": [
+"oro"
+],
+"sector": "Materiales y minería"
+},
+"HBM": {
+"nombre": "Hudbay Minerals (cobre)",
+"tipo": "acción",
+"mercados": [
+"oro"
+],
+"noticias": [
+"oro"
+],
+"sector": "Materiales y minería"
+},
+"ERO": {
+"nombre": "Ero Copper",
+"tipo": "acción",
+"mercados": [
+"oro"
+],
+"noticias": [
+"oro"
+],
+"sector": "Materiales y minería"
+},
+"OR": {
+"nombre": "OR Royalties",
+"tipo": "acción",
+"mercados": [
+"oro"
+],
+"noticias": [
+"oro"
+],
+"sector": "Materiales y minería"
+},
+"BTG": {
+"nombre": "B2Gold",
+"tipo": "acción",
+"mercados": [
+"oro"
+],
+"noticias": [
+"oro"
+],
+"sector": "Materiales y minería"
+},
+"IAG": {
+"nombre": "Iamgold",
+"tipo": "acción",
+"mercados": [
+"oro"
+],
+"noticias": [
+"oro"
+],
+"sector": "Materiales y minería"
+},
+"SBSW": {
+"nombre": "Sibanye Stillwater",
+"tipo": "acción",
+"mercados": [
+"oro"
+],
+"noticias": [
+"oro"
+],
+"sector": "Materiales y minería"
+},
+"EXK": {
+"nombre": "Endeavour Silver",
+"tipo": "acción",
+"mercados": [
+"oro"
+],
+"noticias": [
+"oro"
+],
+"sector": "Materiales y minería"
+},
+"FSM": {
+"nombre": "Fortuna Mining",
+"tipo": "acción",
+"mercados": [
+"oro"
+],
+"noticias": [
+"oro"
+],
+"sector": "Materiales y minería"
+},
+"TFPM": {
+"nombre": "Triple Flag Precious Metals",
+"tipo": "acción",
+"mercados": [
+"oro"
+],
+"noticias": [
+"oro"
+],
+"sector": "Materiales y minería"
+},
+"OGC.TO": {
+"nombre": "OceanaGold",
+"tipo": "acción",
+"mercados": [
+"oro"
+],
+"noticias": [
+"oro"
+],
+"sector": "Materiales y minería"
+},
+"RB=F": {
+"nombre": "Gasolina RBOB (futuro)",
+"tipo": "futuro",
+"mercados": [
+"materias",
+"futuros"
+],
+"noticias": [
+"petróleo"
+],
+"sector": null
+},
+"HO=F": {
+"nombre": "Diésel / heating oil (futuro)",
+"tipo": "futuro",
+"mercados": [
+"materias",
+"futuros"
+],
+"noticias": [
+"petróleo"
+],
+"sector": null
+},
+"PL=F": {
+"nombre": "Platino (futuro)",
+"tipo": "futuro",
+"mercados": [
+"materias",
+"futuros"
+],
+"noticias": [
+"oro"
+],
+"sector": null
+},
+"PA=F": {
+"nombre": "Paladio (futuro)",
+"tipo": "futuro",
+"mercados": [
+"materias",
+"futuros"
+],
+"noticias": [
+"oro"
+],
+"sector": null
+},
+"ALI=F": {
+"nombre": "Aluminio (futuro)",
+"tipo": "futuro",
+"mercados": [
+"materias",
+"futuros"
+],
+"noticias": [
+"oro"
+],
+"sector": null
+},
+"CC=F": {
+"nombre": "Cacao (futuro)",
+"tipo": "futuro",
+"mercados": [
+"materias",
+"futuros"
+],
+"noticias": [
+"agro"
+],
+"sector": null
+},
+"SB=F": {
+"nombre": "Azúcar (futuro)",
+"tipo": "futuro",
+"mercados": [
+"materias",
+"futuros"
+],
+"noticias": [
+"agro"
+],
+"sector": null
+},
+"ZC=F": {
+"nombre": "Maíz (futuro)",
+"tipo": "futuro",
+"mercados": [
+"materias",
+"futuros"
+],
+"noticias": [
+"agro"
+],
+"sector": null
+},
+"ZW=F": {
+"nombre": "Trigo (futuro)",
+"tipo": "futuro",
+"mercados": [
+"materias",
+"futuros"
+],
+"noticias": [
+"agro"
+],
+"sector": null
+},
+"ZS=F": {
+"nombre": "Soya (futuro)",
+"tipo": "futuro",
+"mercados": [
+"materias",
+"futuros"
+],
+"noticias": [
+"agro"
+],
+"sector": null
+},
+"CT=F": {
+"nombre": "Algodón (futuro)",
+"tipo": "futuro",
+"mercados": [
+"materias",
+"futuros"
+],
+"noticias": [
+"agro"
+],
+"sector": null
+},
+"ZL=F": {
+"nombre": "Aceite de soya (futuro)",
+"tipo": "futuro",
+"mercados": [
+"materias",
+"futuros"
+],
+"noticias": [
+"agro"
+],
+"sector": null
+},
+"ZM=F": {
+"nombre": "Harina de soya (futuro)",
+"tipo": "futuro",
+"mercados": [
+"materias",
+"futuros"
+],
+"noticias": [
+"agro"
+],
+"sector": null
+},
+"ZO=F": {
+"nombre": "Avena (futuro)",
+"tipo": "futuro",
+"mercados": [
+"materias",
+"futuros"
+],
+"noticias": [
+"agro"
+],
+"sector": null
+},
+"ZR=F": {
+"nombre": "Arroz (futuro)",
+"tipo": "futuro",
+"mercados": [
+"materias",
+"futuros"
+],
+"noticias": [
+"agro"
+],
+"sector": null
+},
+"OJ=F": {
+"nombre": "Jugo de naranja (futuro)",
+"tipo": "futuro",
+"mercados": [
+"materias",
+"futuros"
+],
+"noticias": [
+"agro"
+],
+"sector": null
+},
+"LE=F": {
+"nombre": "Ganado vivo (futuro)",
+"tipo": "futuro",
+"mercados": [
+"materias",
+"futuros"
+],
+"noticias": [
+"agro"
+],
+"sector": null
+},
+"GF=F": {
+"nombre": "Ganado de engorde (futuro)",
+"tipo": "futuro",
+"mercados": [
+"materias",
+"futuros"
+],
+"noticias": [
+"agro"
+],
+"sector": null
+},
+"HE=F": {
+"nombre": "Cerdo magro (futuro)",
+"tipo": "futuro",
+"mercados": [
+"materias",
+"futuros"
+],
+"noticias": [
+"agro"
+],
+"sector": null
+},
+"AVAX-USD": {
+"nombre": "Avalanche",
+"tipo": "cripto",
+"mercados": [
+"cripto"
+],
+"noticias": [
+"cripto"
+],
+"sector": null
+},
+"XLM-USD": {
+"nombre": "Stellar",
+"tipo": "cripto",
+"mercados": [
+"cripto"
+],
+"noticias": [
+"cripto"
+],
+"sector": null
+},
+"SUI20947-USD": {
+"nombre": "Sui",
+"tipo": "cripto",
+"mercados": [
+"cripto"
+],
+"noticias": [
+"cripto"
+],
+"sector": null
+},
+"HBAR-USD": {
+"nombre": "Hedera",
+"tipo": "cripto",
+"mercados": [
+"cripto"
+],
+"noticias": [
+"cripto"
+],
+"sector": null
+},
+"BCH-USD": {
+"nombre": "Bitcoin Cash",
+"tipo": "cripto",
+"mercados": [
+"cripto"
+],
+"noticias": [
+"cripto"
+],
+"sector": null
+},
+"LTC-USD": {
+"nombre": "Litecoin",
+"tipo": "cripto",
+"mercados": [
+"cripto"
+],
+"noticias": [
+"cripto"
+],
+"sector": null
+},
+"DOT-USD": {
+"nombre": "Polkadot",
+"tipo": "cripto",
+"mercados": [
+"cripto"
+],
+"noticias": [
+"cripto"
+],
+"sector": null
+},
+"SHIB-USD": {
+"nombre": "Shiba Inu",
+"tipo": "cripto",
+"mercados": [
+"cripto"
+],
+"noticias": [
+"cripto"
+],
+"sector": null
+},
+"UNI7083-USD": {
+"nombre": "Uniswap",
+"tipo": "cripto",
+"mercados": [
+"cripto"
+],
+"noticias": [
+"cripto"
+],
+"sector": null
+},
+"XMR-USD": {
+"nombre": "Monero",
+"tipo": "cripto",
+"mercados": [
+"cripto"
+],
+"noticias": [
+"cripto"
+],
+"sector": null
+},
+"LEO-USD": {
+"nombre": "UNUS SED LEO",
+"tipo": "cripto",
+"mercados": [
+"cripto"
+],
+"noticias": [
+"cripto"
+],
+"sector": null
+},
+"PEPE24478-USD": {
+"nombre": "Pepe",
+"tipo": "cripto",
+"mercados": [
+"cripto"
+],
+"noticias": [
+"cripto"
+],
+"sector": null
+},
+"NEAR-USD": {
+"nombre": "NEAR Protocol",
+"tipo": "cripto",
+"mercados": [
+"cripto"
+],
+"noticias": [
+"cripto"
+],
+"sector": null
+},
+"APT21794-USD": {
+"nombre": "Aptos",
+"tipo": "cripto",
+"mercados": [
+"cripto"
+],
+"noticias": [
+"cripto"
+],
+"sector": null
+},
+"ICP-USD": {
+"nombre": "Internet Computer",
+"tipo": "cripto",
+"mercados": [
+"cripto"
+],
+"noticias": [
+"cripto"
+],
+"sector": null
+},
+"ETC-USD": {
+"nombre": "Ethereum Classic",
+"tipo": "cripto",
+"mercados": [
+"cripto"
+],
+"noticias": [
+"cripto"
+],
+"sector": null
+},
+"AAVE-USD": {
+"nombre": "Aave",
+"tipo": "cripto",
+"mercados": [
+"cripto"
+],
+"noticias": [
+"cripto"
+],
+"sector": null
+},
+"POL28321-USD": {
+"nombre": "Polygon (POL)",
+"tipo": "cripto",
+"mercados": [
+"cripto"
+],
+"noticias": [
+"cripto"
+],
+"sector": null
+},
+"CRO-USD": {
+"nombre": "Cronos",
+"tipo": "cripto",
+"mercados": [
+"cripto"
+],
+"noticias": [
+"cripto"
+],
+"sector": null
+},
+"VET-USD": {
+"nombre": "VeChain",
+"tipo": "cripto",
+"mercados": [
+"cripto"
+],
+"noticias": [
+"cripto"
+],
+"sector": null
+},
+"RENDER-USD": {
+"nombre": "Render",
+"tipo": "cripto",
+"mercados": [
+"cripto"
+],
+"noticias": [
+"cripto"
+],
+"sector": null
+},
+"ATOM-USD": {
+"nombre": "Cosmos",
+"tipo": "cripto",
+"mercados": [
+"cripto"
+],
+"noticias": [
+"cripto"
+],
+"sector": null
+},
+"FIL-USD": {
+"nombre": "Filecoin",
+"tipo": "cripto",
+"mercados": [
+"cripto"
+],
+"noticias": [
+"cripto"
+],
+"sector": null
+},
+"ALGO-USD": {
+"nombre": "Algorand",
+"tipo": "cripto",
+"mercados": [
+"cripto"
+],
+"noticias": [
+"cripto"
+],
+"sector": null
+},
+"ARB11841-USD": {
+"nombre": "Arbitrum",
+"tipo": "cripto",
+"mercados": [
+"cripto"
+],
+"noticias": [
+"cripto"
+],
+"sector": null
+},
+"OP-USD": {
+"nombre": "Optimism",
+"tipo": "cripto",
+"mercados": [
+"cripto"
+],
+"noticias": [
+"cripto"
+],
+"sector": null
+},
+"INJ-USD": {
+"nombre": "Injective",
+"tipo": "cripto",
+"mercados": [
+"cripto"
+],
+"noticias": [
+"cripto"
+],
+"sector": null
+},
+"IMX10603-USD": {
+"nombre": "Immutable",
+"tipo": "cripto",
+"mercados": [
+"cripto"
+],
+"noticias": [
+"cripto"
+],
+"sector": null
+},
+"STX4847-USD": {
+"nombre": "Stacks",
+"tipo": "cripto",
+"mercados": [
+"cripto"
+],
+"noticias": [
+"cripto"
+],
+"sector": null
+},
+"GRT6719-USD": {
+"nombre": "The Graph",
+"tipo": "cripto",
+"mercados": [
+"cripto"
+],
+"noticias": [
+"cripto"
+],
+"sector": null
+},
+"TAO22974-USD": {
+"nombre": "Bittensor",
+"tipo": "cripto",
+"mercados": [
+"cripto"
+],
+"noticias": [
+"cripto"
+],
+"sector": null
+},
+"HYPE32196-USD": {
+"nombre": "Hyperliquid",
+"tipo": "cripto",
+"mercados": [
+"cripto"
+],
+"noticias": [
+"cripto"
+],
+"sector": null
+},
+"ENA-USD": {
+"nombre": "Ethena",
+"tipo": "cripto",
+"mercados": [
+"cripto"
+],
+"noticias": [
+"cripto"
+],
+"sector": null
+},
+"WLD-USD": {
+"nombre": "Worldcoin",
+"tipo": "cripto",
+"mercados": [
+"cripto"
+],
+"noticias": [
+"cripto"
+],
+"sector": null
+},
+"ONDO-USD": {
+"nombre": "Ondo",
+"tipo": "cripto",
+"mercados": [
+"cripto"
+],
+"noticias": [
+"cripto"
+],
+"sector": null
+},
+"KAS-USD": {
+"nombre": "Kaspa",
+"tipo": "cripto",
+"mercados": [
+"cripto"
+],
+"noticias": [
+"cripto"
+],
+"sector": null
+},
+"FET-USD": {
+"nombre": "Artificial Superintelligence (FET)",
+"tipo": "cripto",
+"mercados": [
+"cripto"
+],
+"noticias": [
+"cripto"
+],
+"sector": null
+},
+"BONK-USD": {
+"nombre": "Bonk",
+"tipo": "cripto",
+"mercados": [
+"cripto"
+],
+"noticias": [
+"cripto"
+],
+"sector": null
+},
+"SEI-USD": {
+"nombre": "Sei",
+"tipo": "cripto",
+"mercados": [
+"cripto"
+],
+"noticias": [
+"cripto"
+],
+"sector": null
+},
+"JUP29210-USD": {
+"nombre": "Jupiter",
+"tipo": "cripto",
+"mercados": [
+"cripto"
+],
+"noticias": [
+"cripto"
+],
+"sector": null
+},
+"XTZ-USD": {
+"nombre": "Tezos",
+"tipo": "cripto",
+"mercados": [
+"cripto"
+],
+"noticias": [
+"cripto"
+],
+"sector": null
+},
+"SAND-USD": {
+"nombre": "The Sandbox",
+"tipo": "cripto",
+"mercados": [
+"cripto"
+],
+"noticias": [
+"cripto"
+],
+"sector": null
+},
+"^IRX": {
+"nombre": "Tasa del Tesoro de EE.UU. a 3 meses",
+"tipo": "bono",
+"mercados": [
+"bonos"
+],
+"noticias": [
+"bonos"
+],
+"sector": null
+},
+"^FVX": {
+"nombre": "Tasa del Tesoro a 5 años",
+"tipo": "bono",
+"mercados": [
+"bonos"
+],
+"noticias": [
+"bonos"
+],
+"sector": null
+},
+"^TNX": {
+"nombre": "Tasa del Tesoro a 10 años",
+"tipo": "bono",
+"mercados": [
+"bonos"
+],
+"noticias": [
+"bonos"
+],
+"sector": null
+},
+"^TYX": {
+"nombre": "Tasa del Tesoro a 30 años",
+"tipo": "bono",
+"mercados": [
+"bonos"
+],
+"noticias": [
+"bonos"
+],
+"sector": null
+},
+"BNDX": {
+"nombre": "ETF bonos internacionales fuera de EE.UU. (BNDX)",
+"tipo": "etf",
+"mercados": [
+"bonos",
+"etf"
+],
+"noticias": [
+"bonos"
+],
+"sector": null
+},
+"TLT": {
+"nombre": "ETF bonos del Tesoro de 20+ años (TLT)",
+"tipo": "etf",
+"mercados": [
+"bonos",
+"etf"
+],
+"noticias": [
+"bonos"
+],
+"sector": null
+},
+"IEF": {
+"nombre": "ETF bonos del Tesoro de 7-10 años (IEF)",
+"tipo": "etf",
+"mercados": [
+"bonos",
+"etf"
+],
+"noticias": [
+"bonos"
+],
+"sector": null
+},
+"SHY": {
+"nombre": "ETF bonos del Tesoro de 1-3 años (SHY)",
+"tipo": "etf",
+"mercados": [
+"bonos",
+"etf"
+],
+"noticias": [
+"bonos"
+],
+"sector": null
+},
+"AGG": {
+"nombre": "ETF bonos de EE.UU. en general (AGG)",
+"tipo": "etf",
+"mercados": [
+"bonos",
+"etf"
+],
+"noticias": [
+"bonos"
+],
+"sector": null
+},
+"BND": {
+"nombre": "ETF bonos de EE.UU. en general (BND)",
+"tipo": "etf",
+"mercados": [
+"bonos",
+"etf"
+],
+"noticias": [
+"bonos"
+],
+"sector": null
+},
+"LQD": {
+"nombre": "ETF bonos de empresas grandes (LQD)",
+"tipo": "etf",
+"mercados": [
+"bonos",
+"etf"
+],
+"noticias": [
+"bonos"
+],
+"sector": null
+},
+"HYG": {
+"nombre": "ETF bonos de alto rendimiento (HYG)",
+"tipo": "etf",
+"mercados": [
+"bonos",
+"etf"
+],
+"noticias": [
+"bonos"
+],
+"sector": null
+},
+"TIP": {
+"nombre": "ETF bonos protegidos contra la inflación (TIP)",
+"tipo": "etf",
+"mercados": [
+"bonos",
+"etf"
+],
+"noticias": [
+"bonos"
+],
+"sector": null
+},
+"EMB": {
+"nombre": "ETF bonos de países emergentes, incluye Colombia (EMB)",
+"tipo": "etf",
+"mercados": [
+"bonos",
+"etf"
+],
+"noticias": [
+"bonos"
+],
+"sector": null
+},
+"DVY": {
+"nombre": "Fondo de dividendos DVY",
+"tipo": "etf",
+"mercados": [
+"dividendos",
+"etf"
+],
+"noticias": [
+"nasdaq"
+],
+"sector": null
+},
+"HDV": {
+"nombre": "Fondo de dividendos HDV",
+"tipo": "etf",
+"mercados": [
+"dividendos",
+"etf"
+],
+"noticias": [
+"nasdaq"
+],
+"sector": null
+},
+"SDY": {
+"nombre": "Fondo de dividendos SDY",
+"tipo": "etf",
+"mercados": [
+"dividendos",
+"etf"
+],
+"noticias": [
+"nasdaq"
+],
+"sector": null
+},
+"NOBL": {
+"nombre": "Fondo aristócratas del dividendo NOBL",
+"tipo": "etf",
+"mercados": [
+"dividendos",
+"etf"
+],
+"noticias": [
+"nasdaq"
+],
+"sector": null
+},
+"^BVSP": {
+"nombre": "Índice Bovespa (Brasil)",
+"tipo": "índice",
+"mercados": [
+"latam"
+],
+"noticias": [
+"latam"
+],
+"sector": null,
+"pais": "Brasil"
+},
+"EWZ": {
+"nombre": "ETF de Brasil (EWZ)",
+"tipo": "etf",
+"mercados": [
+"latam",
+"etf"
+],
+"noticias": [
+"latam"
+],
+"sector": null,
+"pais": "Brasil"
+},
+"ITUB": {
+"nombre": "Itaú Unibanco (ADR)",
+"tipo": "acción",
+"mercados": [
+"latam"
+],
+"noticias": [
+"latam"
+],
+"sector": null,
+"pais": "Brasil"
+},
+"BBD": {
+"nombre": "Banco Bradesco (ADR)",
+"tipo": "acción",
+"mercados": [
+"latam"
+],
+"noticias": [
+"latam"
+],
+"sector": null,
+"pais": "Brasil"
+},
+"NU": {
+"nombre": "Nu Holdings (Nubank)",
+"tipo": "acción",
+"mercados": [
+"latam"
+],
+"noticias": [
+"latam"
+],
+"sector": null,
+"pais": "Brasil"
+},
+"ABEV": {
+"nombre": "Ambev (ADR)",
+"tipo": "acción",
+"mercados": [
+"latam"
+],
+"noticias": [
+"latam"
+],
+"sector": null,
+"pais": "Brasil"
+},
+"EMBJ": {
+"nombre": "Embraer (ADR)",
+"tipo": "acción",
+"mercados": [
+"latam"
+],
+"noticias": [
+"latam"
+],
+"sector": null,
+"pais": "Brasil"
+},
+"SBS": {
+"nombre": "Sabesp (ADR)",
+"tipo": "acción",
+"mercados": [
+"latam"
+],
+"noticias": [
+"latam"
+],
+"sector": null,
+"pais": "Brasil"
+},
+"GGB": {
+"nombre": "Gerdau (ADR)",
+"tipo": "acción",
+"mercados": [
+"latam"
+],
+"noticias": [
+"latam"
+],
+"sector": null,
+"pais": "Brasil"
+},
+"SUZ": {
+"nombre": "Suzano (ADR)",
+"tipo": "acción",
+"mercados": [
+"latam"
+],
+"noticias": [
+"latam"
+],
+"sector": null,
+"pais": "Brasil"
+},
+"XP": {
+"nombre": "XP Inc.",
+"tipo": "acción",
+"mercados": [
+"latam"
+],
+"noticias": [
+"latam"
+],
+"sector": null,
+"pais": "Brasil"
+},
+"STNE": {
+"nombre": "StoneCo",
+"tipo": "acción",
+"mercados": [
+"latam"
+],
+"noticias": [
+"latam"
+],
+"sector": null,
+"pais": "Brasil"
+},
+"BSBR": {
+"nombre": "Santander Brasil (ADR)",
+"tipo": "acción",
+"mercados": [
+"latam"
+],
+"noticias": [
+"latam"
+],
+"sector": null,
+"pais": "Brasil"
+},
+"PETR4.SA": {
+"nombre": "Petrobras (Bolsa de São Paulo)",
+"tipo": "acción",
+"mercados": [
+"latam"
+],
+"noticias": [
+"latam"
+],
+"sector": null,
+"pais": "Brasil"
+},
+"VALE3.SA": {
+"nombre": "Vale (Bolsa de São Paulo)",
+"tipo": "acción",
+"mercados": [
+"latam"
+],
+"noticias": [
+"latam"
+],
+"sector": null,
+"pais": "Brasil"
+},
+"ITUB4.SA": {
+"nombre": "Itaú Unibanco (Bolsa de São Paulo)",
+"tipo": "acción",
+"mercados": [
+"latam"
+],
+"noticias": [
+"latam"
+],
+"sector": null,
+"pais": "Brasil"
+},
+"WEGE3.SA": {
+"nombre": "WEG (Bolsa de São Paulo)",
+"tipo": "acción",
+"mercados": [
+"latam"
+],
+"noticias": [
+"latam"
+],
+"sector": null,
+"pais": "Brasil"
+},
+"B3SA3.SA": {
+"nombre": "B3, bolsa de Brasil (São Paulo)",
+"tipo": "acción",
+"mercados": [
+"latam"
+],
+"noticias": [
+"latam"
+],
+"sector": null,
+"pais": "Brasil"
+},
+"BBAS3.SA": {
+"nombre": "Banco do Brasil (São Paulo)",
+"tipo": "acción",
+"mercados": [
+"latam"
+],
+"noticias": [
+"latam"
+],
+"sector": null,
+"pais": "Brasil"
+},
+"^MXX": {
+"nombre": "Índice IPC (México)",
+"tipo": "índice",
+"mercados": [
+"latam"
+],
+"noticias": [
+"latam"
+],
+"sector": null,
+"pais": "México"
+},
+"EWW": {
+"nombre": "ETF de México (EWW)",
+"tipo": "etf",
+"mercados": [
+"latam",
+"etf"
+],
+"noticias": [
+"latam"
+],
+"sector": null,
+"pais": "México"
+},
+"AMX": {
+"nombre": "América Móvil (ADR)",
+"tipo": "acción",
+"mercados": [
+"latam"
+],
+"noticias": [
+"latam"
+],
+"sector": null,
+"pais": "México"
+},
+"FMX": {
+"nombre": "FEMSA (ADR)",
+"tipo": "acción",
+"mercados": [
+"latam"
+],
+"noticias": [
+"latam"
+],
+"sector": null,
+"pais": "México"
+},
+"CX": {
+"nombre": "Cemex (ADR)",
+"tipo": "acción",
+"mercados": [
+"latam"
+],
+"noticias": [
+"latam"
+],
+"sector": null,
+"pais": "México"
+},
+"KOF": {
+"nombre": "Coca-Cola FEMSA (ADR)",
+"tipo": "acción",
+"mercados": [
+"latam"
+],
+"noticias": [
+"latam"
+],
+"sector": null,
+"pais": "México"
+},
+"ASR": {
+"nombre": "Grupo Aeroportuario del Sureste (ADR)",
+"tipo": "acción",
+"mercados": [
+"latam"
+],
+"noticias": [
+"latam"
+],
+"sector": null,
+"pais": "México"
+},
+"PAC": {
+"nombre": "Grupo Aeroportuario del Pacífico (ADR)",
+"tipo": "acción",
+"mercados": [
+"latam"
+],
+"noticias": [
+"latam"
+],
+"sector": null,
+"pais": "México"
+},
+"WALMEX.MX": {
+"nombre": "Walmart de México (Bolsa de México)",
+"tipo": "acción",
+"mercados": [
+"latam"
+],
+"noticias": [
+"latam"
+],
+"sector": null,
+"pais": "México"
+},
+"GFNORTEO.MX": {
+"nombre": "Banorte (Bolsa de México)",
+"tipo": "acción",
+"mercados": [
+"latam"
+],
+"noticias": [
+"latam"
+],
+"sector": null,
+"pais": "México"
+},
+"GMEXICOB.MX": {
+"nombre": "Grupo México (Bolsa de México)",
+"tipo": "acción",
+"mercados": [
+"latam"
+],
+"noticias": [
+"latam"
+],
+"sector": null,
+"pais": "México"
+},
+"ECH": {
+"nombre": "ETF de Chile (ECH)",
+"tipo": "etf",
+"mercados": [
+"latam",
+"etf"
+],
+"noticias": [
+"latam"
+],
+"sector": null,
+"pais": "Chile"
+},
+"SQM": {
+"nombre": "SQM, litio (ADR)",
+"tipo": "acción",
+"mercados": [
+"latam"
+],
+"noticias": [
+"latam"
+],
+"sector": null,
+"pais": "Chile"
+},
+"BCH": {
+"nombre": "Banco de Chile (ADR)",
+"tipo": "acción",
+"mercados": [
+"latam"
+],
+"noticias": [
+"latam"
+],
+"sector": null,
+"pais": "Chile"
+},
+"BSAC": {
+"nombre": "Banco Santander Chile (ADR)",
+"tipo": "acción",
+"mercados": [
+"latam"
+],
+"noticias": [
+"latam"
+],
+"sector": null,
+"pais": "Chile"
+},
+"LTM": {
+"nombre": "LATAM Airlines (ADR)",
+"tipo": "acción",
+"mercados": [
+"latam"
+],
+"noticias": [
+"latam"
+],
+"sector": null,
+"pais": "Chile"
+},
+"CCU": {
+"nombre": "CCU, bebidas (ADR)",
+"tipo": "acción",
+"mercados": [
+"latam"
+],
+"noticias": [
+"latam"
+],
+"sector": null,
+"pais": "Chile"
+},
+"FALABELLA.SN": {
+"nombre": "Falabella (Bolsa de Santiago)",
+"tipo": "acción",
+"mercados": [
+"latam"
+],
+"noticias": [
+"latam"
+],
+"sector": null,
+"pais": "Chile"
+},
+"COPEC.SN": {
+"nombre": "Empresas Copec (Bolsa de Santiago)",
+"tipo": "acción",
+"mercados": [
+"latam"
+],
+"noticias": [
+"latam"
+],
+"sector": null,
+"pais": "Chile"
+},
+"EPU": {
+"nombre": "ETF de Perú (EPU)",
+"tipo": "etf",
+"mercados": [
+"latam",
+"etf"
+],
+"noticias": [
+"latam"
+],
+"sector": null,
+"pais": "Perú"
+},
+"BAP": {
+"nombre": "Credicorp (Perú)",
+"tipo": "acción",
+"mercados": [
+"latam"
+],
+"noticias": [
+"latam"
+],
+"sector": null,
+"pais": "Perú"
+},
+"BVN": {
+"nombre": "Buenaventura, minera (Perú)",
+"tipo": "acción",
+"mercados": [
+"latam"
+],
+"noticias": [
+"latam"
+],
+"sector": null,
+"pais": "Perú"
+},
+"IFS": {
+"nombre": "Intercorp Financial (Perú)",
+"tipo": "acción",
+"mercados": [
+"latam"
+],
+"noticias": [
+"latam"
+],
+"sector": null,
+"pais": "Perú"
+},
+"ARGT": {
+"nombre": "ETF de Argentina (ARGT)",
+"tipo": "etf",
+"mercados": [
+"latam",
+"etf"
+],
+"noticias": [
+"latam"
+],
+"sector": null,
+"pais": "Argentina"
+},
+"GGAL": {
+"nombre": "Grupo Financiero Galicia (ADR)",
+"tipo": "acción",
+"mercados": [
+"latam"
+],
+"noticias": [
+"latam"
+],
+"sector": null,
+"pais": "Argentina"
+},
+"BMA": {
+"nombre": "Banco Macro (ADR)",
+"tipo": "acción",
+"mercados": [
+"latam"
+],
+"noticias": [
+"latam"
+],
+"sector": null,
+"pais": "Argentina"
+},
+"PAM": {
+"nombre": "Pampa Energía (ADR)",
+"tipo": "acción",
+"mercados": [
+"latam"
+],
+"noticias": [
+"latam"
+],
+"sector": null,
+"pais": "Argentina"
+},
+"TEO": {
+"nombre": "Telecom Argentina (ADR)",
+"tipo": "acción",
+"mercados": [
+"latam"
+],
+"noticias": [
+"latam"
+],
+"sector": null,
+"pais": "Argentina"
+},
+"CEPU": {
+"nombre": "Central Puerto (ADR)",
+"tipo": "acción",
+"mercados": [
+"latam"
+],
+"noticias": [
+"latam"
+],
+"sector": null,
+"pais": "Argentina"
+},
+"TGS": {
+"nombre": "Transportadora de Gas del Sur (ADR)",
+"tipo": "acción",
+"mercados": [
+"latam"
+],
+"noticias": [
+"latam"
+],
+"sector": null,
+"pais": "Argentina"
+},
+"BBAR": {
+"nombre": "BBVA Argentina (ADR)",
+"tipo": "acción",
+"mercados": [
+"latam"
+],
+"noticias": [
+"latam"
+],
+"sector": null,
+"pais": "Argentina"
+},
+"SUPV": {
+"nombre": "Grupo Supervielle (ADR)",
+"tipo": "acción",
+"mercados": [
+"latam"
+],
+"noticias": [
+"latam"
+],
+"sector": null,
+"pais": "Argentina"
+},
+"LOMA": {
+"nombre": "Loma Negra, cemento (ADR)",
+"tipo": "acción",
+"mercados": [
+"latam"
+],
+"noticias": [
+"latam"
+],
+"sector": null,
+"pais": "Argentina"
+},
+"GLOB": {
+"nombre": "Globant",
+"tipo": "acción",
+"mercados": [
+"latam"
+],
+"noticias": [
+"latam"
+],
+"sector": null,
+"pais": "Argentina"
+},
+"COP=X": {
+"nombre": "Dólar / peso colombiano (USD/COP)",
+"tipo": "divisa",
+"mercados": [
+"divisas"
+],
+"noticias": [
+"divisas"
+],
+"sector": "Divisas"
+},
+"EURUSD=X": {
+"nombre": "Euro / dólar (EUR/USD)",
+"tipo": "divisa",
+"mercados": [
+"divisas"
+],
+"noticias": [
+"divisas"
+],
+"sector": "Divisas"
+},
+"MXN=X": {
+"nombre": "Dólar / peso mexicano (USD/MXN)",
+"tipo": "divisa",
+"mercados": [
+"divisas"
+],
+"noticias": [
+"divisas"
+],
+"sector": "Divisas"
+},
+"BRL=X": {
+"nombre": "Dólar / real brasileño (USD/BRL)",
+"tipo": "divisa",
+"mercados": [
+"divisas"
+],
+"noticias": [
+"divisas"
+],
+"sector": "Divisas"
+},
+"JPY=X": {
+"nombre": "Dólar / yen japonés (USD/JPY)",
+"tipo": "divisa",
+"mercados": [
+"divisas"
+],
+"noticias": [
+"divisas"
+],
+"sector": "Divisas"
+},
+"GBPUSD=X": {
+"nombre": "Libra / dólar (GBP/USD)",
+"tipo": "divisa",
+"mercados": [
+"divisas"
+],
+"noticias": [
+"divisas"
+],
+"sector": "Divisas"
+},
+"CLP=X": {
+"nombre": "Dólar / peso chileno (USD/CLP)",
+"tipo": "divisa",
+"mercados": [
+"divisas"
+],
+"noticias": [
+"divisas"
+],
+"sector": "Divisas"
+},
+"PEN=X": {
+"nombre": "Dólar / sol peruano (USD/PEN)",
+"tipo": "divisa",
+"mercados": [
+"divisas"
+],
+"noticias": [
+"divisas"
+],
+"sector": "Divisas"
+},
+"ARS=X": {
+"nombre": "Dólar / peso argentino (USD/ARS)",
+"tipo": "divisa",
+"mercados": [
+"divisas"
+],
+"noticias": [
+"divisas"
+],
+"sector": "Divisas"
+},
+"CNY=X": {
+"nombre": "Dólar / yuan chino (USD/CNY)",
+"tipo": "divisa",
+"mercados": [
+"divisas"
+],
+"noticias": [
+"divisas"
+],
+"sector": "Divisas"
+},
+"CAD=X": {
+"nombre": "Dólar / dólar canadiense (USD/CAD)",
+"tipo": "divisa",
+"mercados": [
+"divisas"
+],
+"noticias": [
+"divisas"
+],
+"sector": "Divisas"
+},
+"CHF=X": {
+"nombre": "Dólar / franco suizo (USD/CHF)",
+"tipo": "divisa",
+"mercados": [
+"divisas"
+],
+"noticias": [
+"divisas"
+],
+"sector": "Divisas"
+},
+"AUDUSD=X": {
+"nombre": "Dólar australiano / dólar (AUD/USD)",
+"tipo": "divisa",
+"mercados": [
+"divisas"
+],
+"noticias": [
+"divisas"
+],
+"sector": "Divisas"
+},
+"EURCOP=X": {
+"nombre": "Euro / peso colombiano (EUR/COP)",
+"tipo": "divisa",
+"mercados": [
+"divisas"
+],
+"noticias": [
+"divisas"
+],
+"sector": "Divisas"
+},
+"DX-Y.NYB": {
+"nombre": "Índice del dólar DXY (contra 6 monedas)",
+"tipo": "índice",
+"mercados": [
+"divisas",
+"eeuu"
+],
+"noticias": [
+"divisas"
+],
+"sector": null
+},
+"VOO": {
+"nombre": "Fondo S&P 500 VOO (Vanguard)",
+"tipo": "etf",
+"mercados": [
+"etf",
+"eeuu"
+],
+"noticias": [
+"nasdaq"
+],
+"sector": null
+},
+"DIA": {
+"nombre": "Fondo Dow Jones DIA",
+"tipo": "etf",
+"mercados": [
+"etf",
+"eeuu"
+],
+"noticias": [
+"nasdaq"
+],
+"sector": null
+},
+"IWM": {
+"nombre": "Fondo Russell 2000 IWM",
+"tipo": "etf",
+"mercados": [
+"etf",
+"eeuu"
+],
+"noticias": [
+"nasdaq"
+],
+"sector": null
+},
+"ONEQ": {
+"nombre": "Fondo Nasdaq Composite ONEQ",
+"tipo": "etf",
+"mercados": [
+"etf",
+"eeuu"
+],
+"noticias": [
+"nasdaq"
+],
+"sector": null
+},
+"FEZ": {
+"nombre": "ETF Euro Stoxx 50 (FEZ)",
+"tipo": "etf",
+"mercados": [
+"etf",
+"europa"
+],
+"noticias": [
+"europa"
+],
+"sector": null
+},
+"EWU": {
+"nombre": "ETF del Reino Unido (EWU)",
+"tipo": "etf",
+"mercados": [
+"etf",
+"europa"
+],
+"noticias": [
+"europa"
+],
+"sector": null
+},
+"EWG": {
+"nombre": "ETF de Alemania (EWG)",
+"tipo": "etf",
+"mercados": [
+"etf",
+"europa"
+],
+"noticias": [
+"europa"
+],
+"sector": null
+},
+"EWQ": {
+"nombre": "ETF de Francia (EWQ)",
+"tipo": "etf",
+"mercados": [
+"etf",
+"europa"
+],
+"noticias": [
+"europa"
+],
+"sector": null
+},
+"EWH": {
+"nombre": "ETF de Hong Kong (EWH)",
+"tipo": "etf",
+"mercados": [
+"etf",
+"asia"
+],
+"noticias": [
+"asia"
+],
+"sector": null
+},
+"EWT": {
+"nombre": "ETF de Taiwán (EWT)",
+"tipo": "etf",
+"mercados": [
+"etf",
+"asia"
+],
+"noticias": [
+"asia"
+],
+"sector": null
+},
+"MCHI": {
+"nombre": "ETF de China (MCHI)",
+"tipo": "etf",
+"mercados": [
+"etf",
+"asia"
+],
+"noticias": [
+"asia"
+],
+"sector": null
+}
+},
+"descartados": [
+"0003.HK",
+"0006.HK",
+"0012.HK",
+"0027.HK",
+"0101.HK",
+"0175.HK",
+"0241.HK",
+"0285.HK",
+"0288.HK",
+"0291.HK",
+"0316.HK",
+"0322.HK",
+"0688.HK",
+"0762.HK",
+"0823.HK",
+"0836.HK",
+"0868.HK",
+"0881.HK",
+"0960.HK",
+"0968.HK",
+"1024.HK",
+"1038.HK",
+"1044.HK",
+"1093.HK",
+"1099.HK",
+"1113.HK",
+"1177.HK",
+"1209.HK",
+"1876.HK",
+"1928.HK",
+"1929.HK",
+"1997.HK",
+"2015.HK",
+"2057.HK",
+"2269.HK",
+"2313.HK",
+"2319.HK",
+"2331.HK",
+"2382.HK",
+"2618.HK",
+"2688.HK",
+"6618.HK",
+"6690.HK",
+"6862.HK",
+"9992.HK",
+"AM",
+"CHRD",
+"CNX",
+"CTRA",
+"HES",
+"ICOLTES.CL",
+"KOS",
+"KVUE",
+"MTDR",
+"NGD",
+"NOV",
+"SM",
+"TIA22861-USD",
+"TON11419-USD",
+"VIST",
+"VYLR",
+"^IPSA",
+"^MERV",
+"^SPBLPGPT"
+]
+}

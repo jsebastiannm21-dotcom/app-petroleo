@@ -1,0 +1,109 @@
+Fecha,Tipo,Evento,Activo
+2021-12-02,OPEP,"Aumenta producción: confirma +400 mil barriles/día para enero",petróleo
+2022-01-04,OPEP,"Aumenta producción: +400 mil barriles/día para febrero",petróleo
+2022-02-02,OPEP,"Aumenta producción: +400 mil barriles/día para marzo",petróleo
+2022-02-24,Geopolítico,"Inicio guerra en Ucrania",petróleo;oro;nasdaq
+2022-03-02,OPEP,"Aumenta producción: +400 mil barriles/día para abril",petróleo
+2022-03-16,Fed,"Fed sube tasas 0,25 puntos: primera subida desde 2018",oro;nasdaq
+2022-03-31,OPEP,"Aumenta producción: +432 mil barriles/día para mayo",petróleo
+2022-05-04,Fed,"Fed sube tasas 0,50 puntos",oro;nasdaq
+2022-05-05,OPEP,"Aumenta producción: +432 mil barriles/día para junio",petróleo
+2022-06-02,OPEP,"Aumenta producción: +648 mil barriles/día para julio y agosto",petróleo
+2022-06-15,Fed,"Fed sube tasas 0,75 puntos: la mayor subida desde 1994",oro;nasdaq
+2022-06-19,Gobierno,"Gustavo Petro gana la presidencia de Colombia (segunda vuelta)",ecopetrol
+2022-06-30,OPEP,"Aumenta producción: confirma +648 mil barriles/día para agosto",petróleo
+2022-07-13,Inflación,"Inflación de EE.UU. llega a 9,1%: la más alta en 40 años",oro;nasdaq
+2022-07-27,Fed,"Fed sube tasas 0,75 puntos",oro;nasdaq
+2022-08-03,OPEP,"Aumenta producción: +100 mil barriles/día para septiembre",petróleo
+2022-08-07,Gobierno,"Gustavo Petro asume la presidencia de Colombia",ecopetrol
+2022-09-05,OPEP,"Recorta producción: -100 mil barriles/día para octubre",petróleo
+2022-09-21,Fed,"Fed sube tasas 0,75 puntos",oro;nasdaq
+2022-10-05,OPEP,"Recorta producción: -2 millones de barriles/día desde noviembre",petróleo
+2022-10-26,Tecnológicas,"Meta (Facebook) se desploma cerca de 25% tras sus resultados",nasdaq
+2022-11-02,Fed,"Fed sube tasas 0,75 puntos (cuarta subida seguida de ese tamaño)",oro;nasdaq
+2022-11-04,Dólar,"El dólar en Colombia supera los 5.000 pesos por primera vez",ecopetrol
+2022-11-10,Inflación,"Inflación de EE.UU. menor a lo esperado (7,7%): el Nasdaq sube 7%",oro;nasdaq
+2022-12-04,OPEP,"Mantiene producción sin cambios",petróleo
+2022-12-14,Fed,"Fed sube tasas 0,50 puntos",oro;nasdaq
+2023-01-19,Política petrolera,"En Davos, el gobierno ratifica que no firmará nuevos contratos de exploración",ecopetrol
+2023-02-01,Fed,"Fed sube tasas 0,25 puntos",oro;nasdaq
+2023-03-10,Tasas,"Quiebra Silicon Valley Bank por la subida de tasas; miedo a crisis bancaria",oro;nasdaq
+2023-03-22,Fed,"Fed sube tasas 0,25 puntos pese a la crisis bancaria",oro;nasdaq
+2023-04-02,OPEP,"Recorta producción: recorte voluntario sorpresa de 1,66 millones de barriles/día desde mayo",petróleo
+2023-05-03,Fed,"Fed sube tasas 0,25 puntos",oro;nasdaq
+2023-05-24,Tecnológicas,"Nvidia pronostica ventas récord por la inteligencia artificial: la acción sube 24%",nasdaq
+2023-06-04,OPEP,"Recorta producción: Arabia Saudita recorta 1 millón extra en julio; recortes se extienden a 2024",petróleo
+2023-06-14,Fed,"Fed hace una pausa: mantiene las tasas",oro;nasdaq
+2023-07-03,OPEP,"Recorta producción: Arabia Saudita extiende su recorte a agosto; Rusia recorta exportaciones",petróleo
+2023-07-26,Fed,"Fed sube tasas 0,25 puntos a 5,25%-5,50%: máximo en 22 años",oro;nasdaq
+2023-09-05,OPEP,"Recorta producción: Arabia Saudita y Rusia extienden recortes hasta fin de año",petróleo
+2023-10-07,Geopolítico,"Ataque de Hamás a Israel; comienza la guerra en Gaza",petróleo;oro
+2023-11-30,OPEP,"Recorta producción: nuevos recortes voluntarios de 2,2 millones de barriles/día para el 1er trimestre 2024",petróleo
+2023-12-13,Fed,"Fed mantiene tasas y anticipa recortes para 2024",oro;nasdaq
+2024-02-21,Tecnológicas,"Resultados de Nvidia superan expectativas: la acción sube 16%",nasdaq
+2024-03-03,OPEP,"Mantiene recortes: extiende los 2,2 millones de barriles/día al 2º trimestre",petróleo
+2024-04-13,Irán,"Irán ataca a Israel con drones y misiles por primera vez desde su territorio",petróleo;oro
+2024-05-22,Tecnológicas,"Resultados de Nvidia superan expectativas y anuncia división de acciones 10 a 1",nasdaq
+2024-06-02,OPEP,"Mantiene recortes: los extiende a 2025 y anuncia retiro gradual desde octubre",petróleo
+2024-08-02,Empleo,"Informe de empleo débil en EE.UU. (desempleo 4,3%): miedo a recesión y caída global el 5 de agosto",nasdaq;oro
+2024-09-05,OPEP,"Pospone aumentos: retrasa 2 meses el retiro de recortes",petróleo
+2024-09-18,Fed,"Fed recorta tasas 0,50 puntos: primer recorte desde 2020",oro;nasdaq
+2024-10-01,Irán,"Irán lanza unos 180 misiles contra Israel",petróleo;oro
+2024-11-03,OPEP,"Pospone aumentos: retrasa un mes el aumento de diciembre",petróleo
+2024-11-05,Trump,"Donald Trump gana las elecciones de EE.UU.",petróleo;oro;nasdaq
+2024-11-07,Fed,"Fed recorta tasas 0,25 puntos",oro;nasdaq
+2024-12-05,OPEP,"Pospone aumentos: retrasa aumentos hasta abril 2025 y los reparte en 18 meses",petróleo
+2024-12-18,Fed,"Fed recorta tasas 0,25 puntos pero anticipa menos recortes en 2025",oro;nasdaq
+2025-01-20,Trump,"Trump asume la presidencia y declara emergencia energética para producir más petróleo",petróleo
+2025-01-27,Tecnológicas,"La china DeepSeek presenta una IA barata: Nvidia cae 17% en un día",nasdaq
+2025-03-03,OPEP,"Aumenta producción: confirma +138 mil barriles/día para abril",petróleo
+2025-04-02,Trump,"Trump anuncia aranceles a casi todos los países (Día de la Liberación)",petróleo;oro;nasdaq
+2025-04-03,OPEP,"Aumenta producción: +411 mil barriles/día para mayo (el triple de lo previsto)",petróleo
+2025-04-09,Trump,"Trump pausa 90 días los aranceles: el Nasdaq sube 12% en un día",nasdaq
+2025-05-03,OPEP,"Aumenta producción: +411 mil barriles/día para junio",petróleo
+2025-05-31,OPEP,"Aumenta producción: +411 mil barriles/día para julio",petróleo
+2025-06-13,Irán,"Israel ataca instalaciones nucleares y militares de Irán",petróleo;oro
+2025-06-22,Irán,"EE.UU. bombardea sitios nucleares de Irán",petróleo;oro
+2025-06-24,Irán,"Alto el fuego entre Israel e Irán",petróleo;oro
+2025-07-05,OPEP,"Aumenta producción: +548 mil barriles/día para agosto",petróleo
+2025-08-01,Empleo,"Informe de empleo muy débil y grandes revisiones a la baja; Trump despide a la jefa de estadísticas laborales",nasdaq;oro
+2025-08-03,OPEP,"Aumenta producción: +547 mil barriles/día para septiembre",petróleo
+2025-09-07,OPEP,"Aumenta producción: +137 mil barriles/día para octubre",petróleo
+2025-09-17,Fed,"Fed recorta tasas 0,25 puntos: primer recorte de 2025",oro;nasdaq
+2025-10-05,OPEP,"Aumenta producción: +137 mil barriles/día para noviembre",petróleo
+2025-10-29,Fed,"Fed recorta tasas 0,25 puntos",oro;nasdaq
+2025-11-02,OPEP,"Aumenta producción: +137 mil barriles/día para diciembre y pausa en el 1er trimestre 2026",petróleo
+2025-11-30,OPEP,"Mantiene producción: cuotas de 2026 sin cambios y nuevo mecanismo de capacidad",petróleo
+2025-12-10,Fed,"Fed recorta tasas 0,25 puntos a 3,50%-3,75%",oro;nasdaq
+2026-01-04,OPEP,"Mantiene producción: confirma la pausa de aumentos",petróleo
+2026-01-30,Fed,"Trump nomina a Kevin Warsh para presidir la Fed; el oro cae más de 10% desde su récord",oro;nasdaq
+2026-02-01,OPEP,"Mantiene producción: confirma la pausa de aumentos",petróleo
+2026-02-28,Geopolítico,"Inicio guerra con Irán (ataques de EE.UU. e Israel); cierre del Estrecho de Ormuz",petróleo;oro;nasdaq
+2026-03-01,OPEP,"Aumenta producción: +206 mil barriles/día para abril",petróleo
+2026-03-02,Ormuz,"Irán confirma el cierre del Estrecho de Ormuz a las naciones que considera hostiles",petróleo
+2026-04-05,OPEP,"Aumenta producción: +206 mil barriles/día para mayo",petróleo
+2026-04-07,Irán,"Trump anuncia alto el fuego de dos semanas; Irán acepta reabrir Ormuz",petróleo;oro
+2026-04-07,Ecopetrol,"Ricardo Roa sale con licencia; Juan Carlos Hurtado queda encargado de la presidencia de Ecopetrol",ecopetrol
+2026-05-01,OPEP,"Emiratos Árabes Unidos sale de la OPEP",petróleo
+2026-05-03,OPEP,"Aumenta producción: +188 mil barriles/día para junio",petróleo
+2026-05-22,Fed,"Kevin Warsh asume como presidente de la Fed",oro;nasdaq
+2026-05-31,Gobierno,"Primera vuelta presidencial en Colombia",ecopetrol
+2026-06-07,OPEP,"Aumenta producción: +188 mil barriles/día para julio",petróleo
+2026-06-14,Irán,"EE.UU. e Irán firman acuerdo de alto el fuego en Islamabad; reapertura de Ormuz",petróleo;oro
+2026-06-17,Fed,"Fed mantiene tasas en 3,50%-3,75% en la primera reunión de Warsh",oro;nasdaq
+2026-06-18,Ormuz,"EE.UU. levanta el bloqueo naval y se reanuda el paso de petroleros por Ormuz",petróleo
+2026-06-21,Gobierno,"Abelardo de la Espriella gana la presidencia de Colombia; al día siguiente Ecopetrol cae 8,5%",ecopetrol
+2026-06-22,Dólar,"El dólar cae a unos 3.390 pesos, su nivel más bajo desde 2020, tras la elección",ecopetrol
+2026-07-05,OPEP,"Aumenta producción: +188 mil barriles/día para agosto",petróleo
+2026-07-08,Ormuz,"Colapsa el alto el fuego; Irán vuelve a cerrar Ormuz a todos los barcos extranjeros",petróleo;oro
+2026-07-29,Fed,"Fed mantiene tasas; tres miembros votan por subirlas",oro;nasdaq
+2026-08-02,OPEP,"Aumenta producción: +188 mil barriles/día para septiembre",petróleo
+2026-08-07,Gobierno,"Abelardo de la Espriella asume la presidencia de Colombia",ecopetrol
+2026-08-26,Tecnológicas,"Resultados de Nvidia superan expectativas: la acción sube 8,7% al día siguiente",nasdaq
+2026-09-06,OPEP,"Mantiene producción sin cambios para octubre",petróleo
+2026-09-16,Fed,"Fed sube tasas 0,25 puntos a 3,75%-4,00%",oro;nasdaq
+2026-09-24,Ecopetrol,"Joaquín Gutiérrez es elegido presidente de Ecopetrol; anuncia fracking responsable y exploración en el mar",ecopetrol
+2026-10-04,OPEP,"Mantiene producción sin cambios para noviembre",petróleo
+2026-10-28,Fed,"Fed mantiene tasas en 3,75%-4,00%; dos miembros votan por subirlas",oro;nasdaq
+2026-11-01,OPEP,"Mantiene producción sin cambios para diciembre",petróleo
+2026-11-04,Tecnológicas,"Reportes de que OpenAI recortaría su capacidad de centros de datos: el Nasdaq 100 cae más de 6% el 5 de noviembre",nasdaq

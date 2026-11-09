@@ -1,0 +1,20 @@
+# NUNCA se suben: claves y secretos
+.env
+.streamlit/secrets.toml
+# Tus datos personales y archivos generados (van a Supabase, no a GitHub)
+*.csv
+*.json
+respaldo/
+datos/
+# Se queda solo en tu PC
+vendor/
+# Archivos temporales de Python
+__pycache__/
+*.pyc
+# Sí se suben (son parte del programa, no datos personales)
+!catalogo_ampliado.json
+!fichas.json
+!eventos.csv
+!calendario_eventos.csv
+precios.parquet
+.versiones_nube.json

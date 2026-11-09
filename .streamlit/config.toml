@@ -1,0 +1,66 @@
+# Tema ciberpunk tipo HUD con modo OSCURO (el de siempre) y modo CLARO.
+# Cambiar de modo: menú ⋮ (arriba a la derecha) → Settings → Choose app theme → Light / Dark.
+# Títulos en Orbitron (futurista), texto en Exo 2 (futurista pero fácil de leer en celular), código monoespaciado.
+# Contrastes revisados (WCAG AA): oscuro texto 17,7:1 · gris 7,1:1 · bordes 4,1:1; claro texto 16,3:1 · acentos ≥ 4,5:1.
+[theme]
+showWidgetBorder = true
+showSidebarBorder = true
+baseRadius = "4px"
+buttonRadius = "4px"
+font = "'Exo 2':https://fonts.googleapis.com/css2?family=Exo+2:wght@400;500;600;700&display=swap"
+headingFont = "'Orbitron':https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700&display=swap"
+codeFont = "'Share Tech Mono':https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap"
+baseFontSize = 16
+headingFontSizes = ["28px", "21px", "17px", "15px", "14px", "13px"]
+headingFontWeights = [700, 700, 600, 500, 500, 500]
+linkUnderline = false
+paddingTop = "0.5rem"
+paddingBottom = "6rem"
+
+[theme.dark]
+primaryColor = "#00E5FF"
+backgroundColor = "#05070D"
+secondaryBackgroundColor = "#0B1220"
+textColor = "#D6F6FF"
+linkColor = "#FF2BD6"
+borderColor = "#1E7A91"
+codeBackgroundColor = "#0B1220"
+greenColor = "#00FF9C"
+redColor = "#FF3864"
+yellowColor = "#FFD300"
+orangeColor = "#FF9F1C"
+blueColor = "#00E5FF"
+violetColor = "#FF2BD6"
+grayColor = "#8A9BB3"
+dataframeHeaderBackgroundColor = "#0B1A2A"
+dataframeBorderColor = "#16384A"
+chartCategoricalColors = ["#00E5FF", "#FF2BD6", "#00FF9C", "#FFD300", "#8B5CF6", "#FF9F1C", "#4DD0FF", "#FF3864"]
+
+[theme.dark.sidebar]
+backgroundColor = "#070B14"
+secondaryBackgroundColor = "#0B1220"
+borderColor = "#1E7A91"
+
+[theme.light]
+primaryColor = "#006D8F"
+backgroundColor = "#F3F7FA"
+secondaryBackgroundColor = "#E3ECF3"
+textColor = "#0B1A2A"
+linkColor = "#B0128A"
+borderColor = "#5F7D93"
+codeBackgroundColor = "#E3ECF3"
+greenColor = "#08794C"
+redColor = "#C81E45"
+yellowColor = "#8A6D00"
+orangeColor = "#B04E00"
+blueColor = "#006D8F"
+violetColor = "#7A2FD0"
+grayColor = "#4E6075"
+dataframeHeaderBackgroundColor = "#D7E4EE"
+dataframeBorderColor = "#B5C9D8"
+chartCategoricalColors = ["#006D8F", "#B0128A", "#08794C", "#8A6D00", "#7A2FD0", "#B04E00", "#2B8FBF", "#C81E45"]
+
+[theme.light.sidebar]
+backgroundColor = "#E8F0F6"
+secondaryBackgroundColor = "#D7E4EE"
+borderColor = "#5F7D93"
