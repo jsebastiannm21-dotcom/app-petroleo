@@ -36,9 +36,9 @@ def mover(paso):
     st.session_state["panel_inicio"] = nombres[(i + paso) % len(nombres)]
 
 
-fila = st.container(horizontal=True, vertical_alignment="center")
+st.segmented_control("Mercado", nombres, required=True, key="panel_inicio", label_visibility="collapsed")
+fila = st.container(horizontal=True, vertical_alignment="center")       # Juntos en una fila, también en celular
 fila.button("Anterior", icon=":material/chevron_left:", on_click=mover, args=(-1,), key="panel_atras")
-fila.segmented_control("Mercado", nombres, required=True, key="panel_inicio", label_visibility="collapsed")
 fila.button("Siguiente", icon=":material/chevron_right:", on_click=mover, args=(1,), key="panel_adelante",
             icon_position="right")
 nombre_panel, mercados_panel, simbolos_panel, banco = next(p for p in paneles if p[0] == st.session_state["panel_inicio"])

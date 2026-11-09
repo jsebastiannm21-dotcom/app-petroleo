@@ -58,6 +58,8 @@ paginas = {
                      help="Cursos, eventos, ranking del grupo y panel del profesor."),
     "aprende": st.Page("app_pages/tutorial.py", title="Aprende", icon=":material/school:",
                        help="Cada análisis explicado en sencillo y con un ejemplo."),
+    "legal": st.Page("app_pages/legal.py", title="Términos y privacidad", icon=":material/gavel:",
+                     help="Términos de uso y política de tratamiento de datos (ley colombiana)."),
     "activo": st.Page("app_pages/activo.py", title="Activo", icon=":material/insights:", visibility="hidden",
                       help="Página de un activo: decisión, pronóstico, simulador, calendario y ranking."),
 }
@@ -109,6 +111,7 @@ with st.sidebar:
         st.page_link(paginas["admin"], label="Panel admin", icon=":material/admin_panel_settings:")
         st.page_link(paginas["presentacion"], label="Modo presentación", icon=":material/slideshow:")
     usuarios.botones_ayuda(yo)
+    st.page_link(paginas["legal"], label="Términos y privacidad", icon=":material/gavel:")
     st.caption("Dinero virtual y análisis del pasado. No es una recomendación de inversión.")
 
 # ---------- Barra inferior fija ----------
@@ -154,7 +157,7 @@ usuarios.menu_perfil(yo)
 st.caption(":material/gavel: **Herramienta educativa con dinero ficticio. No es una recomendación de inversión.**",
            text_alignment="right")
 
-clarity = nube.secreto("CLARITY_ID")
+clarity = nube.secreto("CLARITY_ID") or "zavfkzec2r"   # Project ID de Microsoft Clarity (no es secreto: va en la página)
 if clarity and nube.conectado():                            # Microsoft Clarity (gratis): analítica de uso anónima
     st.html(f"""<script>(function(c,l,a,r,i,t,y){{c[a]=c[a]||function(){{(c[a].q=c[a].q||[]).push(arguments)}};
 t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;y=l.getElementsByTagName(r)[0];
@@ -174,7 +177,11 @@ except Exception as _error:                                 # Se anota y se avis
                                 "detalle": traceback.format_exc()[-1500:]})
     gestion.registrar(yo["email"], f"Error en {pagina.title}", f"{type(_error).__name__}: {_error}"[:300])
     gestion.alerta_admin(f"❌ Error en la página {pagina.title}: {type(_error).__name__}: {_error}"[:600])
-    raise
+    st.error("Algo salió mal en esta pantalla. Ya le avisamos al administrador. Intenta de nuevo en un momento o "
+             "usa «Reportar problema» en la barra izquierda.", title="Lo sentimos", icon=":material/error:")
+    if usuarios.rol(yo) == "superadmin":                    # Solo tú ves el detalle técnico
+        with st.expander("Detalle técnico (solo superadmin)"):
+            st.code(traceback.format_exc()[-3000:])
 finally:
     _seg = time.time() - _inicio
     _s = ui.salud()

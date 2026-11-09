@@ -2,6 +2,8 @@
 # Método de costo promedio: si compras varias veces, el precio de compra es el promedio ponderado.
 # Ganancia "en papel" = de lo que todavía tienes; ganancia "realizada" = de lo que ya vendiste.
 
+import functools
+
 import pandas as pd
 
 import activos
@@ -148,7 +150,7 @@ class Cartera:
             estado[op["Activo"]] = [cant, costo, c_cop, c_usd]
         return t, estado
 
-    def posiciones(self, solo_abiertas=True, con_precio=True):
+    def posiciones(self, solo_abiertas=True, con_precio=True, con_sugerencia=True):
         """Una fila por activo: cantidad, precio promedio, ganancia en papel, realizada y sugerencia."""
         filas = []
         t, estado = self._recorrer()
@@ -175,7 +177,8 @@ class Cartera:
                     fila["Valor_COP"] = fila["Valor_USD"] * activos.tasa_usd("COP")
                 fila["Ganancia_papel"] = fila["Valor_actual"] - costo if precio else None
                 fila["Ganancia_%"] = (precio / fila["Precio_compra"] - 1) * 100 if precio else None
-                fila["Sugerencia"], fila["Motivo"] = sugerencia(activo, fila["Ganancia_%"])
+                if con_sugerencia:                        # La sugerencia corre el análisis completo: solo si se necesita
+                    fila["Sugerencia"], fila["Motivo"] = sugerencia(activo, fila["Ganancia_%"])
             filas.append(fila)
         return pd.DataFrame(filas)
 
@@ -211,6 +214,12 @@ def ultimo_cierre(simbolo):
         return None
 
 
+@functools.lru_cache(maxsize=256)
+def _analisis(simbolo, _version):
+    """El análisis de un activo, guardado en memoria hasta que cambien sus precios (_version = fecha del archivo)."""
+    return estrategia.analizar(simbolo)
+
+
 def sugerencia(simbolo, ganancia_pct):
     """'Vender' si tocó el stop loss o el objetivo, o si la probabilidad de subida bajó de 50%."""
     if ganancia_pct is None:
@@ -221,7 +230,7 @@ def sugerencia(simbolo, ganancia_pct):
     if ganancia_pct >= estrategia.OBJETIVO:
         return "Vender", f"Gana {ganancia_pct:+.1f}%: llegó al objetivo de +{estrategia.OBJETIVO}%"
     try:
-        r = estrategia.analizar(simbolo)
+        r = _analisis(simbolo, activos.ruta_precios(simbolo).stat().st_mtime)
     except Exception:
         return "Mantener", "No se pudo analizar el activo"
     if r["suficiente"] and r["prob"] < estrategia.ALERTA_BAJA:

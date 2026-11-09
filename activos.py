@@ -393,7 +393,7 @@ def pais(simbolo):
     if t == "bono":
         return "Estados Unidos"
     if t == "futuro":
-        return "Estados Unidos (bolsas de Chicago y Nueva York)"
+        return "EE.UU. (Chicago y Nueva York)"
     if a.get("pais"):
         return a["pais"]
     suf = _sufijo(simbolo)

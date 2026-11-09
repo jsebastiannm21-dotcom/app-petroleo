@@ -2,6 +2,10 @@
 # Cambiar de modo: menú ⋮ (arriba a la derecha) → Settings → Choose app theme → Light / Dark.
 # Títulos en Orbitron (futurista), texto en Exo 2 (futurista pero fácil de leer en celular), código monoespaciado.
 # Contrastes revisados (WCAG AA): oscuro texto 17,7:1 · gris 7,1:1 · bordes 4,1:1; claro texto 16,3:1 · acentos ≥ 4,5:1.
+[client]
+# Nadie ve detalles técnicos de los errores (ni código): la app muestra un mensaje en español y avisa al admin
+showErrorDetails = "none"
+
 [theme]
 showWidgetBorder = true
 showSidebarBorder = true

@@ -86,8 +86,11 @@ def _registro(email):
         col = st.columns(2)
         genero = col[0].selectbox("Género (opcional)", GENEROS, index=None, placeholder="Opcional")
         edad = col[1].number_input("Edad (opcional)", min_value=0, max_value=110, value=None, step=1, placeholder="Opcional")
-        with st.expander("Leer los términos y la autorización de datos"):
+        with st.expander("Leer los términos de uso y la política de tratamiento de datos"):
+            import legal
             st.markdown(TERMINOS)
+            st.markdown(legal.terminos())
+            st.markdown(legal.privacidad())
         terminos = st.checkbox("Acepto los términos de uso *")
         datos = st.checkbox("Autorizo el tratamiento de mis datos personales (Ley 1581 de 2012) *")
         contacto = st.checkbox("Acepto que me contacten por correo (opcional)")
@@ -128,6 +131,10 @@ def sesion():
         st.button("Entrar con Google", icon=":material/login:", type="primary", on_click=st.login, args=("google",))
         if st.button("Contacto", icon=":material/mail:", type="tertiary"):
             dialogo_mensaje("Contacto", {})
+        with st.expander("Términos de uso y política de tratamiento de datos"):
+            import legal
+            st.markdown(legal.terminos())
+            st.markdown(legal.privacidad())
         st.caption(":material/gavel: Herramienta educativa con dinero ficticio. No es una recomendación de inversión.")
         st.stop()
     email = str(st.user.email).lower()

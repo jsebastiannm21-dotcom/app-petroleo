@@ -561,6 +561,25 @@ Se configura con `ADMIN_TELEGRAM_TOKEN` y `ADMIN_TELEGRAM_CHAT_ID`.
 **Microsoft Clarity (gratis):** mapas de calor, grabaciones de sesión, clics de frustración, tiempo por pantalla,
 horas pico y celular vs. computador. Se activa con `CLARITY_ID` en los secrets y está avisado en los términos.
 
+## Seguridad y calidad (Fase 5)
+- **Roles probados** con cuentas de prueba (estudiante, profesor, inversionista y superadmin):
+  - nadie ve datos de otro, ni Mis activos, ni el panel de admin;
+  - escribiendo la dirección del panel a mano, la app la rechaza.
+- **RLS (seguridad por fila)** en las 4 tablas de Supabase. Para comprobarlo, pega `supabase_seguridad.sql` en
+  Supabase → SQL Editor y toca Run: todas deben decir `true`.
+- **Claves:** revisé todo el historial de GitHub y no hay ninguna clave ni archivo `.env`.
+- **Errores:** nadie ve detalles técnicos ni mensajes en inglés. Sale un mensaje claro en español, y el detalle va al
+  Panel admin → Salud y al Telegram de admin.
+- **Velocidad:** todas las páginas cargan en menos de 2 segundos. Antes, el Simulador tardaba hasta 5,4 s.
+- **Celular:** revisé todas las pantallas en tamaño de celular. La barra de íconos de las gráficas ya no las tapa y el
+  carrusel muestra todos los mercados.
+- **Términos y privacidad:** página propia (barra izquierda) según la Ley 1581 de 2012. Incluye la analítica, el
+  borrado de cuentas y el uso agregado de datos. **Completa tu nombre como responsable** en `legal.py`
+  (`RESPONSABLE`).
+- **eToro:** preparado y **desactivado**. Solo opera en la cuenta demo, y se enciende con `ETORO_ACTIVO=1` y las
+  claves en `.env`.
+- **Guía para profesores:** `GUIA_PROFESORES.md`.
+
 ## Cómo abrir la app
 
 **Doble clic en el ícono «App Petróleo» del escritorio.** Se abre en **http://localhost:8501**. Aparece también

@@ -70,8 +70,32 @@ def usuario():
     return (USUARIO.get() or superadmin()).lower()
 
 
+# ---------- Memoria corta: una misma carga de página pide los mismos datos varias veces ----------
+_MEMORIA, _SEGUNDOS = {}, 3.0
+
+
+def _recordado(clave, leer):
+    """Devuelve lo leído hace menos de 3 segundos (cada clave incluye el correo: nunca se cruzan usuarios)."""
+    import copy
+    import time
+    hora, valor = _MEMORIA.get(clave, (0, None))
+    if time.time() - hora > _SEGUNDOS:
+        valor = leer()
+        _MEMORIA[clave] = (time.time(), valor)
+    return copy.deepcopy(valor)
+
+
+def _olvidar(email):
+    for clave in [k for k in _MEMORIA if k[1] == email]:
+        _MEMORIA.pop(clave, None)
+
+
 # ---------- Operaciones (compras y ventas) ----------
 def leer_operaciones(email, cartera):
+    return _recordado(("ops", email, cartera), lambda: _leer_operaciones(email, cartera))
+
+
+def _leer_operaciones(email, cartera):
     filas = cliente().table("operaciones").select("*").eq("email", email).eq("cartera", cartera).order("id").execute().data
     t = pd.DataFrame(filas)
     return t.drop(columns=["id", "email", "cartera"], errors="ignore")
@@ -83,6 +107,7 @@ def reemplazar_operaciones(email, cartera, tabla):
                        .to_json(orient="records", force_ascii=False))
     for f in filas:
         f.update(email=email, cartera=cartera)
+    _olvidar(email)
     c = cliente().table("operaciones")
     c.delete().eq("email", email).eq("cartera", cartera).execute()
     if filas:
@@ -91,12 +116,16 @@ def reemplazar_operaciones(email, cartera, tabla):
 
 # ---------- Ajustes (configuración del simulador, stops personales, comisiones) ----------
 def leer_ajuste(clave, email=None, defecto=None):
-    filas = cliente().table("ajustes").select("valor").eq("email", email or usuario()).eq("clave", clave).execute().data
+    email = email or usuario()
+    filas = _recordado(("ajuste", email, clave), lambda: cliente().table("ajustes").select("valor").eq("email", email)
+                       .eq("clave", clave).execute().data)
     return filas[0]["valor"] if filas else defecto
 
 
 def guardar_ajuste(clave, valor, email=None):
-    cliente().table("ajustes").upsert({"email": email or usuario(), "clave": clave, "valor": valor}).execute()
+    email = email or usuario()
+    _olvidar(email)
+    cliente().table("ajustes").upsert({"email": email, "clave": clave, "valor": valor}).execute()
 
 
 # ---------- Archivos compartidos y precios ----------

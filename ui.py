@@ -207,7 +207,10 @@ def ficha(simbolo):
         fila.metric("Tipo", activos.tipo_nombre(simbolo), help=activos.que_es(simbolo).capitalize())
         fila.metric("Sector", activos.etiqueta_sector(simbolo))
         fila.metric("País", activos.pais(simbolo))
-        tam, como = fichas.tamano_de(simbolo)
+        if activos.tipo(simbolo) in ("futuro", "divisa", "índice", "bono"):
+            tam, como = "No aplica", "es un contrato, una moneda o una medida del mercado, no una empresa"
+        else:
+            tam, como = fichas.tamano_de(simbolo)
         fila.metric("Tamaño", tam, help=f"{AYUDA_TAMANO} Aquí: {como}.")
         st.markdown(f"**¿Paga dividendos?** {_dividendos_ficha(simbolo, d)}")
         st.caption(f":material/schedule: Horario: {activos.horario(simbolo)} · :material/storefront: Dónde comprar: "
@@ -759,6 +762,10 @@ def estilo(fig, alto, leyenda=True):
                       hoverlabel=dict(bgcolor="#0B1220", bordercolor="#00E5FF", font_family="Share Tech Mono"))
     fig.update_xaxes(showgrid=False, linecolor="rgba(0,229,255,0.35)")
     fig.update_yaxes(gridcolor="rgba(0,229,255,0.10)", zerolinecolor="rgba(0,229,255,0.25)")
+    # Sin la barra de íconos de Plotly (cámara, lupa...): en celular tapaba las gráficas
+    fig.update_layout(modebar=dict(remove=["zoom", "pan", "select", "lasso2d", "zoomIn", "zoomOut", "autoScale",
+                                           "resetScale", "toImage", "toggleSpikelines", "hoverClosestCartesian",
+                                           "hoverCompareCartesian", "resetViews"], bgcolor="rgba(0,0,0,0)"))
     return fig
 
 

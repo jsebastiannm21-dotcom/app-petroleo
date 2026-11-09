@@ -1,4 +1,4 @@
-# etoro.py - Conexión con eToro (PREPARADA, todavía sin claves)
+# etoro.py - Conexión con eToro (PREPARADA y DESACTIVADA: se enciende con ETORO_ACTIVO=1 en .env)
 # Basado en la documentación pública del API de eToro: https://api-portal.etoro.com
 #
 # SEGURIDAD:
@@ -43,9 +43,13 @@ class ClaveFaltante(Exception):
 
 def _credenciales():
     load_dotenv(CARPETA / ".env", override=True)
+    if os.getenv("ETORO_ACTIVO", "").strip() != "1":     # Interruptor: desactivado hasta que tú lo enciendas
+        raise ClaveFaltante("La conexión con eToro está DESACTIVADA. Cuando tengas las claves, ponlas en .env junto "
+                            "con ETORO_ACTIVO=1")
     api, user = os.getenv("ETORO_API_KEY", "").strip(), os.getenv("ETORO_USER_KEY", "").strip()
     if not (api and user):
-        raise ClaveFaltante("Faltan ETORO_API_KEY y ETORO_USER_KEY en el archivo .env")
+        raise ClaveFaltante("Faltan ETORO_API_KEY y ETORO_USER_KEY en el archivo .env. Cuando las tengas, ponlas ahí "
+                            "y vuelve a correr esto.")
     return api, user
 
 
@@ -118,4 +122,4 @@ if __name__ == "__main__":
             print(f"Claves OK. Cuenta DEMO: disponible {c['credito_usd']} USD, "
                   f"{len(c['posiciones'])} posiciones abiertas")
     except ClaveFaltante as error:
-        print(f"{error}. Cuando las tengas, ponlas en .env y vuelve a correr esto.")
+        print(error)

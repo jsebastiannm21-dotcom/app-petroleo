@@ -128,7 +128,7 @@ def efectivo():
 
 def resumen():
     """Disponible, invertido (valor actual) y total, en pesos y en dólares, y la meta del mes."""
-    pos = cartera.posiciones()
+    pos = cartera.posiciones(con_sugerencia=False)       # Para el saldo no hace falta la sugerencia (es lo lento)
     tasa = tasa_a_pesos("USD")
     invertido = float(sum((p["Valor_actual"] or 0) * tasa_a_pesos(p["Moneda"]) for _, p in pos.iterrows()))
     disponible = efectivo()
