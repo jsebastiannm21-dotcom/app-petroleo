@@ -96,8 +96,12 @@ def _registro(email):
 
 def sesion():
     """Pide el login con Google y el registro. Devuelve el usuario (dict) con su rol, o detiene la página."""
-    if not login_configurado() or not nube.conectado():
+    import os
+    if os.getenv("APP_LOCAL") == "1" or not nube.conectado():   # Tu PC (abrir_app.bat) o sin nube: directo
         return {"email": nube.superadmin(), "nombre": "Superadmin (este PC)", "rol": "superadmin", "aprobado": True}
+    if not login_configurado():                     # En la nube SIN login: nadie entra (protege tus datos)
+        st.error("Falta configurar el login con Google en los secrets de la app.", title="App en mantenimiento")
+        st.stop()
     if not st.user.is_logged_in:
         st.title("Análisis de mercados")
         st.markdown("Herramienta educativa: análisis de más de 1.100 activos, predicciones y un simulador con dinero "
