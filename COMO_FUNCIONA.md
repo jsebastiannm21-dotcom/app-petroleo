@@ -406,6 +406,58 @@ Cuando una venta (real o simulada) cierra en pérdida, en Mis activos y en el Si
 
 La app muestra una gráfica con **tus errores más repetidos**. Se guarda en `diario_errores.csv`.
 
+## La app en la nube (gratis)
+- **Enlace:** https://app-petroleo-2jsrncgu76vcg3kdfxjqyc.streamlit.app/ (Streamlit Community Cloud).
+- **Código:** repositorio privado https://github.com/jsebastiannm21-dotcom/app-petroleo
+  - El `.env`, los secrets y tus datos **nunca** se suben: lo impide `.gitignore`.
+- **Datos:** en Supabase.
+  - Compras, ventas, el simulador de cada usuario, ajustes, diario de errores y usuarios van en tablas.
+  - Ranking, noticias y precios van en el almacenamiento privado `datos`.
+  - Las claves están en los "secrets" de Streamlit y de GitHub, no en el código.
+- **Login con Google** (el oficial de Streamlit). La primera vez se piden nombre, institución, tipo de cuenta y,
+  opcionales, género y edad. También la aceptación de términos y de datos (Ley 1581 de 2012), con casilla aparte
+  para «acepto que me contacten».
+- **Roles:**
+
+  | Rol | Qué puede hacer |
+  |---|---|
+  | Superadmin (tú) | Ve todo, incluido Mis activos, el modo automático y los usuarios |
+  | Profesor | Tú lo apruebas en Alertas → Usuarios registrados; mientras tanto usa la app como estudiante |
+  | Estudiante | Análisis y simulador manual |
+  | Inversionista | Todo el análisis y el simulador manual y automático |
+
+  Cada usuario tiene **su propio simulador**. Mis activos, Telegram y los aciertos del automático solo los ves tú.
+- **Menú de perfil** (arriba a la derecha): tus datos, activos, ganancias, pérdidas, desde cuándo operas, última
+  operación y «Cerrar sesión».
+- **En tu PC** la app entra directo como superadmin: `abrir_app.bat` pone `APP_LOCAL=1`. En la nube siempre se pide
+  el login, y sin login configurado la app se bloquea.
+
+### Tareas en la nube (GitHub Actions, con tu PC apagado)
+- Reportes de 8:00, 9:45, 12:00, 3:30 y 8:00 p.m.
+- Vigilancia **cada 30 minutos** de 7:15 a.m. a 9:45 p.m. Cada 15 minutos se pasaría de los 2.000 minutos gratis
+  al mes.
+- Resumen de fin de semana (sábado y domingo, 4:00 p.m.) y backtest de los domingos (6:00 p.m.).
+- Una visita a la app cada 4 horas para que no se duerma.
+
+Se ven en GitHub → pestaña **Actions**, y desde ahí se puede correr cualquiera a mano (**Run workflow**). GitHub a
+veces las atrasa unos minutos. Los precios completos se suben 2 veces al día (mañana y cierre), para no pasar el
+límite gratis de descargas de Supabase.
+
+### En tu PC (Programador de tareas)
+Solo dos tareas, que guardan sus resultados en Supabase. Si el PC está apagado, corren apenas lo prendas.
+- **Claude en la nube:** 7:30 a.m.
+- **Kronos en la nube:** 8:20 a.m.
+
+### Cómo actualizar la app
+1. Pídele el cambio a Claude en esta carpeta (o edita los archivos).
+2. Claude lo prueba y lo sube a GitHub. Si lo haces tú, en la carpeta de la app:
+   `git add -A` → `git commit -m "qué cambiaste"` → `git push`.
+3. **Streamlit actualiza la app sola** en 2 a 5 minutos. Si no, en la app: **⋮ → Reboot app**.
+4. Tus datos no se tocan: viven en Supabase, no en el código.
+
+- **Si cambias una clave:** ponla en `.env` y en los Secrets de Streamlit, y doble clic en `poner_claves_github.bat`.
+- **Para actualizar la lista de activos:** `python actualizar_listas.py` y luego súbelo a GitHub.
+
 ## Cómo abrir la app
 
 **Doble clic en el ícono «App Petróleo» del escritorio.** Se abre en **http://localhost:8501**. Aparece también
