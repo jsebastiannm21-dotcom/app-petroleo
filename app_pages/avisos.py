@@ -115,18 +115,19 @@ if admin:
                                     "Mantener_%": st.column_config.NumberColumn("Si mantenía", format="%+.2f%%")})
 
 # ---------- Horarios ----------
-st.subheader("Horarios de Telegram (días hábiles, hora de Bogotá)")
-st.table(pd.DataFrame([
-    ("7:30 a.m.", "Claude analiza los activos con COMPRAR y los tuyos (no manda mensaje)."),
-    ("8:00 a.m.", "Reporte del día: top 5, sugerencia por mercado y dividendos próximos."),
-    ("9:45 a.m.", "Qué comprar y qué vender hoy, con la orden lista para Trii si es COMPRAR CONFIRMADO."),
-    ("12:00 m.", "Revisión: ¿algo tocó el stop loss o el objetivo?"),
-    ("3:30 p.m.", "Última llamada antes del cierre."),
-    ("8:00 p.m.", "Resumen del día, aciertos y noticias de la noche."),
-    ("Cada 15 min (7:00 a.m. a 10:00 p.m.)", "Aviso al momento si una posición real o simulada toca el stop o el "
-                                             "objetivo, o si sale una noticia fuerte (OPEP, Fed, Trump, guerra, caída fuerte)."),
-], columns=["Hora", "Qué llega"]).set_index("Hora"))
-st.caption("Para activarlos, escribe en Claude Code: ! powershell -ExecutionPolicy Bypass -File programar_revisiones.ps1")
+if admin:                                  # Los horarios de Telegram solo le sirven al superadmin
+    st.subheader("Horarios de Telegram (días hábiles, hora de Bogotá)")
+    st.table(pd.DataFrame([
+        ("7:30 a.m.", "Claude analiza los activos con COMPRAR y los tuyos (no manda mensaje)."),
+        ("8:00 a.m.", "Reporte del día: top 5, sugerencia por mercado y dividendos próximos."),
+        ("9:45 a.m.", "Qué comprar y qué vender hoy, con la orden lista para Trii si es COMPRAR CONFIRMADO."),
+        ("12:00 m.", "Revisión: ¿algo tocó el stop loss o el objetivo?"),
+        ("3:30 p.m.", "Última llamada antes del cierre."),
+        ("8:00 p.m.", "Resumen del día, aciertos y noticias de la noche."),
+        ("Cada 15 min (7:00 a.m. a 10:00 p.m.)", "Aviso al momento si una posición real o simulada toca el stop o el "
+                                                 "objetivo, o si sale una noticia fuerte (OPEP, Fed, Trump, guerra, caída fuerte)."),
+    ], columns=["Hora", "Qué llega"]).set_index("Hora"))
+    st.caption("Para activarlos, escribe en Claude Code: ! powershell -ExecutionPolicy Bypass -File programar_revisiones.ps1")
 
 # ---------- Qué significa cada alerta ----------
 st.subheader("Qué significa cada alerta")

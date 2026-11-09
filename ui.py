@@ -342,6 +342,17 @@ def termino(texto, clave=None):
 
 @st.dialog("¿Por qué esta decisión?", width="large")
 def explicar_decision(r):
+    pasos_decision(r)
+
+
+def explicacion_visible(r):
+    """La explicación paso a paso, siempre visible (para estudiantes)."""
+    with st.container(border=True):
+        st.markdown("#### :material/school: ¿Por qué esta decisión? Paso a paso")
+        pasos_decision(r)
+
+
+def pasos_decision(r):
     """Explicación paso a paso de la decisión, para estudiantes."""
     decision, color, dudas = unificada(r)
     h = r["hoy"]
@@ -952,9 +963,18 @@ def _elegir_activo(cartera, venta, clave):
         s = st.selectbox("Activo que tienes", list(tengo), key=f"{clave}_act_v",
                          format_func=lambda x: f"{activos.etiqueta(x)} · tienes {tengo[x]:g}")
         return s, tengo[s]
-    nombres = {v: k for k, v in activos.NOMBRE_MERCADO.items()}
+    import nube
+    ev = nube.EVENTO.get() if clave == "s" else None
+    abiertos = None
+    if ev:
+        import cursos
+        abiertos = set(cursos.mercados_hoy(ev))
+        st.caption(":material/lock_open: Mercados abiertos esta semana en el evento: " +
+                   ", ".join(activos.NOMBRE_MERCADO.get(m, m) for m in sorted(abiertos)))
+    nombres = {v: k for k, v in activos.NOMBRE_MERCADO.items() if abiertos is None or k in abiertos}
     elegidos = st.pills("Filtrar por mercado (vacío = todos)", list(nombres), selection_mode="multi", key=f"{clave}_merc")
-    opciones = [s for s in activos.ACTIVOS if not elegidos or set(activos.mercados(s)) & {nombres[m] for m in elegidos}]
+    opciones = [s for s in activos.ACTIVOS if (not elegidos or set(activos.mercados(s)) & {nombres[m] for m in elegidos})
+                and (abiertos is None or set(activos.mercados(s)) & abiertos)]
     s = st.selectbox("Activo", opciones, format_func=activos.etiqueta, accept_new_options=True, index=None,
                      placeholder="Elige o escribe un símbolo", key=f"{clave}_act_c")
     return (activos.limpiar(s) if s else None), None
@@ -1106,17 +1126,44 @@ def confirmar_operacion(sim, tipo, activo, monto_cop=None, cantidad=None):
                    icon=":material/warning:")
     if not abierto:
         st.caption(":material/schedule: El mercado está cerrado: se usa el precio del último cierre.")
+    import cursos
+    ev = sim.evento()
+    obligatoria = bool(ev and ev.get("bitacora_obligatoria"))
+    st.markdown("**Bitácora:** ¿por qué " + ("compras" if tipo == "Compra" else "vendes") + "?"
+                + (" *(obligatoria en este evento)*" if obligatoria else " *(opcional)*"))
+    razon = st.pills("Razón", cursos.RAZONES, key="bitacora_razon", label_visibility="collapsed")
+    frase = st.text_input("Una frase (opcional)", key="bitacora_frase", max_chars=200,
+                          placeholder="Ej.: el petróleo subió por la OPEP")
+    try:                                               # ¿Siguió la sugerencia de la app?
+        r = analisis(activo)
+        if tipo == "Compra":
+            siguio = r["decision"] == "COMPRAR"
+        else:
+            import cartera as motor
+            pos = sim.cartera.posiciones()
+            g = pos.loc[pos["Activo"] == activo, "Ganancia_%"]
+            siguio = motor.sugerencia(activo, float(g.iloc[0]) if len(g) and pd.notna(g.iloc[0]) else None)[0] == "Vender"
+        st.caption(f":material/insights: La app {'sugería' if siguio else 'no sugería'} esta "
+                   f"{'compra' if tipo == 'Compra' else 'venta'} hoy.")
+    except Exception:
+        siguio = None
     st.markdown("**¿Confirmas?**")
     fila = st.container(horizontal=True)
     if fila.button("Sí, confirmo", type="primary", icon=":material/check:"):
+        nota = cursos.nota_bitacora(razon, frase, siguio) if (razon or frase or siguio is not None) else ""
+        if obligatoria and not razon:
+            st.error("En este evento la bitácora es obligatoria: elige una razón.")
+            return
         if tipo == "Compra":
-            _, error = sim.comprar(activo, monto_cop=monto_cop)
+            _, error = sim.comprar(activo, monto_cop=monto_cop, nota=nota)
         else:
-            _, error = sim.vender(activo, cantidad=cantidad)
+            _, error = sim.vender(activo, cantidad=cantidad, nota=nota)
         if error:
             st.error(error)
         else:
             st.session_state["operacion_hecha"] = f"{tipo} simulada hecha: {activo}"
+            for k in ("bitacora_razon", "bitacora_frase"):   # La próxima bitácora empieza en blanco
+                st.session_state.pop(k, None)
             st.rerun()
     if fila.button("Cancelar"):
         st.rerun()
@@ -1205,6 +1252,13 @@ def compra_rapida(simbolo):
         cab.markdown(f"#### :material/bolt: Comprar o vender {simbolo} en el simulador")
         cab.badge("SIMULACIÓN · mismo saldo e historial del Simulador", icon=":material/science:", color="violet")
         tengo = simulador.cartera.tengo(simbolo)
+        ev = simulador.evento()
+        if ev:
+            import cursos
+            st.caption(f":material/event: Estás usando el simulador del evento **{ev['nombre']}**.")
+            if not set(activos.mercados(simbolo)) & set(cursos.mercados_hoy(ev)) and tengo <= 0:
+                st.caption(":material/lock: Este activo no está abierto esta semana en tu evento.")
+                return
         tipo = st.segmented_control("Operación", ["Compra", "Venta"] if tengo > 0 else ["Compra"], default="Compra",
                                     required=True, key=f"rapida_tipo_{simbolo}")
         operar_simulador(simulador, f"rapida_{simbolo}", simbolo, tengo, tipo)

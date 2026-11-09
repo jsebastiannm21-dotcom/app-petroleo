@@ -98,6 +98,10 @@ def sesion():
     """Pide el login con Google y el registro. Devuelve el usuario (dict) con su rol, o detiene la página."""
     import os
     if os.getenv("APP_LOCAL") == "1" or not nube.conectado():   # Tu PC (abrir_app.bat) o sin nube: directo
+        como = (os.getenv("APP_COMO") or "").strip().lower()       # Solo en tu PC: probar como otro usuario
+        if como and nube.conectado() and obtener(como):
+            nube.USUARIO.set(como)
+            return obtener(como)
         return {"email": nube.superadmin(), "nombre": "Superadmin (este PC)", "rol": "superadmin", "aprobado": True}
     if not login_configurado():                     # En la nube SIN login: nadie entra (protege tus datos)
         st.error("Falta configurar el login con Google en los secrets de la app.", title="App en mantenimiento")
@@ -164,6 +168,14 @@ def panel_admin():
         return
     st.dataframe(t[["nombre", "email", "institucion", "rol", "aprobado", "genero", "edad", "acepta_contacto", "creado"]],
                  hide_index=True, alt="Usuarios registrados")
+    import cursos
+    for p in [x for x in cursos.pedidos_conservar() if x["estado"] == "pendiente"]:
+        fila = st.container(horizontal=True, vertical_alignment="center")
+        fila.markdown(f"**{p['email']}** pide conservar su cuenta ({p['fecha']}): «{p['motivo']}». "
+                      f"{'Acepta' if p['contacto'] else 'No acepta'} que lo contacten.")
+        if fila.button("Aprobar", key=f"conservar_{p['email']}", type="primary"):
+            cursos.aprobar_conservar(p["email"])
+            st.rerun()
     pendientes = t[(t["rol"] == "profesor") & (~t["aprobado"])]
     for _, p in pendientes.iterrows():
         fila = st.container(horizontal=True, vertical_alignment="center")

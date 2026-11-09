@@ -458,6 +458,69 @@ Solo dos tareas, que guardan sus resultados en Supabase. Si el PC está apagado,
 - **Si cambias una clave:** ponla en `.env` y en los Secrets de Streamlit, y doble clic en `poner_claves_github.bat`.
 - **Para actualizar la lista de activos:** `python actualizar_listas.py` y luego súbelo a GitHub.
 
+## Clase: profesores, cursos y eventos (Fase 3)
+Todo está en la página **Clase** (barra de abajo). Cada persona ve una parte distinta.
+
+**Profesor**
+- **Cómo se llega a profesor:** cualquiera puede pedirlo, en el registro o con «Quiero ser profesor». Tú lo
+  apruebas en Alertas → Usuarios registrados.
+- **Cursos:** universidad, materia, grupo (opcional), jornada, días, horas y semestre. El nombre se arma solo:
+  «Finanzas Internacionales · Grupo A · Mañana · 2026-2».
+- **Monitores:** el profesor agrega el correo de cada monitor. Ven el panel y las notas de ese curso, pero no
+  cambian reglas.
+- **Eventos:** pueden ser de un curso o globales (todos sus cursos). Cada uno tiene:
+  - clave de acceso, fechas, monto inicial fijo y mercados permitidos;
+  - **plan por semanas** (qué mercados se abren cada semana) y **retos semanales**;
+  - un límite opcional por activo (por ejemplo, máximo 30% del saldo);
+  - bitácora obligatoria u opcional.
+
+  Se puede **duplicar como plantilla**.
+- **Panel del grupo:**
+  - quién operó hoy y quién no;
+  - promedios del grupo;
+  - ranking por ganancia y por control de riesgo;
+  - ficha de cada estudiante: operaciones, bitácora, riesgo y si siguió la sugerencia;
+  - «siguieron la app vs. por su cuenta»;
+  - varios cursos por separado.
+- **Rúbrica y nota:**
+  - el profesor pone rangos de rendimiento (por ejemplo, 15% = 5,0) y pesos para rendimiento, riesgo y bitácora;
+  - si alguien pierde toda la plata, la parte de rendimiento queda en la nota mínima;
+  - **control de riesgo (0 a 100):** resta 4 puntos por cada 1% de la peor pérdida en una operación, y 1 punto por
+    cada 1% que el activo más grande pase del 40% del portafolio.
+- **Excel descargable:** con filtros por universidad, curso y jornada, y filtros dentro del Excel. Trae dos
+  hojas: Estudiantes y Operaciones con bitácora.
+- **Anuncios:** los automáticos salen del calendario (por ejemplo, «Mañana: inflación de EE. UU.») y se pueden
+  prender o apagar. También hay anuncios manuales.
+
+**Estudiante**
+- Entra con la **clave del evento** (puede usar un apodo) y queda en su curso.
+- Cada evento tiene **su propio simulador**: se elige en la barra izquierda, en «Simulador que estás usando».
+  - Monto fijo, sin reiniciar y solo manual.
+  - Solo puede usar los mercados abiertos de la semana y respetar el límite por activo. La app lo revisa también
+    por dentro, no solo en pantalla.
+- **Bitácora rápida** al comprar o vender: Seguí la sugerencia, Noticia, Tendencia o Intuición, más una frase
+  opcional. La app anota si siguió o no la sugerencia.
+- Además tiene:
+  - tutorial inicial;
+  - su progreso y su puesto (por ganancia y por riesgo);
+  - resumen semanal;
+  - «hoy no has operado»;
+  - alertas de stop y objetivo;
+  - insignias: primera operación, mejor racha y mejor control de riesgo;
+  - en la página de cada activo, la **explicación paso a paso siempre visible**.
+
+**Fin del evento**
+- El profesor tiene **30 días** para descargar su Excel.
+- El estudiante ve que su cuenta se borra en 30 días, salvo que entre a otro evento o toque «Quiero conservar mi
+  cuenta» (dice por qué y si acepta que lo contacten). Tú lo apruebas en Alertas → Usuarios registrados.
+- Cada mañana la nube borra lo vencido y deja **solo estadísticas anónimas**, sin nombre ni correo.
+
+**Aviso legal** visible en todas las pantallas: herramienta educativa, dinero ficticio, no es recomendación de
+inversión.
+
+**Para probar en tu PC como otro usuario:** antes de abrir la app, `set APP_COMO=correo@...`. Solo funciona en tu
+PC, con `APP_LOCAL=1`.
+
 ## Cómo abrir la app
 
 **Doble clic en el ícono «App Petróleo» del escritorio.** Se abre en **http://localhost:8501**. Aparece también

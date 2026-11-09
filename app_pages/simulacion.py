@@ -1,5 +1,8 @@
 # Simulador: juego con plata virtual (una cuenta en pesos), automático o manual
 
+from datetime import datetime
+
+import pandas as pd
 import streamlit as st
 
 import activos
@@ -23,9 +26,30 @@ cab = st.container(horizontal=True, vertical_alignment="center")
 cab.title("Simulador")
 cab.badge("SIMULACIÓN · plata virtual", icon=":material/science:", color="violet")
 
-if not ui.puede("automatico") and simulador.modo() == "automatico":
+ev = simulador.evento()
+if ev:
+    import cursos
+    with st.container(border=True):
+        st.markdown(f"#### :material/event: Evento: {ev['nombre']}")
+        st.caption(f"Semana {cursos.semana_actual(ev)} de {cursos.semanas(ev)} · monto inicial fijo "
+                   f"{ui.pesos(float(ev['monto']))} COP · solo modo manual · no se puede reiniciar")
+        st.markdown("**Mercados abiertos esta semana:** " + ", ".join(
+            activos.NOMBRE_MERCADO.get(m, m) for m in cursos.mercados_hoy(ev))
+            + (f" · **Límite:** máximo {ev['limite_pct']:g}% del saldo por activo" if ev.get("limite_pct") else ""))
+        if cursos.reto_de_la_semana(ev):
+            st.markdown(f":material/flag: **Reto de la semana:** {cursos.reto_de_la_semana(ev)}")
+        for _, texto in cursos.anuncios(ev)[:3]:
+            st.markdown(texto)
+    hoy_ops = simulador.cartera.leer()
+    if cursos.estado(ev) == "activo" and datetime.now().weekday() < 5 and not (
+            len(hoy_ops) and (pd.to_datetime(hoy_ops["Fecha"]).dt.date == datetime.now().date()).any()):
+        st.warning("Hoy no has operado en este evento.", icon=":material/notifications_active:")
+    pos_ev = simulador.cartera.posiciones()
+    for _, p_ in (pos_ev[pos_ev["Sugerencia"] == "Vender"].iterrows() if len(pos_ev) else []):
+        st.warning(f"{p_['Activo']}: {p_['Motivo']}", icon=":material/warning:")
+if not ui.puede("automatico") and simulador.modo() == "automatico" and not ev:
     simulador.cambiar_modo("manual")
-modos = ["automatico", "manual"] if ui.puede("automatico") else ["manual"]
+modos = ["automatico", "manual"] if ui.puede("automatico") and not ev else ["manual"]
 if not ui.puede("automatico"):
     st.caption(":material/info: Con tu tipo de cuenta el simulador es manual. El modo automático es para "
                "inversionistas.")
@@ -36,7 +60,7 @@ modo = st.segmented_control(
     help="**Automático:** el simulador compra solo cuando la app dice COMPRAR y vende solo al tocar el stop loss, el "
          "objetivo o el plazo. Te avisa por Telegram cada operación con su razón y un resumen cada noche. "
          "**Manual:** tú decides cada compra y venta; la app solo sugiere.")
-if modo != simulador.modo():
+if modo != simulador.modo() and not ev:
     simulador.cambiar_modo(modo)
     st.toast(f"Modo {modo}")
 
@@ -51,32 +75,34 @@ with st.container(border=True):
                 f"(+{simulador.config()['meta_%']}%)")
     st.progress(s["progreso_meta"], text=f"{s['progreso_meta']:.0%} de la meta · faltan {s['dias_mes']} días del mes")
 
-with st.expander("Comisiones de Trii", icon=":material/payments:"):
-    import comisiones
-    c = comisiones.config()
-    st.caption("Se descuentan en cada compra y venta del simulador. Cámbialas si Trii cambia sus tarifas.")
-    col = st.columns(3)
-    fija = col[0].number_input("Comisión fija (COP, IVA incluido)", min_value=0.0, value=float(c["fija_cop"]), step=125.0)
-    limite = col[1].number_input("Hasta este monto por operación (COP)", min_value=0.0, value=float(c["limite_cop"]),
-                                 step=500_000.0, format="%.0f")
-    pct = col[2].number_input("Por encima: % del monto (+ IVA)", min_value=0.0, value=float(c["porcentaje"]), step=0.05)
-    col = st.columns(3)
-    iva = col[0].number_input("IVA (%)", min_value=0.0, value=float(c["iva"]), step=1.0)
-    spread = col[1].number_input("Spread cambiario para activos en US$ (%)", min_value=0.0,
-                                 value=float(c["spread_cambiario"]), step=0.1,
-                                 help="Diferencia entre el dólar al que Trii te cambia y el dólar real, en cada operación.")
-    if col[2].button("Guardar comisiones", icon=":material/save:"):
-        comisiones.guardar(fija_cop=fija, limite_cop=limite, porcentaje=pct, iva=iva, spread_cambiario=spread)
-        st.toast("Comisiones guardadas")
+if ui.puede("admin") and not ev:          # Las tarifas las cambia solo el superadmin
+    with st.expander("Comisiones de Trii", icon=":material/payments:"):
+        import comisiones
+        c = comisiones.config()
+        st.caption("Se descuentan en cada compra y venta del simulador. Cámbialas si Trii cambia sus tarifas.")
+        col = st.columns(3)
+        fija = col[0].number_input("Comisión fija (COP, IVA incluido)", min_value=0.0, value=float(c["fija_cop"]), step=125.0)
+        limite = col[1].number_input("Hasta este monto por operación (COP)", min_value=0.0, value=float(c["limite_cop"]),
+                                     step=500_000.0, format="%.0f")
+        pct = col[2].number_input("Por encima: % del monto (+ IVA)", min_value=0.0, value=float(c["porcentaje"]), step=0.05)
+        col = st.columns(3)
+        iva = col[0].number_input("IVA (%)", min_value=0.0, value=float(c["iva"]), step=1.0)
+        spread = col[1].number_input("Spread cambiario para activos en US$ (%)", min_value=0.0,
+                                     value=float(c["spread_cambiario"]), step=0.1,
+                                     help="Diferencia entre el dólar al que Trii te cambia y el dólar real, en cada operación.")
+        if col[2].button("Guardar comisiones", icon=":material/save:"):
+            comisiones.guardar(fija_cop=fija, limite_cop=limite, porcentaje=pct, iva=iva, spread_cambiario=spread)
+            st.toast("Comisiones guardadas")
 
-with st.expander("Saldo inicial y reinicio"):
-    controles = st.container(horizontal=True, vertical_alignment="bottom")
-    nuevo = controles.number_input("Saldo inicial (pesos)", min_value=1_000.0, value=float(s["inicial"]),
-                                   step=50_000.0, format="%.0f")
-    if controles.button("Cambiar saldo inicial", icon=":material/edit:"):
-        confirmar_reinicio(nuevo)
-    if controles.button("Reiniciar simulador", icon=":material/restart_alt:"):
-        confirmar_reinicio(s["inicial"])
+if not ev:                                   # En un evento no se cambia el monto ni se reinicia
+    with st.expander("Saldo inicial y reinicio"):
+        controles = st.container(horizontal=True, vertical_alignment="bottom")
+        nuevo = controles.number_input("Saldo inicial (pesos)", min_value=1_000.0, value=float(s["inicial"]),
+                                       step=50_000.0, format="%.0f")
+        if controles.button("Cambiar saldo inicial", icon=":material/edit:"):
+            confirmar_reinicio(nuevo)
+        if controles.button("Reiniciar simulador", icon=":material/restart_alt:"):
+            confirmar_reinicio(s["inicial"])
 
 if modo == "automatico":
     if st.button("Correr la revisión automática ahora", icon=":material/play_arrow:",

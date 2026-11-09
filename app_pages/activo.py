@@ -37,7 +37,9 @@ if st.button(f"Ver noticias de {activos.nombre(simbolo)}", type="primary", icon=
 
 ui.ficha(simbolo)
 ui.decision_grande(r)
-if st.button("¿Por qué esta decisión? Explicación paso a paso", icon=":material/school:", key="porque_activo"):
+if simulador.evento() or __import__("usuarios").rol(ui.yo()) == "estudiante":
+    ui.explicacion_visible(r)                               # Para estudiantes, siempre visible
+elif st.button("¿Por qué esta decisión? Explicación paso a paso", icon=":material/school:", key="porque_activo"):
     ui.explicar_decision(r)
 if activos.tipo(simbolo) not in ("índice", "bono", "divisa"):
     ui.stop_personal(simbolo)

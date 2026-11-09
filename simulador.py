@@ -27,12 +27,21 @@ _carteras = {}
 
 
 def _cartera_de(email):
-    if email not in _carteras:
-        propio = email == nube.superadmin()            # El simulador de siempre es el del superadmin
-        archivo = ARCHIVO if propio else activos.CARPETA / f"simulador_{activos._slug(email)}.csv"
-        _carteras[email] = Cartera(archivo, extra=["Tasa_COP", "Costo_COP", "Origen", "Precio_COP", "Precio_USD"],
-                                   nube=(email, "sim"))
-    return _carteras[email]
+    """El simulador personal del usuario o, si eligió un evento, su simulador de ese evento (uno por evento)."""
+    ev = nube.EVENTO.get()
+    clave = (email, ev["id"] if ev else None)
+    if clave not in _carteras:
+        propio = email == nube.superadmin() and not ev  # El simulador de siempre es el personal del superadmin
+        archivo = ARCHIVO if propio else activos.CARPETA / (
+            f"simulador_{activos._slug(email)}" + (f"_ev_{ev['id']}" if ev else "") + ".csv")
+        _carteras[clave] = Cartera(archivo, extra=["Tasa_COP", "Costo_COP", "Origen", "Precio_COP", "Precio_USD"],
+                                   nube=(email, f"ev:{ev['id']}" if ev else "sim"))
+    return _carteras[clave]
+
+
+def evento():
+    """El evento cuyo simulador se está usando (dict) o None."""
+    return nube.EVENTO.get()
 
 
 class _CarteraDelUsuario:
@@ -51,12 +60,17 @@ def pesos(x):
 # ---------- Configuración ----------
 def config():
     base = {"saldo_inicial": 100_000.0, "modo": "manual", "meta_%": 15}
+    ev = evento()
+    if ev:                                             # En un evento: monto fijo del profesor y solo modo manual
+        return {**base, "saldo_inicial": float(ev["monto"]), "inicio": ev["inicio"]}
     if nube.conectado():
         return {**base, **(nube.leer_ajuste("simulador_config", defecto={}) or {})}
     return {**base, **(json.loads(CONFIG.read_text()) if CONFIG.exists() else {})}
 
 
 def _guardar_config(**cambios):
+    if evento():
+        raise ValueError("En un evento no se cambia el monto ni el modo: los fija el profesor.")
     nuevo = {**config(), **cambios}
     if nube.conectado():
         nube.guardar_ajuste("simulador_config", nuevo)
@@ -78,6 +92,8 @@ def cambiar_modo(nuevo):
 
 def reiniciar(nuevo_saldo=None):
     """Borra todas las operaciones. Si se da un monto, ese es el nuevo saldo inicial."""
+    if evento():
+        raise ValueError("En un evento no se puede reiniciar el simulador.")
     monto = float(nuevo_saldo) if nuevo_saldo is not None else saldo_inicial()
     if monto <= 0:
         raise ValueError("El saldo inicial debe ser mayor que cero.")
@@ -144,6 +160,17 @@ def comprar(simbolo, monto_cop=None, cantidad=None, origen="manual", nota=""):
         costo = comisiones.costo(precio * cantidad * tasa, moneda)["total"]
     if precio * cantidad * tasa + costo > efectivo() + 1e-6:
         return None, f"Saldo insuficiente: tienes {pesos(efectivo())} disponibles."
+    ev = evento()
+    if ev:                                             # Reglas del evento, revisadas también aquí (no solo en la pantalla)
+        import cursos
+        if ev.get("bitacora_obligatoria") and not cursos.leer_bitacora(nota).get("razon"):
+            return None, "En este evento la bitácora es obligatoria: elige la razón de tu compra."
+        pos = cartera.posiciones()
+        fila = pos[pos["Activo"] == simbolo] if len(pos) else pos
+        ya = float(fila["Valor_actual"].iloc[0]) * tasa if len(fila) and pd.notna(fila["Valor_actual"].iloc[0]) else 0.0
+        error = cursos.regla_de_compra(ev, simbolo, precio * cantidad * tasa + costo, resumen()["total"], ya)
+        if error:
+            return None, error
     nota = nota or ("" if abierto else "Mercado cerrado: precio del último cierre")
     error = cartera.registrar(simbolo, "COMPRA", precio, cantidad, datetime.now(), nota, moneda,
                               Tasa_COP=tasa, Costo_COP=round(costo, 2), Origen=origen)
@@ -155,6 +182,11 @@ def vender(simbolo, cantidad=None, origen="manual", nota=""):
     """Vende al precio real del momento (todo si no se da cantidad). Devuelve (fila, error)."""
     simbolo = activos.limpiar(simbolo)
     cantidad = cantidad if cantidad is not None else cartera.tengo(simbolo)
+    ev = evento()
+    if ev and ev.get("bitacora_obligatoria"):
+        import cursos
+        if not cursos.leer_bitacora(nota).get("razon"):
+            return None, "En este evento la bitácora es obligatoria: elige la razón de tu venta."
     precio, moneda, abierto = activos.precio_ahora(simbolo)
     tasa = tasa_a_pesos(moneda)
     costo = comisiones.costo(precio * cantidad * tasa, moneda)["total"]

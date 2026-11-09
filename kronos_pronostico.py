@@ -49,6 +49,8 @@ def _cargar():
 def pronosticar(simbolo, dias=5, historia=400):
     """Precio de cierre previsto para los próximos 'dias' días hábiles (columna Central)."""
     p = pd.read_csv(activos.ruta_precios(simbolo), index_col="Fecha", parse_dates=True).tail(historia)
+    if "Volumen" not in p:                   # Los precios que vienen de la nube no traen el volumen: se baja completo
+        p = activos.descargar(simbolo).tail(historia)
     x = pd.DataFrame({"open": p["Apertura"].values, "high": p["Maximo"].values, "low": p["Minimo"].values,
                       "close": p["Cierre"].values, "volume": p["Volumen"].fillna(0).values})
     futuro = pd.bdate_range(p.index[-1] + pd.Timedelta(days=1), periods=dias)

@@ -27,6 +27,7 @@ COMPARTIDOS = ["ranking.csv", "noticias.csv", "noticias_estado.json", "dividendo
 PRECIOS = "precios.parquet"                # Todos los precios diarios en un solo archivo comprimido
 COLUMNAS_PRECIO = ("Apertura", "Maximo", "Minimo", "Cierre")   # El volumen solo lo usa Kronos, que vive en tu PC
 USUARIO = contextvars.ContextVar("usuario", default=None)   # El usuario de esta sesión (cada pestaña del navegador)
+EVENTO = contextvars.ContextVar("evento", default=None)     # El evento (dict) cuyo simulador se está usando, o None
 _cliente = None
 
 

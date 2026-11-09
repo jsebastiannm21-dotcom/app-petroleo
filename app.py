@@ -22,15 +22,37 @@ if nube.conectado():
 yo = usuarios.sesion()                                      # Login con Google y registro (en tu PC entra directo)
 st.session_state["yo"] = yo
 
+
+@st.cache_data(ttl=60, show_spinner=False)
+def _mis_eventos(email):
+    import cursos
+    return [(e, p) for e, p in cursos.mis_eventos(email) if cursos.estado(e) != "borrado"]
+
+
+if nube.conectado():                                        # Simulador del evento (cada evento tiene el suyo)
+    mios = _mis_eventos(yo["email"])
+    if mios:
+        nombres_ev = {"personal": "Mi simulador personal", **{e["id"]: e["nombre"] for e, _ in mios}}
+        if "evento_activo" not in st.session_state and usuarios.rol(yo) == "estudiante":
+            st.session_state["evento_activo"] = mios[0][0]["id"]    # Al estudiante le abre su evento
+        if st.session_state.get("evento_activo") not in nombres_ev:
+            st.session_state["evento_activo"] = "personal"
+        elegido_ev = st.sidebar.selectbox("Simulador que estás usando", list(nombres_ev), format_func=nombres_ev.get,
+                                          key="evento_activo", help="Cada evento tiene su propio simulador, separado.")
+        if elegido_ev != "personal":
+            nube.EVENTO.set(next(e for e, _ in mios if e["id"] == elegido_ev))
+
 paginas = {
     "inicio": st.Page("app_pages/inicio.py", title="Inicio", icon=":material/home:", default=True,
                       help="Resumen de Nasdaq, petróleo y oro, el top 5 del ranking, tus activos y las alertas de hoy."),
     "seguimiento": st.Page("app_pages/seguimiento.py", title="Seguimiento", icon=":material/list:",
-                           help="Lista de activos por mercado y tus compras reales (Mis activos)."),
+                           help="Listas de activos por mercado, bolsas, dividendos y cierres semanales."),
     "simulador": st.Page("app_pages/simulacion.py", title="Simulador", icon=":material/science:",
                          help="Cuentas virtuales de 100.000 pesos que siguen la estrategia."),
     "alertas": st.Page("app_pages/avisos.py", title="Alertas", icon=":material/notifications:",
-                       help="Alertas de hoy y conexión con Telegram."),
+                       help="Alertas de hoy y qué significa cada una."),
+    "clase": st.Page("app_pages/clase.py", title="Clase", icon=":material/groups:",
+                     help="Cursos, eventos, ranking del grupo y panel del profesor."),
     "aprende": st.Page("app_pages/tutorial.py", title="Aprende", icon=":material/school:",
                        help="Cada análisis explicado en sencillo y con un ejemplo."),
     "activo": st.Page("app_pages/activo.py", title="Activo", icon=":material/insights:", visibility="hidden",
@@ -80,7 +102,7 @@ with st.sidebar:
 
 # ---------- Barra inferior fija ----------
 with st.container(horizontal=True, horizontal_alignment="distribute", key="barra_inferior"):
-    for clave in ["inicio", "seguimiento", "simulador", "alertas", "aprende"]:
+    for clave in ["inicio", "seguimiento", "simulador", "clase", "alertas", "aprende"]:
         st.page_link(paginas[clave], label=paginas[clave].title, icon=paginas[clave].icon)
 # Estilo HUD ciberpunk (pedido expreso): bordes que brillan, números grandes con resplandor y entrada suave.
 # Revisado para celular (títulos y números más pequeños, barra que respeta el borde del iPhone) y teclado.
@@ -118,4 +140,6 @@ p, li { line-height: 1.55; }
 </style>""".replace("FONDO_BARRA", "rgba(243,247,250,0.97)" if claro else "rgba(5,7,13,0.96)"))
 
 usuarios.menu_perfil(yo)
+st.caption(":material/gavel: **Herramienta educativa con dinero ficticio. No es una recomendación de inversión.**",
+           text_alignment="right")
 pagina.run()

@@ -584,6 +584,11 @@ def main():
     if args.momento == "manana":
         import dividendos
         dividendos.actualizar()
+        import nube
+        if nube.conectado():                         # Fin de eventos: borra a los 30 días (quedan estadísticas anónimas)
+            import cursos
+            for linea in cursos.limpieza():
+                print(linea)
     resultados = {}
     for simbolo in tabla["Activo"]:
         try:

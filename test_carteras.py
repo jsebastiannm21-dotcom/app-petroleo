@@ -4,6 +4,9 @@ import tempfile
 
 import activos
 import cartera
+import nube
+
+nube.conectado = lambda: False      # La prueba NUNCA toca Supabase (ni tus datos reales en la nube)
 import estrategia
 import simulador as s
 
