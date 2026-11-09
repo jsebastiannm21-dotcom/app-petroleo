@@ -14,7 +14,7 @@ baseFontSize = 16
 headingFontSizes = ["28px", "21px", "17px", "15px", "14px", "13px"]
 headingFontWeights = [700, 700, 600, 500, 500, 500]
 linkUnderline = false
-paddingTop = "0.5rem"
+paddingTop = "3.5rem"            # Deja libre la barra de arriba de Streamlit (ahí va el menú de perfil)
 paddingBottom = "6rem"
 
 [theme.dark]

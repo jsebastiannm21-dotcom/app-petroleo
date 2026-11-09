@@ -130,8 +130,9 @@ def resumen_operaciones():
 
 def menu_perfil(u):
     """Menú desplegable a la derecha, sin foto, con Cerrar sesión abajo."""
-    fila = st.container(horizontal=True, horizontal_alignment="right")
-    with fila.popover(u["nombre"].split(" ")[0], icon=":material/account_circle:"):
+    fila = st.container(horizontal=True, horizontal_alignment="right", key="fila_perfil")
+    with fila.popover(f"{u['nombre'].split(' ')[0]} · Mi perfil", icon=":material/account_circle:", type="primary",
+                      key="menu_perfil", help="Tus datos, tus resultados y Cerrar sesión"):
         st.markdown(f"**{u['nombre']}**  \n{u['email']}")
         st.badge({"superadmin": "Superadmin", **ROLES}.get(rol(u), rol(u)), color="violet")
         if u.get("rol") == "profesor" and not u.get("aprobado"):
@@ -146,8 +147,10 @@ def menu_perfil(u):
                         f"**Opera desde:** {fecha(r['desde'])}  \n**Última operación:** {fecha(r['ultima'])}".replace(",", "."))
         except Exception:
             st.caption("Todavía no tienes operaciones.")
-        if login_configurado():
-            st.button("Cerrar sesión", icon=":material/logout:", on_click=st.logout, width="stretch")
+        en_sesion = login_configurado() and getattr(st.user, "is_logged_in", False)
+        st.button("Cerrar sesión", icon=":material/logout:", on_click=st.logout, width="stretch", type="primary",
+                  key="cerrar_sesion", disabled=not en_sesion,
+                  help=None if en_sesion else "En tu PC entras directo, sin sesión que cerrar. En la nube sí funciona.")
 
 
 def panel_admin():
