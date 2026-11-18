@@ -1,12 +1,12 @@
 # legal.py - Términos de uso y Política de tratamiento de datos personales (ley colombiana).
 # Base: Ley 1581 de 2012 (protección de datos), Decreto 1377 de 2013 (compilado en el Decreto 1074 de 2015)
 # y las guías de la Superintendencia de Industria y Comercio (SIC).
-# IMPORTANTE: completa RESPONSABLE con tu nombre o el de tu organización y tu ciudad (la ley exige identificarlo).
 
+import marca
 import nube
 
 ACTUALIZADO = "9 de noviembre de 2026"
-RESPONSABLE = "el administrador de la app «Análisis de mercados»"   # Cámbialo por tu nombre completo o razón social
+RESPONSABLE = "QuantPulse"                     # Responsable del tratamiento de datos (Ley 1581 de 2012)
 CIUDAD = "Bogotá D.C., Colombia"
 
 
@@ -19,7 +19,7 @@ def terminos():
     return f"""### Términos de uso
 *Última actualización: {ACTUALIZADO}.*
 
-1. **Qué es la app.** «Análisis de mercados» es una **herramienta educativa**. Muestra análisis de datos del pasado,
+1. **Qué es la app.** «{marca.NOMBRE}» es una **herramienta educativa**. Muestra análisis de datos del pasado,
    predicciones y un simulador con **dinero ficticio**. **No es una recomendación de inversión** ni asesoría financiera,
    y no es una entidad vigilada por la Superintendencia Financiera.
 2. **Tus decisiones son tuyas.** Lo que hagas con tu dinero real es tu responsabilidad. Los resultados del pasado y del
