@@ -110,7 +110,11 @@ def _registro(email):
 def sesion():
     """Pide el login con Google y el registro. Devuelve el usuario (dict) con su rol, o detiene la página."""
     import os
-    if os.getenv("APP_LOCAL") == "1" or not nube.conectado():   # Tu PC (abrir_app.bat) o sin nube: directo
+    if os.getenv("APP_LOCAL") != "1" and not nube.conectado():  # En la nube SIN claves: nadie entra
+        st.error("La app no está bien configurada (no puede leer sus claves). Vuelve en unos minutos.",
+                 title="App en mantenimiento")
+        st.stop()
+    if os.getenv("APP_LOCAL") == "1":                          # Solo tu PC (abrir_app.bat) entra directo
         como = (os.getenv("APP_COMO") or "").strip().lower()       # Solo en tu PC: probar como otro usuario
         if como and nube.conectado() and obtener(como):
             nube.USUARIO.set(como)

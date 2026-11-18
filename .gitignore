@@ -19,3 +19,4 @@ __pycache__/
 precios.parquet
 .versiones_nube.json
 respaldo_nube/
+revisar_secrets.toml
