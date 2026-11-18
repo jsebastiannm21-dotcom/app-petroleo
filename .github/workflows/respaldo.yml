@@ -1,0 +1,31 @@
+# Copia de seguridad semanal de la base de datos, CIFRADA (gratis). Se guarda aparte, en GitHub -> Actions -> esta
+# tarea -> Artifacts, durante 90 días. Solo se abre con RESPALDO_CLAVE:  python respaldo_nube.py --descifrar ARCHIVO
+name: Copia de seguridad semanal
+on:
+  schedule:
+    - cron: "0 8 * * 0"            # Domingo 3:00 a.m. (hora de Bogotá)
+  workflow_dispatch:
+jobs:
+  copiar:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    env:
+      TZ: America/Bogota
+      SUPABASE_URL: ${{ secrets.SUPABASE_URL }}
+      SUPABASE_KEY: ${{ secrets.SUPABASE_KEY }}
+      SUPERADMIN_EMAIL: ${{ secrets.SUPERADMIN_EMAIL }}
+      RESPALDO_CLAVE: ${{ secrets.RESPALDO_CLAVE }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+          cache-dependency-path: requirements-tareas.txt
+      - run: pip install -r requirements-tareas.txt
+      - run: python respaldo_nube.py
+      - uses: actions/upload-artifact@v4
+        with:
+          name: copia-cifrada-${{ github.run_number }}
+          path: respaldo_nube/*.cifrada
+          retention-days: 90

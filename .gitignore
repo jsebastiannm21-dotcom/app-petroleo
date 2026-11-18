@@ -18,3 +18,4 @@ __pycache__/
 !calendario_eventos.csv
 precios.parquet
 .versiones_nube.json
+respaldo_nube/
