@@ -12,11 +12,23 @@ ARCHIVO = activos.CARPETA / "comisiones.json"
 BASE = {"fija_cop": 14_875.0, "limite_cop": 5_000_000.0, "porcentaje": 0.25, "iva": 19.0, "spread_cambiario": 1.0}
 
 
+def _en_demo():
+    import nube
+    return nube.DEMO.get()
+
+
 def config():
+    if _en_demo():                                         # Demo: comisiones de Trii + cambios hechos en la demo
+        import demo
+        return {**BASE, **demo.COMISIONES}
     return {**BASE, **(json.loads(ARCHIVO.read_text(encoding="utf-8")) if ARCHIVO.exists() else {})}
 
 
 def guardar(**cambios):
+    if _en_demo():                                         # Nunca toca el archivo real
+        import demo
+        demo.COMISIONES.update(cambios)
+        return
     ARCHIVO.write_text(json.dumps({**config(), **cambios}), encoding="utf-8")
     import nube
     if nube.conectado():

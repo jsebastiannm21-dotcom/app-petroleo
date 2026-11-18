@@ -8,6 +8,8 @@ import time
 import requests
 from playwright.sync_api import sync_playwright
 
+import marca
+
 
 def avisar(texto):
     token, chat = os.getenv("ADMIN_TELEGRAM_TOKEN"), os.getenv("ADMIN_TELEGRAM_CHAT_ID")
@@ -29,7 +31,7 @@ try:
         for _ in range(24):                                   # Hasta 2 minutos esperando a que aparezca la app
             pagina.wait_for_timeout(5000)
             texto = " ".join(f.inner_text("body") for f in pagina.frames if f.url.startswith("http"))
-            if "Entrar con Google" in texto or "Análisis de mercados" in texto or "Mantenimiento" in texto:
+            if any(t in texto for t in ("Entrar con Google", marca.NOMBRE, "Análisis de mercados", "Mantenimiento")):
                 cargo = True
                 break
     segundos = time.time() - inicio

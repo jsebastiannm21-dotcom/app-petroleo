@@ -69,6 +69,9 @@ fila = st.container(horizontal=True)
 fila.metric("Disponible", ui.pesos(s["disponible"]), ui.dinero(s["disponible_usd"]), delta_color="off")
 fila.metric("Invertido", ui.pesos(s["invertido"]), ui.dinero(s["invertido_usd"]), delta_color="off")
 fila.metric("Total", ui.pesos(s["total"]), f"{s['ganancia_%']:+.2f}% · {ui.dinero(s['total_usd'])}")
+_ops = simulador.cartera.leer()                     # Comisiones pagadas: la suma de las de cada operación
+fila.metric("Comisiones pagadas", ui.pesos(float(pd.to_numeric(_ops.get("Costo_COP"), errors="coerce").fillna(0).sum())
+                                           if len(_ops) else 0.0), f"{len(_ops)} operaciones", delta_color="off")
 
 with st.container(border=True):
     st.markdown(f"**Meta del mes:** pasar de {ui.pesos(s['inicial'])} a {ui.pesos(s['meta'])} "

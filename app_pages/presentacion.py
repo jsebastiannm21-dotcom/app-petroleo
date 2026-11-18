@@ -18,7 +18,7 @@ if not nube.conectado():
 # Números grandes para proyectar (pedido expreso de estilo; solo dentro de esta página)
 st.html("""<style>.st-key-proyectar [data-testid="stMetricValue"] { font-size: 4.2rem; }
 .st-key-proyectar [data-testid="stMetricLabel"] p { font-size: 1.3rem; }</style>""")
-st.title("Análisis de mercados en cifras")
+st.title(f"{__import__('marca').NOMBRE} en cifras")
 st.caption("Herramienta educativa con dinero ficticio · se actualiza sola cada minuto · pantalla completa: F11")
 
 

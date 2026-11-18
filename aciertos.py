@@ -13,7 +13,16 @@ COLUMNAS = ["Fecha", "Activo", "Precio", "Decision_app", "Decision_unificada", "
 def leer():
     if not ARCHIVO.exists():
         return pd.DataFrame(columns=COLUMNAS)
-    return pd.read_csv(ARCHIVO, encoding="utf-8-sig", parse_dates=["Fecha", "Fecha_revision"])
+    t = pd.read_csv(ARCHIVO, encoding="utf-8-sig", parse_dates=["Fecha", "Fecha_revision"])
+    t["Acierto"] = a_booleano(t["Acierto"])
+    return t
+
+
+def a_booleano(serie):
+    """Verdadero, falso o pendiente (vacío). El tipo 'boolean' de pandas acepta los tres; float64 no acepta True."""
+    texto = serie.astype(str).str.strip().str.lower()
+    return pd.Series(pd.NA, index=serie.index, dtype="boolean").mask(texto.isin(["true", "1", "1.0"]), True) \
+        .mask(texto.isin(["false", "0", "0.0"]), False)
 
 
 def registrar(resultados):
@@ -56,7 +65,7 @@ def resumen():
     """Porcentaje de aciertos de la app sola y de la decisión unificada (COMPRAR CONFIRMADO)."""
     t = leer()
     revisadas = t[t["Acierto"].notna()].copy()
-    revisadas["Acierto"] = revisadas["Acierto"].astype(str).str.lower() == "true"
+    revisadas["Acierto"] = revisadas["Acierto"].astype(bool)
     conf = revisadas[revisadas["Decision_unificada"] == "COMPRAR CONFIRMADO"]
     pct = lambda x: x["Acierto"].mean() * 100 if len(x) else None
     return {"app_%": pct(revisadas), "app_n": len(revisadas), "unificada_%": pct(conf), "unificada_n": len(conf),

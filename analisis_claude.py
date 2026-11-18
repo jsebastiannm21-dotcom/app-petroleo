@@ -30,7 +30,9 @@ COLUMNAS = ["Fecha", "Activo", "Veredicto", "Dudas", "Resumen", "Resultados", "P
 def leer():
     if not ARCHIVO.exists():
         return pd.DataFrame(columns=COLUMNAS)
-    return pd.read_csv(ARCHIVO, encoding="utf-8-sig", parse_dates=["Fecha"])
+    t = pd.read_csv(ARCHIVO, encoding="utf-8-sig")
+    t["Fecha"] = pd.to_datetime(t["Fecha"], format="mixed")    # Hay fechas con y sin segundos
+    return t
 
 
 def del_activo(simbolo):

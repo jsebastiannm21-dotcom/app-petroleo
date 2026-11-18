@@ -12,12 +12,17 @@ import ui
 
 encabezado = st.container(horizontal=True, vertical_alignment="bottom")
 encabezado.title("Inicio")
-if ui.puede("actualizar") and encabezado.button("Actualizar datos", icon=":material/refresh:",
-                                                 help="Descarga precios y noticias nuevas (tarda unos 3 minutos)."):
-    ui.actualizar_todo()
+# Los precios ya no tienen botón: se actualizan solos (tarjetas de abajo). Las noticias van aparte.
+if ui.puede("actualizar") and encabezado.button("Actualizar noticias", icon=":material/newspaper:",
+                                                 help="Busca noticias nuevas. Los precios se actualizan solos."):
+    with st.spinner("Buscando noticias nuevas..."):
+        noticias.actualizar()
+    st.cache_data.clear()
     st.rerun()
 tabla = ui.tabla_ranking()
-st.caption(f"Precios al {pd.to_datetime(tabla['Fecha_datos']).max():%d/%m/%Y} · noticias actualizadas: "
+_cierre = pd.to_datetime(tabla["Fecha_datos"]).max()                # NaT si el ranking todavía está vacío
+st.caption(f"Precios: se actualizan solos cada 15 s · señales con el cierre del "
+           f"{'—' if pd.isna(_cierre) else f'{_cierre:%d/%m/%Y}'} · noticias actualizadas: "
            f"{noticias.ultima_actualizacion() or 'nunca'}")
 
 # ---------- Carrusel de mercados (los mismos de Seguimiento; Mis activos va aparte, más abajo) ----------
@@ -62,7 +67,7 @@ for inicio in range(0, len(simbolos_panel), 3):                # Tarjetas de 3 e
             continue
         decision, color, _ = ui.unificada(r)
         with columna.container(border=True, height="stretch"):
-            st.metric(activos.nombre(simbolo), ui.numero(r["precio"]), f"{r['cambio_dia_%']:+.2f}% hoy")
+            ui.metrica_viva(simbolo, simbolos_panel, r["precio"] / (1 + r["cambio_dia_%"] / 100))
             with st.container(horizontal=True):
                 st.badge(activos.tipo_nombre(simbolo), color="violet")
                 st.badge(r["estado"], color=ui.COLOR_ESTADO[r["estado"]])
@@ -105,7 +110,16 @@ izq, centro, der = st.columns([1.3, 1, 1])
 with izq.container(border=True, height="stretch"):
     st.subheader("Ranking top 5")
     top = tabla.head(5).copy()
-    top["Decision"] = [ui.unificada(ui.analisis(s))[0] for s in top["Activo"]]
+
+    def _decision(simbolo):
+        try:
+            return ui.unificada(ui.analisis(simbolo))[0]
+        except Exception:                                    # Un activo sin datos no tumba la tarjeta
+            return "Sin datos"
+
+    top["Decision"] = [_decision(s) for s in top["Activo"]]
+    if top.empty:
+        st.caption(":material/info: Todavía no hay ranking: se calcula en la próxima revisión automática.")
     evento = st.dataframe(
         top[["Sector", "Activo", "Nombre", "Probabilidad_%", "Decision"]], hide_index=True, on_select="rerun",
         selection_mode=["single-row", "single-cell"], key="top5", alt="Los cinco activos con mayor probabilidad de subida",
@@ -115,7 +129,7 @@ with izq.container(border=True, height="stretch"):
                        "Decision": st.column_config.TextColumn("Decisión", help="Tócala para ver por qué")})
     if evento.selection.cells:
         fila_t, columna = evento.selection.cells[0]
-        if columna == "Decision":
+        if columna == "Decision" and top["Decision"].iloc[fila_t] != "Sin datos":
             ui.explicar_decision(ui.analisis(top["Activo"].iloc[fila_t]))
         else:
             ui.ir_a_activo(top["Activo"].iloc[fila_t])

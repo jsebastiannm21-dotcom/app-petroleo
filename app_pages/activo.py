@@ -22,15 +22,16 @@ except Exception as error:
 
 encabezado = st.container(horizontal=True, vertical_alignment="center")
 encabezado.title(f"{activos.icono(simbolo)} {activos.nombre(simbolo)}")
-encabezado.metric(simbolo, ui.numero(r["precio"]), f"{r['cambio_dia_%']:+.2f}% hoy")
-if ui.puede("actualizar") and encabezado.button("Actualizar datos", icon=":material/refresh:"):
+if ui.puede("actualizar") and encabezado.button("Actualizar noticias", icon=":material/newspaper:"):
     import noticias
-    with st.spinner("Descargando precios y noticias..."):
-        activos.descargar(simbolo)
+    with st.spinner("Buscando noticias..."):
         noticias.de_empresa(simbolo, refrescar_horas=0)
     st.cache_data.clear()
     st.rerun()
-st.caption(f"Datos al {r['fecha']:%d/%m/%Y} · tendencia {r['estado']} · {activos.tipo_nombre(simbolo)}")
+if not activos.es_cripto(simbolo):                      # Cripto ya tiene su gráfica en vivo de Binance (abajo)
+    ui.precio_vivo_activo(simbolo, r["precio"] / (1 + r["cambio_dia_%"] / 100))
+st.caption(f"Señal calculada con el cierre del {r['fecha']:%d/%m/%Y} · tendencia {r['estado']} · "
+           f"{activos.tipo_nombre(simbolo)}")
 if st.button(f"Ver noticias de {activos.nombre(simbolo)}", type="primary", icon=":material/newspaper:", width="stretch",
              key="noticias_activo", help="Todas sus noticias y las de su mercado, con filtro por fecha."):
     ui.panel_noticias(simbolo)

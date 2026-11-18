@@ -456,6 +456,7 @@ def excel(estudiantes, operaciones):
                 for i, c in enumerate(t.columns, 1):
                     hoja.column_dimensions[get_column_letter(i)].width = max(10, min(40, len(str(c)) + 4))
             hoja.freeze_panes = "A2"
+        libro.book.properties.title = libro.book.properties.creator = __import__("marca").NOMBRE
     return salida.getvalue()
 
 

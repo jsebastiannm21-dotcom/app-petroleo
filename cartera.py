@@ -192,7 +192,9 @@ class Cartera:
         tabla = {}
         for activo, ops in t.groupby("Activo"):
             try:
-                cierres = pd.read_csv(activos.ruta_precios(activo), index_col="Fecha", parse_dates=True)["Cierre"]
+                cierres = _precios_demo(activo)
+                if cierres is None:
+                    cierres = pd.read_csv(activos.ruta_precios(activo), index_col="Fecha", parse_dates=True)["Cierre"]
             except Exception:
                 continue
             cierres = cierres[cierres.index >= inicio - pd.Timedelta(days=7)]
@@ -206,7 +208,19 @@ class Cartera:
         return valores
 
 
+def _precios_demo(simbolo):
+    """En modo demostración, los precios fijos de los activos de la demo (para que las cifras cuadren); si no, None."""
+    import nube
+    if nube.DEMO.get():
+        import demo
+        return demo.PRECIOS_DEMO.get(simbolo)
+    return None
+
+
 def ultimo_cierre(simbolo):
+    demo_ = _precios_demo(simbolo)
+    if demo_ is not None:
+        return float(demo_.iloc[-1])
     try:
         activos.asegurar_datos(simbolo)
         return float(pd.read_csv(activos.ruta_precios(simbolo), usecols=["Cierre"])["Cierre"].iloc[-1])

@@ -28,6 +28,7 @@ PRECIOS = "precios.parquet"                # Todos los precios diarios en un sol
 COLUMNAS_PRECIO = ("Apertura", "Maximo", "Minimo", "Cierre")   # El volumen solo lo usa Kronos, que vive en tu PC
 USUARIO = contextvars.ContextVar("usuario", default=None)   # El usuario de esta sesión (cada pestaña del navegador)
 EVENTO = contextvars.ContextVar("evento", default=None)     # El evento (dict) cuyo simulador se está usando, o None
+DEMO = contextvars.ContextVar("demo", default=False)        # Modo demostración: todo va a la base de mentira (demo.py)
 _cliente = None
 
 
@@ -50,11 +51,14 @@ def secreto(nombre):
 
 
 def conectado():
-    return bool(secreto("SUPABASE_URL") and secreto("SUPABASE_KEY"))
+    return DEMO.get() or bool(secreto("SUPABASE_URL") and secreto("SUPABASE_KEY"))
 
 
 def cliente():
     global _cliente
+    if DEMO.get():                                          # Aislado: nunca toca Supabase
+        import demo
+        return demo.cliente()
     if _cliente is None:
         from supabase import create_client
         _cliente = create_client(secreto("SUPABASE_URL"), secreto("SUPABASE_KEY"))
@@ -62,6 +66,9 @@ def cliente():
 
 
 def superadmin():
+    if DEMO.get():
+        import demo
+        return demo.SUPERADMIN
     return (secreto("SUPERADMIN_EMAIL") or "superadmin").lower()
 
 
@@ -78,6 +85,7 @@ def _recordado(clave, leer):
     """Devuelve lo leído hace menos de 3 segundos (cada clave incluye el correo: nunca se cruzan usuarios)."""
     import copy
     import time
+    clave = clave + (DEMO.get(),)                       # La demo nunca comparte memoria con los datos reales
     hora, valor = _MEMORIA.get(clave, (0, None))
     if time.time() - hora > _SEGUNDOS:
         valor = leer()

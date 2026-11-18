@@ -590,6 +590,10 @@ def precio_y_moneda(simbolo):
 def precio_ahora(simbolo):
     """(precio, moneda, mercado_abierto). Con el mercado cerrado, el precio es el último cierre.
     Cripto: precio en vivo de Binance (opera 24/7)."""
+    import cartera
+    fijo = cartera._precios_demo(simbolo)                   # Modo demostración: precio fijo de la demo
+    if fijo is not None:
+        return float(fijo.iloc[-1]), "COP", False
     if es_cripto(simbolo):
         import binance
         vivo = binance.precio(simbolo)

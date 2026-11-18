@@ -136,11 +136,12 @@ def marcar_leido(clave):
 def alerta_admin(texto):
     """Manda un mensaje al bot de admin. Sin bot de admin configurado, queda solo en el panel."""
     token, chat = nube.secreto("ADMIN_TELEGRAM_TOKEN"), nube.secreto("ADMIN_TELEGRAM_CHAT_ID")
-    if not (token and chat):
+    if not (token and chat) or nube.DEMO.get():            # En modo demostración no se avisa nada
         return False
     try:
         r = requests.post(f"https://api.telegram.org/bot{token}/sendMessage",
-                          data={"chat_id": chat, "text": f"🛠️ ADMIN\n{texto}"[:4000]}, timeout=15)
+                          data={"chat_id": chat, "text": f"🛠️ {__import__('marca').NOMBRE} · ADMIN\n{texto}"[:4000]},
+                          timeout=15)
         return r.ok
     except Exception:
         return False

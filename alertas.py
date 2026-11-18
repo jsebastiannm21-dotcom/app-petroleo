@@ -65,6 +65,11 @@ def enviar(texto):
     if not (token and chat):
         print("[Telegram no configurado] " + texto.replace("\n", " | "))
         return False
+    import marca
+    import nube
+    if nube.DEMO.get():                            # En modo demostración no se manda nada a Telegram
+        return False
+    texto = f"{marca.NOMBRE}\n{texto}"             # Cada notificación lleva el nombre de la app arriba
     # Telegram acepta máximo 4096 caracteres por mensaje: partimos por líneas
     partes, actual = [], ""
     for linea in texto.split("\n"):

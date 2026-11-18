@@ -98,8 +98,9 @@ def reiniciar(nuevo_saldo=None):
     if monto <= 0:
         raise ValueError("El saldo inicial debe ser mayor que cero.")
     _guardar_config(saldo_inicial=monto, inicio=datetime.now().strftime("%Y-%m-%d"))
-    from respaldo import respaldar
-    respaldar()                                # Antes de borrar, siempre una copia de seguridad
+    if not nube.DEMO.get():                    # En demo no hay nada real que respaldar
+        from respaldo import respaldar
+        respaldar()                            # Antes de borrar, siempre una copia de seguridad
     cartera.borrar_todo()                      # La cartera activa (en las pruebas, un archivo temporal)
 
 

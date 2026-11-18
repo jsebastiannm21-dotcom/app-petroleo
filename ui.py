@@ -43,8 +43,9 @@ def contar_uso(que):
 
 
 @st.cache_data(ttl=1800, show_spinner=False)
-def comunidad():
-    """(porcentajes por mercado, compras, ¿se usa como señal?, texto del backtest). Anónimo y agregado."""
+def comunidad(demo=False):
+    """(porcentajes por mercado, compras, ¿se usa como señal?, texto del backtest). Anónimo y agregado.
+    'demo' separa el caché: la demo nunca muestra (ni guarda) cifras de la comunidad real."""
     import gestion
     pct, n = gestion.comunidad()
     usar, texto = gestion.comunidad_validada()
@@ -55,7 +56,7 @@ def tarjeta_comunidad():
     import nube
     if not nube.conectado():
         return
-    pct, n, usar, texto = comunidad()
+    pct, n, usar, texto = comunidad(nube.DEMO.get())
     with st.container(border=True):
         st.markdown("#### :material/groups: Sentimiento de la comunidad (anónimo)")
         if not n:
@@ -307,20 +308,6 @@ def tabla_ranking():
         with st.spinner(f"Primera vez: descargando los {len(activos.ACTIVOS)} activos (tarda unos 3 minutos)..."):
             ranking.calcular(actualizar=True)
     return _ranking(ranking.ARCHIVO.stat().st_mtime)
-
-
-def actualizar_todo():
-    import noticias
-    import nube
-    with st.spinner("Descargando precios de todos los activos y recalculando..."):
-        ranking.calcular(actualizar=True)
-    with st.spinner("Buscando noticias nuevas..."):
-        noticias.actualizar()
-    if nube.conectado():
-        with st.spinner("Guardando en la nube..."):
-            nube.empacar_precios()
-            nube.subir(nube.COMPARTIDOS + [nube.PRECIOS])
-    st.cache_data.clear()
 
 
 def unificada(r):
@@ -783,31 +770,33 @@ def mini_grafica(serie, alto=150):
     return estilo(fig, alto, leyenda=False)
 
 
-@st.cache_data(ttl=600, show_spinner="Bajando los precios por hora...")
-def _por_hora(simbolo):
-    """Velas de 1 hora del último día de mercado, en hora de Bogotá."""
-    import yfinance as yf
-    d = yf.download(simbolo, period="5d", interval="60m", progress=False, auto_adjust=False)
-    if d.empty:
-        return pd.Series(dtype=float)
-    if isinstance(d.columns, pd.MultiIndex):
-        d.columns = d.columns.get_level_values(0)
+def _por_cinco_min(simbolo):
+    """Velas de 5 minutos del último día de mercado (eToro; respaldo Yahoo), en hora de Bogotá."""
+    import precios_vivos
+    d = precios_vivos.velas(simbolo, "FiveMinutes", 300)
     c = d["Close"].dropna()
-    c.index = c.index.tz_convert("America/Bogota").tz_localize(None)
-    return c[c.index.date == c.index[-1].date()]
+    c = c[c.index.date == c.index[-1].date()] if len(c) else c
+    c.attrs = dict(d.attrs)
+    return c
 
 
 def grafica_un_dia(simbolo, clave):
-    c = _por_hora(simbolo)
-    if len(c) < 2:
-        st.caption(":material/info: Yahoo no tiene precios por hora de este activo para el último día.")
-        return
-    fig = go.Figure(go.Scatter(x=c.index, y=c, name="Precio por hora", mode="lines+markers",
-                               line=dict(color=AZUL, width=2), hovertemplate="%{x|%I:%M %p}: %{y:,.2f}<extra></extra>"))
-    fig.update_xaxes(tickformat="%I:%M %p")
-    st.caption(f"{c.index[-1]:%d/%m/%Y}, hora de Bogotá: {(c.iloc[-1] / c.iloc[0] - 1) * 100:+.2f}% en el día "
-               "(una vela por hora)")
-    st.plotly_chart(estilo(fig, 380, leyenda=False), width="stretch", key=f"dia_{clave}")
+    @st.fragment(run_every=60)                             # La gráfica del día se redibuja sola cada minuto
+    def dibujar():
+        c = _por_cinco_min(simbolo)
+        if len(c) < 2:
+            st.caption(":material/info: No hay precios intradía de este activo para el último día.")
+            return
+        fig = go.Figure(go.Scatter(x=c.index, y=c, name="Precio", mode="lines", line=dict(color=AZUL, width=2),
+                                   hovertemplate="%{x|%I:%M %p}: %{y:,.2f}<extra></extra>"))
+        fig.update_xaxes(tickformat="%I:%M %p")
+        hora = pd.Timestamp(c.index[-1]).tz_localize("America/Bogota")
+        sello = sello_precio({"hora": hora, "fuente": c.attrs.get("fuente", "respaldo"),
+                              "origen": c.attrs.get("origen", "Yahoo Finance")})
+        st.caption(f"{c.index[-1]:%d/%m/%Y}, hora de Bogotá: {(c.iloc[-1] / c.iloc[0] - 1) * 100:+.2f}% en el día "
+                   f"(velas de 5 minutos) · última vela: {sello}")
+        st.plotly_chart(estilo(fig, 380, leyenda=False), width="stretch", key=f"dia_{clave}")
+    dibujar()
 
 
 def filtro_periodo(clave, fechas, con_dia=False):
@@ -1406,6 +1395,56 @@ def predicciones_cartera(cartera, clave, etiqueta=""):
                "moverse juntos, así que el rango real puede ser un poco más ancho).")
 
 
+FUENTE_COLOR = {"en vivo": "green", "diferido": "orange", "respaldo": "gray"}
+
+
+def sello_precio(p):
+    """'● En vivo · 01:45:02 PM (eToro)': de dónde salió el precio y a qué hora (Bogotá)."""
+    if not p:
+        return ":gray[● Sin precio ahora]"
+    hora = pd.Timestamp(p["hora"]).tz_convert("America/Bogota")
+    texto = f":{FUENTE_COLOR[p['fuente']]}[● {p['fuente'].capitalize()}] · {hora:%I:%M:%S %p} ({p['origen']})"
+    return texto + (f" · {hora:%d/%m}" if hora.date() != pd.Timestamp.now("America/Bogota").date() else "")
+
+
+def metrica_viva(simbolo, grupo, cierre_previo, cada=15):
+    """Precio de una tarjeta que se actualiza solo, sin botón. 'grupo' son todos los símbolos visibles: se piden
+    juntos en UNA consulta a eToro (queda en caché 5 s), así varias tarjetas no gastan el límite de 60 por minuto."""
+    import precios_vivos
+
+    @st.fragment(run_every=cada)
+    def dibujar():
+        p = precios_vivos.precios(grupo).get(simbolo)
+        if p:
+            st.metric(activos.nombre(simbolo), numero(p["precio"]),
+                      f"{(p['precio'] / cierre_previo - 1) * 100:+.2f}% hoy" if cierre_previo else None)
+        st.caption(sello_precio(p))
+    dibujar()
+
+
+def precio_vivo_activo(simbolo, cierre_previo, cada=5):
+    """Precio de un activo por el WebSocket de eToro (respaldo: consulta y Yahoo) con la gráfica de los ticks."""
+    import precios_vivos
+    flujo = precios_vivos.flujo(simbolo)
+
+    @st.fragment(run_every=cada)
+    def dibujar():
+        p = precios_vivos.precio(simbolo, flujo)
+        fila = st.container(horizontal=True, vertical_alignment="center")
+        fila.metric("Precio ahora", numero(p["precio"]),
+                    f"{(p['precio'] / cierre_previo - 1) * 100:+.2f}% hoy" if cierre_previo else None)
+        fila.markdown(sello_precio(p))
+        if flujo and len(flujo.datos) > 1:
+            t = pd.DataFrame(list(flujo.datos), columns=["Hora", "Precio"])
+            t["Hora"] = pd.to_datetime(t["Hora"], utc=True).dt.tz_convert("America/Bogota").dt.tz_localize(None)
+            fig = go.Figure(go.Scatter(x=t["Hora"], y=t["Precio"], mode="lines", line=dict(color=AZUL, width=2),
+                                       hovertemplate="%{x|%I:%M:%S %p}: %{y:,.2f}<extra></extra>"))
+            st.plotly_chart(estilo(fig, 220, leyenda=False), width="stretch", key=f"ticks_{simbolo}")
+        elif flujo and flujo.error:
+            st.caption(f"WebSocket de eToro: {flujo.error}. Mientras tanto se usa la consulta normal.")
+    dibujar()
+
+
 @st.cache_resource(show_spinner=False)
 def _flujo(simbolo):
     import binance
@@ -1494,15 +1533,20 @@ def grafica_cartera(cartera, clave, etiqueta=""):
     monto = en_periodo["Precio"] * en_periodo["Cantidad"]
     neto = monto.where(en_periodo["Tipo"] == "COMPRA", -monto).sum()
     ganancia = valores["Total"].iloc[-1] - valores["Total"].iloc[0] - neto
-    st.metric(f"Ganancia o pérdida en {dias} días {etiqueta}", dinero(ganancia),
-              help="Cambio del valor total menos lo que compraste y más lo que vendiste en el periodo.")
+    en_pesos = set(ops["Moneda"].dropna()) == {"COP"}        # Los valores van en la moneda de cada activo
+    if en_pesos and "Costo_COP" in en_periodo:              # En pesos se pueden restar las comisiones pagadas
+        ganancia -= float(pd.to_numeric(en_periodo["Costo_COP"], errors="coerce").fillna(0).sum())
+    st.metric(f"Ganancia o pérdida en {dias} días {etiqueta}", pesos(ganancia) if en_pesos else dinero(ganancia),
+              help="Cambio del valor total menos lo que compraste y más lo que vendiste en el periodo"
+                   + (", ya descontadas las comisiones." if en_pesos else "."))
+    simbolo_m = "$" if en_pesos else "US$ "
     fig = go.Figure()
     for i, columna in enumerate([c for c in valores.columns if c != "Total"][:len(PALETA) - 1]):
         fig.add_trace(go.Scatter(x=valores.index, y=valores[columna], name=columna,
-                                 line=dict(color=PALETA[i + 1], width=1.6), hovertemplate="US$ %{y:,.2f}"))
+                                 line=dict(color=PALETA[i + 1], width=1.6), hovertemplate=simbolo_m + "%{y:,.2f}"))
     fig.add_trace(go.Scatter(x=valores.index, y=valores["Total"], name="Total", line=dict(color=AZUL, width=3),
-                             hovertemplate="US$ %{y:,.2f}"))
-    fig.update_yaxes(title_text="Valor (US$)", tickprefix="US$ ")
+                             hovertemplate=simbolo_m + "%{y:,.2f}"))
+    fig.update_yaxes(title_text="Valor (COP)" if en_pesos else "Valor (US$)", tickprefix=simbolo_m)
     st.plotly_chart(estilo(fig, 320), width="stretch", key=f"valor_{clave}")
 
     pos = cartera.posiciones(con_precio=False)

@@ -125,7 +125,7 @@ def sesion():
         st.error("Falta configurar el login con Google en los secrets de la app.", title="App en mantenimiento")
         st.stop()
     if not st.user.is_logged_in:
-        st.title("Análisis de mercados")
+        st.title(__import__("marca").NOMBRE)
         st.markdown("Herramienta educativa: análisis de más de 1.100 activos, predicciones y un simulador con dinero "
                     "virtual. **No es una recomendación de inversión.**")
         st.button("Entrar con Google", icon=":material/login:", type="primary", on_click=st.login, args=("google",))
@@ -219,6 +219,7 @@ def menu_perfil(u):
     fila = st.container(horizontal=True, horizontal_alignment="right", key="fila_perfil")
     with fila.popover(f"{u['nombre'].split(' ')[0]} · Mi perfil", icon=":material/account_circle:", type="primary",
                       key="menu_perfil", help="Tus datos, tus resultados y Cerrar sesión"):
+        st.caption(__import__("marca").NOMBRE)
         st.markdown(f"**{u['nombre']}**  \n{u['email']}")
         st.badge({"superadmin": "Superadmin", **ROLES}.get(rol(u), rol(u)), color="violet")
         if u.get("rol") == "profesor" and not u.get("aprobado"):

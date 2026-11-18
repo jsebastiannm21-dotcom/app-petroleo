@@ -10,11 +10,16 @@ import pandas as pd
 import streamlit as st
 
 import activos
+import marca
 import nube
 import ui
 import usuarios
 
-st.set_page_config(page_title="Análisis de mercados", page_icon=":material/monitoring:", layout="wide")
+st.set_page_config(page_title=marca.NOMBRE, page_icon=":material/monitoring:", layout="wide")
+# Cada carga empieza con los datos REALES y sin evento: el hilo de la sesión recuerda los valores de la carga anterior
+nube.DEMO.set(False)
+nube.USUARIO.set(None)
+nube.EVENTO.set(None)
 
 if nube.conectado():
     @st.cache_resource(ttl=1800, show_spinner="Preparando los datos del mercado (la primera vez tarda un poco)...")
@@ -23,6 +28,37 @@ if nube.conectado():
         return True
     _datos_de_la_nube()
 yo = usuarios.sesion()                                      # Login con Google y registro (en tu PC entra directo)
+
+
+def _cambiar_demo():
+    st.session_state["demo"] = not st.session_state.get("demo")
+    for clave in ("perfil_demo", "evento_activo"):
+        st.session_state.pop(clave, None)
+
+
+if usuarios.rol(yo) == "superadmin":                        # Solo el superadmin REAL puede entrar y salir de la demo
+    en_demo = st.session_state.get("demo", False)
+    st.sidebar.button("Salir del modo demostración" if en_demo else "Entrar al modo demostración",
+                      icon=":material/logout:" if en_demo else ":material/slideshow:", width="stretch",
+                      type="primary" if en_demo else "secondary", on_click=_cambiar_demo, key="boton_demo",
+                      help="Datos ficticios en una base aparte: nunca toca tus usuarios, operaciones ni notas reales.")
+else:
+    st.session_state["demo"] = False
+if st.session_state.get("demo"):
+    import demo
+    nube.DEMO.set(True)                                     # Desde aquí, todo va a la base de mentira (demo.py)
+    elegido = st.sidebar.selectbox("Perfil de la demo", list(demo.PERFILES), key="perfil_demo",
+                                   format_func=lambda e: demo.PERFILES[e]["etiqueta"],
+                                   on_change=lambda: st.session_state.pop("evento_activo", None),
+                                   help="Cambia entre los perfiles ficticios. Solo existe dentro del modo demostración.")
+    nube.USUARIO.set(elegido)
+    yo = demo.perfil(elegido)
+    st.html(f"""<div class="banda-demo">⚠️ {demo.BANDA}</div><style>
+.banda-demo {{ position: fixed; top: 3.75rem; left: 0; right: 0; z-index: 999999; pointer-events: none;
+  background: #FFB000; color: #111; font-weight: 800; text-align: center; letter-spacing: .04em;
+  padding: .4rem 1rem; box-shadow: 0 2px 12px rgba(0,0,0,.35); }}
+[data-testid="stMain"] .block-container {{ padding-top: 6.5rem; }}
+</style>""")
 st.session_state["yo"] = yo
 
 
@@ -74,7 +110,8 @@ st.session_state.setdefault("activo", activos.PRINCIPAL)
 if "activo_pendiente" in st.session_state:                # Otra pantalla pidió abrir un activo
     st.session_state["activo"] = st.session_state.pop("activo_pendiente")
 with st.sidebar:
-    st.subheader(":material/monitoring: Análisis de mercados")
+    st.subheader(f":material/monitoring: {marca.NOMBRE}")
+    st.markdown(f"**{marca.SECCION_ANALISIS}**")
     mercados = ui.filtro_mercados("sidebar_mercados")
     activos_on = [s for s in activos.ACTIVOS if any(activos.mercado_activo(m) for m in activos.mercados(s))]
     opciones = [s for s in activos_on if not mercados or set(activos.mercados(s)) & mercados]
@@ -153,6 +190,7 @@ p, li { line-height: 1.55; }
 }
 </style>""".replace("FONDO_BARRA", "rgba(243,247,250,0.97)" if claro else "rgba(5,7,13,0.96)"))
 
+st.markdown(f"#### :material/monitoring: {marca.NOMBRE}")    # Encabezado de todas las pantallas
 usuarios.menu_perfil(yo)
 st.caption(":material/gavel: **Herramienta educativa con dinero ficticio. No es una recomendación de inversión.**",
            text_alignment="right")

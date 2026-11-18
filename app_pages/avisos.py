@@ -81,10 +81,11 @@ if registro.empty:
     st.caption("Cada mañana se anotan las sugerencias de COMPRAR con su fecha y precio; a los 5 días de mercado se "
                "revisa si acertaron.")
 else:
+    registro["Acierto"] = registro["Acierto"].map({True: "Sí", False: "No"}).fillna("Pendiente")
     st.dataframe(registro.iloc[::-1], hide_index=True, alt="Registro de sugerencias",
                  column_config={"Fecha": st.column_config.DateColumn(format="DD/MM/YYYY"),
                                 "Fecha_revision": st.column_config.DateColumn("Revisada el", format="DD/MM/YYYY"),
-                                "Acierto": st.column_config.CheckboxColumn()})
+                                "Acierto": st.column_config.TextColumn("Acierto")})
 
 # ---------- Aciertos del modo automático (superadmin) ----------
 import automatico  # noqa: E402
