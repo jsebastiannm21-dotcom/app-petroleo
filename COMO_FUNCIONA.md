@@ -567,6 +567,13 @@ horas pico y celular vs. computador. Se activa con `CLARITY_ID` en los secrets y
   - escribiendo la dirección del panel a mano, la app la rechaza.
 - **RLS (seguridad por fila)** en las 4 tablas de Supabase. Para comprobarlo, pega `supabase_seguridad.sql` en
   Supabase → SQL Editor y toca Run: todas deben decir `true`.
+- **RLS comprobado** en Supabase el 17/11/2026: todas las tablas dicen `true`.
+- **Copias de seguridad semanales cifradas:** cada domingo a las 3:00 a.m. GitHub copia todas las tablas y archivos de
+  Supabase.
+  - Se guardan **cifradas** en GitHub → Actions → «Copia de seguridad semanal» → Artifacts, durante 90 días.
+  - Solo se abren con `RESPALDO_CLAVE`, que está en tu `.env`. **Guárdala en un lugar seguro.**
+  - Para abrir una: descarga el .zip de GitHub, sácale el archivo `.cifrada` y corre
+    `python respaldo_nube.py --descifrar copia_....cifrada`.
 - **Claves:** revisé todo el historial de GitHub y no hay ninguna clave ni archivo `.env`.
 - **Errores:** nadie ve detalles técnicos ni mensajes en inglés. Sale un mensaje claro en español, y el detalle va al
   Panel admin → Salud y al Telegram de admin.
